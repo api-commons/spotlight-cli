@@ -57,5 +57,8 @@
     "fetch-mock": "^12.6.0",
     "memfs": "^3.5.3",
     "prettier": "^2.4.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
