@@ -97,7 +97,7 @@ module.exports = new Resolver({
 then, if you're a CLI user you can refer to that resolver in the following manner:
 
 ```bash
-spectral lint --resolver my-resolver.js my-document
+spotlight lint --resolver my-resolver.js my-document
 ```
 
 For JS API consumers, this would look like this:

@@ -21,7 +21,8 @@ import type { Stringified } from './types';
 
 const STACK_SYMBOL = Symbol('@stoplight/spectral/ruleset/#stack');
 const EXPLICIT_SEVERITY = Symbol('@stoplight/spectral/ruleset/#explicit-severity');
-const DEFAULT_RULESET_FILE = /^\.?spectral\.(ya?ml|json|m?js)$/;
+// Accept the Spotlight-native filename and the Spectral filename (for compatibility).
+const DEFAULT_RULESET_FILE = /^\.?(spotlight|spectral)\.(ya?ml|json|m?js)$/;
 
 type RulesetContext = {
   readonly severity?: FileRulesetSeverityDefinition;

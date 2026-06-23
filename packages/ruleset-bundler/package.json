@@ -60,5 +60,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Bundles Spotlight rulesets and their dependencies into a single distributable."
 }

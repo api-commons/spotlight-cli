@@ -50,5 +50,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Ready-to-use Spotlight rulesets for OpenAPI, AsyncAPI, and Arazzo."
 }

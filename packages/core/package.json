@@ -68,5 +68,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Core linting engine for Spotlight — runs rulesets against JSON/YAML API descriptions."
 }

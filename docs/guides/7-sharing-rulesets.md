@@ -41,7 +41,7 @@ extends:
 As with any ruleset, you can pass these directly to the [Spectral CLI](./2-cli.md):
 
 ```shell
-spectral lint -r https://example.com/some-ruleset.yml
+spotlight lint -r https://example.com/some-ruleset.yml
 ```
 
 ## npm

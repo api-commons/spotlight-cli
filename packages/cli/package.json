@@ -72,5 +72,6 @@
       "../*/dist/**/*.js.map",
       "../*/src/**/*.ts"
     ]
-  }
+  },
+  "description": "Spotlight command-line linter for OpenAPI, AsyncAPI, and Arazzo descriptions, with custom ruleset support."
 }

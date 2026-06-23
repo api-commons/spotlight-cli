@@ -25,5 +25,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "JSON and YAML parsers for Spotlight."
 }

@@ -26,5 +26,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "JSON $ref resolver for Spotlight."
 }

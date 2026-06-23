@@ -27,5 +27,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Runtime utilities shared across the Spotlight packages."
 }

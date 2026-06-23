@@ -63,7 +63,7 @@ lint:spectral:
     name: stoplight/spectral
     entrypoint: [""]
   script:
-    - spectral lint -D -f junit -o spectral-report.xml openapi.yaml
+    - spotlight lint -D -f junit -o spectral-report.xml openapi.yaml
   artifacts:
     when: always
     expire_in: 2 weeks

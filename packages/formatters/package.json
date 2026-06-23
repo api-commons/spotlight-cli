@@ -57,5 +57,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Output formatters for Spotlight lint results (stylish, JSON, JUnit, and more)."
 }

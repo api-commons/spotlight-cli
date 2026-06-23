@@ -26,5 +26,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "Document format detection for Spotlight (OpenAPI, AsyncAPI, Arazzo, JSON Schema)."
 }

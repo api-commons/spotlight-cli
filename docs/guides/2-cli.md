@@ -3,25 +3,25 @@
 [Once Spectral is installed](../getting-started/2-installation.md) and [you have a ruleset](../../README.md#installation-and-usage), run Spectral via the command-line:
 
 ```bash
-spectral lint petstore.yaml
+spotlight lint petstore.yaml
 ```
 
 Use this command to lint with a custom ruleset or one that's located in a different directory than your API document:
 
 ```bash
-spectral lint petstore.yaml --ruleset myruleset.json
+spotlight lint petstore.yaml --ruleset myruleset.json
 ```
 
 You can lint multiple files at the same time by passing on multiple arguments:
 
 ```bash
-spectral lint petstore.yaml https://example.com/petstore/openapi-v2.json https://example.com/todos/openapi-v3.json
+spotlight lint petstore.yaml https://example.com/petstore/openapi-v2.json https://example.com/todos/openapi-v3.json
 ```
 
 Alternatively, you can use [glob syntax](https://github.com/mrmlnc/fast-glob#basic-syntax) to match multiple files at once:
 
 ```bash
-spectral lint ./reference/**/*.oas*.{json,yml,yaml}
+spotlight lint ./reference/**/*.oas*.{json,yml,yaml}
 ```
 
 Other options include:
@@ -182,26 +182,26 @@ If you wish to output results in multiple formats, you can do so by passing mult
 In order to output results in multiple formats, you must also pass the `-o` flag with a filename for each format.
 
 ```bash
-spectral lint "specs/**/*.yaml" -f json -f junit -o.json results.json -o.junit junit.xml
+spotlight lint "specs/**/*.yaml" -f json -f junit -o.json results.json -o.junit junit.xml
 ```
 
 You can also pipe an output to stdout.
 
 ```bash
-spectral lint "specs/**/*.yaml" -f stylish -f junit -o.junit junit.xml -o.stylish "<stdout>"
+spotlight lint "specs/**/*.yaml" -f stylish -f junit -o.junit junit.xml -o.stylish "<stdout>"
 ```
 
 It's possible to output each format to stdout.
 
 ```bash
-spectral lint "specs/**/*.yaml" -f text -f stylish -o.text "<stdout>" -o.stylish "<stdout>"
+spotlight lint "specs/**/*.yaml" -f text -f stylish -o.text "<stdout>" -o.stylish "<stdout>"
 ```
 
 ## Proxying
 
 To have requests made from Spectral be proxied through a server, you'd need to specify the `PROXY` environment variable:
 
-`PROXY=<<PROXY_SERVER_ADDRESS>> spectral lint spec.yaml`
+`PROXY=<<PROXY_SERVER_ADDRESS>> spotlight lint spec.yaml`
 
 ## Custom \$ref Resolving
 

@@ -22,7 +22,7 @@ Using Spectral gets a little tricky for developers who are following a code-firs
 If the API description documents live in some other format, such as comments or annotations inside code, consider using a tool with an export option on the CLI. Here's an example using [go-swagger](https://github.com/go-swagger/go-swagger):
 
 ```bash
-swagger generate spec -o ./tmp/openapi.json && spectral lint ./tmp/openapi.json
+swagger generate spec -o ./tmp/openapi.json && spotlight lint ./tmp/openapi.json
 ```
 
 After your API is in production, changing problems that Spectral finds could be troublesome.
@@ -40,8 +40,8 @@ Here's an example of a Spectral Git hook using [Husky](https://github.com/typico
 {
   "husky": {
     "hooks": {
-      "pre-commit": "spectral lint ./reference/**/*.{json,yml,yaml}",
-      "pre-push": "spectral lint ./reference/**/*.{json,yml,yaml}",
+      "pre-commit": "spotlight lint ./reference/**/*.{json,yml,yaml}",
+      "pre-push": "spotlight lint ./reference/**/*.{json,yml,yaml}",
       "...": "..."
     }
   }
