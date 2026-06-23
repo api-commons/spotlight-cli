@@ -1,0 +1,1550 @@
+[
+  {
+    "number": 2653,
+    "title": "Is it possible to validate a plain JSON Schema?",
+    "category": "Q&A",
+    "up": 4,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/2653-is-it-possible-to-validate-a-plain-json-schema.md"
+  },
+  {
+    "number": 2938,
+    "title": "Community ruleset: x-agent-trust compliance (OpenAPI Extensions Registry)",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2938-community-ruleset-x-agent-trust-compliance-openapi-extension.md"
+  },
+  {
+    "number": 2875,
+    "title": "How to use in code?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": true,
+    "file": "discussions/2875-how-to-use-in-code.md"
+  },
+  {
+    "number": 2857,
+    "title": "What is the \"tags\" property on rules?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2857-what-is-the-tags-property-on-rules.md"
+  },
+  {
+    "number": 2856,
+    "title": "Spectral override not working when ruleset is in subdirectory - rule still triggers despite being turned off",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2856-spectral-override-not-working-when-ruleset-is-in-subdirector.md"
+  },
+  {
+    "number": 2435,
+    "title": "unused-components-schema for discriminator mappings",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 6,
+    "answered": false,
+    "file": "discussions/2435-unused-components-schema-for-discriminator-mappings.md"
+  },
+  {
+    "number": 2841,
+    "title": "Spectral maven plugin created https://github.com/nddipiazza/spectral-maven-plugin",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2841-spectral-maven-plugin-created-https-github-com-nddipiazza-sp.md"
+  },
+  {
+    "number": 2249,
+    "title": "Setup spectral in maven/gradle to build",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2249-setup-spectral-in-maven-gradle-to-build.md"
+  },
+  {
+    "number": 2829,
+    "title": "Would be nice to include filename into the validation process so you can create rules based on the filename or to compare content of the file with the filename",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2829-would-be-nice-to-include-filename-into-the-validation-proces.md"
+  },
+  {
+    "number": 2815,
+    "title": "Validate OAS specification extensions",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2815-validate-oas-specification-extensions.md"
+  },
+  {
+    "number": 2808,
+    "title": "Nice little `well-formed-object` custom function 👨🏼‍🌾",
+    "category": "Show and tell",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2808-nice-little-well-formed-object-custom-function.md"
+  },
+  {
+    "number": 2801,
+    "title": "Azure DevOps integration with the Spectral Lint Task! 👒",
+    "category": "Show and tell",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2801-azure-devops-integration-with-the-spectral-lint-task.md"
+  },
+  {
+    "number": 2797,
+    "title": "Missing  Rule or Code Name in HTML Output Format",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2797-missing-rule-or-code-name-in-html-output-format.md"
+  },
+  {
+    "number": 2791,
+    "title": "Mutating extends ruleset in javascript",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2791-mutating-extends-ruleset-in-javascript.md"
+  },
+  {
+    "number": 2784,
+    "title": "Adding a SECURITY.md file to define a security policy",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2784-adding-a-security-md-file-to-define-a-security-policy.md"
+  },
+  {
+    "number": 2762,
+    "title": "Bank API - ASP.NET Core 9 reference API - Complies to OWASP ruleset and 2 others",
+    "category": "Show and tell",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2762-bank-api-asp-net-core-9-reference-api-complies-to-owasp-rule.md"
+  },
+  {
+    "number": 2761,
+    "title": "How to make Gitlab CI interpret the \"gitlab\" output format of Spectral CLI ?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2761-how-to-make-gitlab-ci-interpret-the-gitlab-output-format-of-.md"
+  },
+  {
+    "number": 2756,
+    "title": "Error while linting within VS Code.",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2756-error-while-linting-within-vs-code.md"
+  },
+  {
+    "number": 2723,
+    "title": "Registering custom rules format for browser bundled rulesets",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2723-registering-custom-rules-format-for-browser-bundled-rulesets.md"
+  },
+  {
+    "number": 2716,
+    "title": "When will be released new version of spectral?",
+    "category": "General",
+    "up": 7,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2716-when-will-be-released-new-version-of-spectral.md"
+  },
+  {
+    "number": 2714,
+    "title": "AsyncAPI v3 support",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2714-asyncapi-v3-support.md"
+  },
+  {
+    "number": 2422,
+    "title": "TypeError: Cannot destructure property 'Spectral' of 'spectral_core_1.default' as it is undefined.",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2422-typeerror-cannot-destructure-property-spectral-of-spectral-c.md"
+  },
+  {
+    "number": 2666,
+    "title": "Is there a JsonSchema for the JSON/Yaml rulesets?",
+    "category": "Ideas",
+    "up": 2,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2666-is-there-a-jsonschema-for-the-json-yaml-rulesets.md"
+  },
+  {
+    "number": 2601,
+    "title": "Rule to enforce single quote strings",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2601-rule-to-enforce-single-quote-strings.md"
+  },
+  {
+    "number": 2705,
+    "title": "documentationUrl doesn't show in console",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2705-documentationurl-doesn-t-show-in-console.md"
+  },
+  {
+    "number": 2704,
+    "title": "Java Implementation for Spectral spec support",
+    "category": "General",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2704-java-implementation-for-spectral-spec-support.md"
+  },
+  {
+    "number": 2687,
+    "title": "Support for Parsing !reference Tag in GitLab CI YAML Files",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2687-support-for-parsing-reference-tag-in-gitlab-ci-yaml-files.md"
+  },
+  {
+    "number": 2677,
+    "title": "New Features for Spectral: OAS3.1 & OWASP?",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2677-new-features-for-spectral-oas3-1-owasp.md"
+  },
+  {
+    "number": 2673,
+    "title": "AsyncAPI V3",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2673-asyncapi-v3.md"
+  },
+  {
+    "number": 2598,
+    "title": "Is there any plan to support AsyncAPI 3.x ?",
+    "category": "Q&A",
+    "up": 7,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2598-is-there-any-plan-to-support-asyncapi-3-x.md"
+  },
+  {
+    "number": 2630,
+    "title": "Invalid JSON + invalid OAS is not recognized as such",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2630-invalid-json-invalid-oas-is-not-recognized-as-such.md"
+  },
+  {
+    "number": 2516,
+    "title": "Multi Document YAML Files",
+    "category": "Q&A",
+    "up": 4,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2516-multi-document-yaml-files.md"
+  },
+  {
+    "number": 2645,
+    "title": "How can I \"follow\" $ref to validate schema in responses",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2645-how-can-i-follow-ref-to-validate-schema-in-responses.md"
+  },
+  {
+    "number": 2383,
+    "title": "Can’t resolve nimma/legacy and nimma/fallbacks error",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/2383-can-t-resolve-nimma-legacy-and-nimma-fallbacks-error.md"
+  },
+  {
+    "number": 2619,
+    "title": "how to resolve yarn build error in packages/runtime/src/reader.ts ?",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2619-how-to-resolve-yarn-build-error-in-packages-runtime-src-read.md"
+  },
+  {
+    "number": 2608,
+    "title": "Spectral linter ruleset - is there a way to have a specific rule executed at the very end?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2608-spectral-linter-ruleset-is-there-a-way-to-have-a-specific-ru.md"
+  },
+  {
+    "number": 2603,
+    "title": "Could linter show all the executed rules in the end no matter there are errors or not?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2603-could-linter-show-all-the-executed-rules-in-the-end-no-matte.md"
+  },
+  {
+    "number": 2584,
+    "title": "Implementing \"OR\" with the rulesets",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2584-implementing-or-with-the-rulesets.md"
+  },
+  {
+    "number": 2437,
+    "title": "Raise Warning/Error for required but undefined properties",
+    "category": "Rulesets",
+    "up": 2,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/2437-raise-warning-error-for-required-but-undefined-properties.md"
+  },
+  {
+    "number": 2590,
+    "title": "Issue with required fields in schema function",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2590-issue-with-required-fields-in-schema-function.md"
+  },
+  {
+    "number": 2589,
+    "title": "Rule to validate presence of \"delete\" property in schema reference of POST requestBody",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2589-rule-to-validate-presence-of-delete-property-in-schema-refer.md"
+  },
+  {
+    "number": 2582,
+    "title": "Trying to create a custom rule to filter and get extensions starting with x-myextension",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2582-trying-to-create-a-custom-rule-to-filter-and-get-extensions-.md"
+  },
+  {
+    "number": 2568,
+    "title": "\"nullable\" cannot be used without \"type\" linter error",
+    "category": "General",
+    "up": 2,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2568-nullable-cannot-be-used-without-type-linter-error.md"
+  },
+  {
+    "number": 1959,
+    "title": "Nested objects within schema properties",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1959-nested-objects-within-schema-properties.md"
+  },
+  {
+    "number": 2544,
+    "title": "How to pass a raw Javascript bundle into `extend` or VSCode/IntelliJ plugins?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2544-how-to-pass-a-raw-javascript-bundle-into-extend-or-vscode-in.md"
+  },
+  {
+    "number": 2541,
+    "title": "How to use Spectral CLI with a remote ruleset that does not have valid certificate",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2541-how-to-use-spectral-cli-with-a-remote-ruleset-that-does-not-.md"
+  },
+  {
+    "number": 2222,
+    "title": "How to ignore/disable rules for specific matches",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 3,
+    "answered": true,
+    "file": "discussions/2222-how-to-ignore-disable-rules-for-specific-matches.md"
+  },
+  {
+    "number": 2539,
+    "title": "Fix for Spectral VSCode Extension",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2539-fix-for-spectral-vscode-extension.md"
+  },
+  {
+    "number": 2536,
+    "title": "custom function - what is additionalProperties",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2536-custom-function-what-is-additionalproperties.md"
+  },
+  {
+    "number": 2535,
+    "title": "comparing given value with other value within jsonpath",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2535-comparing-given-value-with-other-value-within-jsonpath.md"
+  },
+  {
+    "number": 2418,
+    "title": "Getting \"Invalid ruleset provided\" using ruleset from url",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2418-getting-invalid-ruleset-provided-using-ruleset-from-url.md"
+  },
+  {
+    "number": 2530,
+    "title": "How to alphabetically order all paths?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2530-how-to-alphabetically-order-all-paths.md"
+  },
+  {
+    "number": 2525,
+    "title": "change file with error",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2525-change-file-with-error.md"
+  },
+  {
+    "number": 2504,
+    "title": "Reference to documentationUrl in message",
+    "category": "Ideas",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2504-reference-to-documentationurl-in-message.md"
+  },
+  {
+    "number": 2498,
+    "title": "Reference to documentationUrl in message",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2498-reference-to-documentationurl-in-message.md"
+  },
+  {
+    "number": 2463,
+    "title": "I wish there were a simpler way to configure a custom rule to operate on any schema node",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2463-i-wish-there-were-a-simpler-way-to-configure-a-custom-rule-t.md"
+  },
+  {
+    "number": 2472,
+    "title": "Referencing a custom function in an extended ruleset",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2472-referencing-a-custom-function-in-an-extended-ruleset.md"
+  },
+  {
+    "number": 2464,
+    "title": "Unable to extend ruleset from another private repo within my github organization #652",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2464-unable-to-extend-ruleset-from-another-private-repo-within-my.md"
+  },
+  {
+    "number": 2461,
+    "title": "Rule to verify the name of a property based on the type / format",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2461-rule-to-verify-the-name-of-a-property-based-on-the-type-form.md"
+  },
+  {
+    "number": 2452,
+    "title": "Enhancements, Suggestions, and Possible Defects",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2452-enhancements-suggestions-and-possible-defects.md"
+  },
+  {
+    "number": 2398,
+    "title": "Calling a ruleset function in a custom function for browser based linting",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 4,
+    "answered": false,
+    "file": "discussions/2398-calling-a-ruleset-function-in-a-custom-function-for-browser-.md"
+  },
+  {
+    "number": 2425,
+    "title": "Add LSP support",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 6,
+    "answered": false,
+    "file": "discussions/2425-add-lsp-support.md"
+  },
+  {
+    "number": 98,
+    "title": "Feature idea: Automatically fix issues",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/98-feature-idea-automatically-fix-issues.md"
+  },
+  {
+    "number": 2357,
+    "title": "Error #1: scope.sandbox.at(...).property.match is not a function",
+    "category": "Q&A",
+    "up": 6,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2357-error-1-scope-sandbox-at-property-match-is-not-a-function.md"
+  },
+  {
+    "number": 2420,
+    "title": "spectral-cli lint with custom resolver not working",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2420-spectral-cli-lint-with-custom-resolver-not-working.md"
+  },
+  {
+    "number": 2415,
+    "title": "Use a custom resolver with the basePath being the path to the contract being linted",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2415-use-a-custom-resolver-with-the-basepath-being-the-path-to-th.md"
+  },
+  {
+    "number": 2431,
+    "title": "Date time in non ISO format are not flagged in examples",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 4,
+    "answered": false,
+    "file": "discussions/2431-date-time-in-non-iso-format-are-not-flagged-in-examples.md"
+  },
+  {
+    "number": 2392,
+    "title": "Custom rulesets when using docker",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2392-custom-rulesets-when-using-docker.md"
+  },
+  {
+    "number": 2411,
+    "title": "when running a lint then getting error - No results with a severity of 'error' or higher found!",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2411-when-running-a-lint-then-getting-error-no-results-with-a-sev.md"
+  },
+  {
+    "number": 1775,
+    "title": "How to automatically test your rules",
+    "category": "Ideas",
+    "up": 2,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/1775-how-to-automatically-test-your-rules.md"
+  },
+  {
+    "number": 2323,
+    "title": "Using Ruleset Function In Custom Function",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2323-using-ruleset-function-in-custom-function.md"
+  },
+  {
+    "number": 2184,
+    "title": "Can I control the version of spectral-rulesets used when installing spectral-cli?",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2184-can-i-control-the-version-of-spectral-rulesets-used-when-ins.md"
+  },
+  {
+    "number": 2384,
+    "title": "Error with ajv depedency",
+    "category": "General",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2384-error-with-ajv-depedency.md"
+  },
+  {
+    "number": 1397,
+    "title": "Welcome to Spectral Discussions!",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1397-welcome-to-spectral-discussions.md"
+  },
+  {
+    "number": 2364,
+    "title": "Handling of missing documents",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2364-handling-of-missing-documents.md"
+  },
+  {
+    "number": 2359,
+    "title": "Run Debugger for custom rules",
+    "category": "Q&A",
+    "up": 5,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2359-run-debugger-for-custom-rules.md"
+  },
+  {
+    "number": 1942,
+    "title": "Overrides in Spectral 6",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 2,
+    "answered": true,
+    "file": "discussions/1942-overrides-in-spectral-6.md"
+  },
+  {
+    "number": 2354,
+    "title": "Version spectral default ruleset",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2354-version-spectral-default-ruleset.md"
+  },
+  {
+    "number": 2351,
+    "title": "UI for viewing spectral rulesets",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2351-ui-for-viewing-spectral-rulesets.md"
+  },
+  {
+    "number": 2340,
+    "title": "How to use no-$ref-siblings rule from oas3_0 in oas3_1?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2340-how-to-use-no-ref-siblings-rule-from-oas3-0-in-oas3-1.md"
+  },
+  {
+    "number": 2329,
+    "title": "How to validate the openapi spec in react application using spectral",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2329-how-to-validate-the-openapi-spec-in-react-application-using-.md"
+  },
+  {
+    "number": 2324,
+    "title": "oas3-valid-oas-content-example - Curious if anybody is looking at issue #1274",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2324-oas3-valid-oas-content-example-curious-if-anybody-is-looking.md"
+  },
+  {
+    "number": 1578,
+    "title": "Integrating with angular application",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/1578-integrating-with-angular-application.md"
+  },
+  {
+    "number": 2319,
+    "title": "Select ruleset file dynamically",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2319-select-ruleset-file-dynamically.md"
+  },
+  {
+    "number": 2314,
+    "title": "no-script-tags-in-markdown fenced code block false positive?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2314-no-script-tags-in-markdown-fenced-code-block-false-positive.md"
+  },
+  {
+    "number": 2312,
+    "title": "functionOptions in custom js ruleset throws an AggregateError",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2312-functionoptions-in-custom-js-ruleset-throws-an-aggregateerro.md"
+  },
+  {
+    "number": 2301,
+    "title": "Hacktoberfest 2022",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2301-hacktoberfest-2022.md"
+  },
+  {
+    "number": 2300,
+    "title": "Rule to Validate Schema Data Types Based on Paths",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2300-rule-to-validate-schema-data-types-based-on-paths.md"
+  },
+  {
+    "number": 2429,
+    "title": "Generate reports with aggregated errors, warnings and potentially a OAS Score",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2429-generate-reports-with-aggregated-errors-warnings-and-potenti.md"
+  },
+  {
+    "number": 2299,
+    "title": "How to map object from resolved doc back to $ref in original unresolved doc",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2299-how-to-map-object-from-resolved-doc-back-to-ref-in-original-.md"
+  },
+  {
+    "number": 2297,
+    "title": "Custom functions not working in Spectral 6.x",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2297-custom-functions-not-working-in-spectral-6-x.md"
+  },
+  {
+    "number": 2296,
+    "title": "Integrate Spectral into Azure Devops Pipeline",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2296-integrate-spectral-into-azure-devops-pipeline.md"
+  },
+  {
+    "number": 2291,
+    "title": "Rule for Confirming Header Exists in OpenAPI Spec",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2291-rule-for-confirming-header-exists-in-openapi-spec.md"
+  },
+  {
+    "number": 2295,
+    "title": "Secondary Rate Limit When Linting Files",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2295-secondary-rate-limit-when-linting-files.md"
+  },
+  {
+    "number": 2289,
+    "title": "Find script tags in an openapi spec",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2289-find-script-tags-in-an-openapi-spec.md"
+  },
+  {
+    "number": 2432,
+    "title": "new rule: $ref noticed in invalid places",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 7,
+    "answered": false,
+    "file": "discussions/2432-new-rule-ref-noticed-in-invalid-places.md"
+  },
+  {
+    "number": 2278,
+    "title": "Correct way to reference shared code in custom functions?",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2278-correct-way-to-reference-shared-code-in-custom-functions.md"
+  },
+  {
+    "number": 2277,
+    "title": "Asyncapi with schema property double throwing in Spectral linting",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2277-asyncapi-with-schema-property-double-throwing-in-spectral-li.md"
+  },
+  {
+    "number": 2275,
+    "title": "Spectral oas3-valid-schema-example error on valid schema using allOf inheritance",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2275-spectral-oas3-valid-schema-example-error-on-valid-schema-usi.md"
+  },
+  {
+    "number": 1487,
+    "title": "Is there a way to check that all schemas have descriptions and examples?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1487-is-there-a-way-to-check-that-all-schemas-have-descriptions-a.md"
+  },
+  {
+    "number": 2252,
+    "title": "missing releases 6.4.2, 6.5.0 and 6.5.1",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": true,
+    "file": "discussions/2252-missing-releases-6-4-2-6-5-0-and-6-5-1.md"
+  },
+  {
+    "number": 2255,
+    "title": "Issues validating a yaml file against a schema",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2255-issues-validating-a-yaml-file-against-a-schema.md"
+  },
+  {
+    "number": 2254,
+    "title": "How to check for elements that are undefined in custom rulesets",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2254-how-to-check-for-elements-that-are-undefined-in-custom-rules.md"
+  },
+  {
+    "number": 2239,
+    "title": "How to use a JSON custom ruleset ?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2239-how-to-use-a-json-custom-ruleset.md"
+  },
+  {
+    "number": 2226,
+    "title": "spetral rule set function for value is not equal to somethig",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2226-spetral-rule-set-function-for-value-is-not-equal-to-somethig.md"
+  },
+  {
+    "number": 2220,
+    "title": "Override to turn off specific oas3-unused-component warning?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2220-override-to-turn-off-specific-oas3-unused-component-warning.md"
+  },
+  {
+    "number": 2218,
+    "title": "Unregister format",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2218-unregister-format.md"
+  },
+  {
+    "number": 2210,
+    "title": "How to import external NPM libraries into custom functions?",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2210-how-to-import-external-npm-libraries-into-custom-functions.md"
+  },
+  {
+    "number": 1909,
+    "title": "Trouble linting with $ref's",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/1909-trouble-linting-with-ref-s.md"
+  },
+  {
+    "number": 2206,
+    "title": "Fix for json path mapping problem needs review/approval",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2206-fix-for-json-path-mapping-problem-needs-review-approval.md"
+  },
+  {
+    "number": 2205,
+    "title": "Rule to look at two different section in the API schema",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2205-rule-to-look-at-two-different-section-in-the-api-schema.md"
+  },
+  {
+    "number": 2201,
+    "title": "How to display the openapi file name in custom function?",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2201-how-to-display-the-openapi-file-name-in-custom-function.md"
+  },
+  {
+    "number": 2198,
+    "title": "How to get open api line number in custom function",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2198-how-to-get-open-api-line-number-in-custom-function.md"
+  },
+  {
+    "number": 1974,
+    "title": "spectral-cli.exe lint swagger2model.json on Windows",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1974-spectral-cli-exe-lint-swagger2model-json-on-windows.md"
+  },
+  {
+    "number": 2191,
+    "title": "Spectral runtime and linting process?",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2191-spectral-runtime-and-linting-process.md"
+  },
+  {
+    "number": 2176,
+    "title": "Spectral Unrecognized After Installation",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2176-spectral-unrecognized-after-installation.md"
+  },
+  {
+    "number": 2169,
+    "title": "Getting \"Error running Spectral!\" when I add \"extends: spectral:oas\" in spectral.yaml",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2169-getting-error-running-spectral-when-i-add-extends-spectral-o.md"
+  },
+  {
+    "number": 2185,
+    "title": "Error running Spectral.exe from a batch (.bat) file",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2185-error-running-spectral-exe-from-a-batch-bat-file.md"
+  },
+  {
+    "number": 2180,
+    "title": "Range attribute only showing { Start: [object], End: [object] } in JS implementation",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2180-range-attribute-only-showing-start-object-end-object-in-js-i.md"
+  },
+  {
+    "number": 2175,
+    "title": "Help with custom Rule sets and Yarn v2",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/2175-help-with-custom-rule-sets-and-yarn-v2.md"
+  },
+  {
+    "number": 2166,
+    "title": "How can I use the src to build? I've downloaded the source code ,but I want to obtain \"spectral-linux\" ,this executable file.",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2166-how-can-i-use-the-src-to-build-i-ve-downloaded-the-source-co.md"
+  },
+  {
+    "number": 2439,
+    "title": "Validate that path parameters have `schema` or `content`",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2439-validate-that-path-parameters-have-schema-or-content.md"
+  },
+  {
+    "number": 2167,
+    "title": "Having problem while using the Spectral v6.",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/2167-having-problem-while-using-the-spectral-v6.md"
+  },
+  {
+    "number": 2160,
+    "title": "Error results in spectral",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2160-error-results-in-spectral.md"
+  },
+  {
+    "number": 2428,
+    "title": "Add a rule to the default ruleset forbidding endpoints that only differ by a trailing slash",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2428-add-a-rule-to-the-default-ruleset-forbidding-endpoints-that-.md"
+  },
+  {
+    "number": 1954,
+    "title": "Load multiple ruleset files",
+    "category": "General",
+    "up": 2,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1954-load-multiple-ruleset-files.md"
+  },
+  {
+    "number": 2113,
+    "title": "[Question] How to use spectral inside a angular app",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2113-question-how-to-use-spectral-inside-a-angular-app.md"
+  },
+  {
+    "number": 2106,
+    "title": "Graphical Editor?",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2106-graphical-editor.md"
+  },
+  {
+    "number": 2105,
+    "title": "Find All \"description\" Tags At Once?",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2105-find-all-description-tags-at-once.md"
+  },
+  {
+    "number": 2095,
+    "title": "How to mark endpoint with a \"consumes\" attribute but no body parameter as an error",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2095-how-to-mark-endpoint-with-a-consumes-attribute-but-no-body-p.md"
+  },
+  {
+    "number": 2077,
+    "title": "A spell checker ruleset for Spectral",
+    "category": "Show and tell",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2077-a-spell-checker-ruleset-for-spectral.md"
+  },
+  {
+    "number": 1688,
+    "title": "Using the character ‘@’ in an attribute name, crashes the linter tool.",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1688-using-the-character-in-an-attribute-name-crashes-the-linter-.md"
+  },
+  {
+    "number": 2434,
+    "title": "Validate that Security Requirements are Defined",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/2434-validate-that-security-requirements-are-defined.md"
+  },
+  {
+    "number": 1997,
+    "title": "error: \"value\" property must have required property \"data_name\"",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1997-error-value-property-must-have-required-property-data-name.md"
+  },
+  {
+    "number": 1984,
+    "title": "Disabling Rules and JSON Path",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1984-disabling-rules-and-json-path.md"
+  },
+  {
+    "number": 1990,
+    "title": "Ensure all properties are \"required\"",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1990-ensure-all-properties-are-required.md"
+  },
+  {
+    "number": 1944,
+    "title": "Check for Tags?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1944-check-for-tags.md"
+  },
+  {
+    "number": 1967,
+    "title": "Why the code below doesn't return with an error?",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1967-why-the-code-below-doesn-t-return-with-an-error.md"
+  },
+  {
+    "number": 1902,
+    "title": "Did they way custom function load change from 5.9.2 to 6.1.0",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1902-did-they-way-custom-function-load-change-from-5-9-2-to-6-1-0.md"
+  },
+  {
+    "number": 1964,
+    "title": "Available tokens in regex processor",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1964-available-tokens-in-regex-processor.md"
+  },
+  {
+    "number": 1957,
+    "title": "Visual Studio Extension validation error Property `links` is not expected to be here",
+    "category": "Q&A",
+    "up": 2,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1957-visual-studio-extension-validation-error-property-links-is-n.md"
+  },
+  {
+    "number": 1949,
+    "title": "custom functions",
+    "category": "Q&A",
+    "up": 3,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1949-custom-functions.md"
+  },
+  {
+    "number": 1678,
+    "title": "rule jsonPath to select properties names containing '@' symbol",
+    "category": "Q&A",
+    "up": 0,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1678-rule-jsonpath-to-select-properties-names-containing-symbol.md"
+  },
+  {
+    "number": 1897,
+    "title": "Custom functions giving error",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1897-custom-functions-giving-error.md"
+  },
+  {
+    "number": 1890,
+    "title": "SPECTRAL core and custom functions not getting referenced when running spectral lint command from CMD",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1890-spectral-core-and-custom-functions-not-getting-referenced-wh.md"
+  },
+  {
+    "number": 1892,
+    "title": "How to install spectral with curl on an arm64 architecture machine",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1892-how-to-install-spectral-with-curl-on-an-arm64-architecture-m.md"
+  },
+  {
+    "number": 1744,
+    "title": "Different results using regex101 and the core function \"pattern\"",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1744-different-results-using-regex101-and-the-core-function-patte.md"
+  },
+  {
+    "number": 1834,
+    "title": "Install Spectral version 5.9.2",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1834-install-spectral-version-5-9-2.md"
+  },
+  {
+    "number": 1791,
+    "title": "Error Suppression?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 2,
+    "answered": true,
+    "file": "discussions/1791-error-suppression.md"
+  },
+  {
+    "number": 1754,
+    "title": "How to handle this use case using built in core functions",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1754-how-to-handle-this-use-case-using-built-in-core-functions.md"
+  },
+  {
+    "number": 1898,
+    "title": "Guidance on possible linting rules",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1898-guidance-on-possible-linting-rules.md"
+  },
+  {
+    "number": 1653,
+    "title": "When can we expect OpenAPI 3.1 support?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1653-when-can-we-expect-openapi-3-1-support.md"
+  },
+  {
+    "number": 2433,
+    "title": "OAS3 Rule: Ensure that securitySchemes match defined scopes",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 2,
+    "answered": false,
+    "file": "discussions/2433-oas3-rule-ensure-that-securityschemes-match-defined-scopes.md"
+  },
+  {
+    "number": 2427,
+    "title": "Include rules for official `format` values",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2427-include-rules-for-official-format-values.md"
+  },
+  {
+    "number": 1691,
+    "title": "Reference resolution",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1691-reference-resolution.md"
+  },
+  {
+    "number": 1683,
+    "title": "Is there a way to extend NPM package hosted on private Artifactory?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1683-is-there-a-way-to-extend-npm-package-hosted-on-private-artif.md"
+  },
+  {
+    "number": 1676,
+    "title": "Linting API documents with $ref lines",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1676-linting-api-documents-with-ref-lines.md"
+  },
+  {
+    "number": 1590,
+    "title": "Spectral linting code samples",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1590-spectral-linting-code-samples.md"
+  },
+  {
+    "number": 1663,
+    "title": "How to specify error location",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1663-how-to-specify-error-location.md"
+  },
+  {
+    "number": 1409,
+    "title": "Can I use spectral as a linter for a JSON schema?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1409-can-i-use-spectral-as-a-linter-for-a-json-schema.md"
+  },
+  {
+    "number": 1595,
+    "title": "Support for Documentation URL in the HTML report",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1595-support-for-documentation-url-in-the-html-report.md"
+  },
+  {
+    "number": 2438,
+    "title": "Built in rule to validate request and response media types",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 3,
+    "answered": false,
+    "file": "discussions/2438-built-in-rule-to-validate-request-and-response-media-types.md"
+  },
+  {
+    "number": 1591,
+    "title": "Include support for alpine linux in the install script",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": true,
+    "file": "discussions/1591-include-support-for-alpine-linux-in-the-install-script.md"
+  },
+  {
+    "number": 1530,
+    "title": "How to request new version of Spectral with updated packages",
+    "category": "General",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1530-how-to-request-new-version-of-spectral-with-updated-packages.md"
+  },
+  {
+    "number": 1567,
+    "title": "`oas3-schema` rule - hidden errors",
+    "category": "General",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1567-oas3-schema-rule-hidden-errors.md"
+  },
+  {
+    "number": 1398,
+    "title": "APIs You Won't Hate - The Ruleset",
+    "category": "Show and tell",
+    "up": 3,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1398-apis-you-won-t-hate-the-ruleset.md"
+  },
+  {
+    "number": 1475,
+    "title": "Using Spectral API, how to use URL instead of OpenApi document and how to define the output format?",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 1,
+    "answered": false,
+    "file": "discussions/1475-using-spectral-api-how-to-use-url-instead-of-openapi-documen.md"
+  },
+  {
+    "number": 2436,
+    "title": "Create rule for flagging query parameters in paths as invalid",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2436-create-rule-for-flagging-query-parameters-in-paths-as-invali.md"
+  },
+  {
+    "number": 1426,
+    "title": "Exposing a static ruleset for \"extends\"",
+    "category": "Q&A",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1426-exposing-a-static-ruleset-for-extends.md"
+  },
+  {
+    "number": 1415,
+    "title": "Integration with SonarQube",
+    "category": "Q&A",
+    "up": 8,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/1415-integration-with-sonarqube.md"
+  },
+  {
+    "number": 2430,
+    "title": "Teach Spectral to report a dependency graph",
+    "category": "Ideas",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2430-teach-spectral-to-report-a-dependency-graph.md"
+  },
+  {
+    "number": 2426,
+    "title": "rule: produce/consume absence should be signaled",
+    "category": "Rulesets",
+    "up": 1,
+    "comments": 0,
+    "answered": false,
+    "file": "discussions/2426-rule-produce-consume-absence-should-be-signaled.md"
+  }
+]
