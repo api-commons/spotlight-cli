@@ -30,7 +30,7 @@ describe('Browser Compatibility Integration Tests', () => {
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['spectral:oas'],
+          extends: ['spotlight:oas'],
           rules: {
             'info-contact': 'error',
           },
@@ -52,7 +52,7 @@ describe('Browser Compatibility Integration Tests', () => {
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['spectral:oas', 'spectral:asyncapi'],
+          extends: ['spotlight:oas', 'spotlight:asyncapi'],
           rules: {
             'custom-rule': {
               given: '$.info',
@@ -87,7 +87,7 @@ describe('Browser Compatibility Integration Tests', () => {
       vol.writeFileSync(
         path.join(cwd, 'ruleset.yaml'),
         `
-extends: spectral:oas
+extends: spotlight:oas
 rules:
   info-description: error
 `,
@@ -105,7 +105,7 @@ rules:
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['spectral:oas'],
+          extends: ['spotlight:oas'],
           formats: ['oas2', 'oas3'],
           rules: {
             'operation-tags': 'warn',
@@ -151,7 +151,7 @@ rules:
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['spectral:oas'],
+          extends: ['spotlight:oas'],
         }),
       );
 
@@ -182,7 +182,7 @@ rules:
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['./base.json', 'spectral:oas'],
+          extends: ['./base.json', 'spotlight:oas'],
           rules: {
             'info-contact': 'warn',
           },
@@ -218,7 +218,7 @@ rules:
         vol.writeFileSync(
           path.join(cwd, `ruleset-${name}.json`),
           JSON.stringify({
-            extends: ['spectral:oas'],
+            extends: ['spotlight:oas'],
           }),
         );
 
@@ -247,7 +247,7 @@ rules:
       vol.writeFileSync(
         path.join(cwd, 'ruleset.json'),
         JSON.stringify({
-          extends: ['spectral:oas'],
+          extends: ['spotlight:oas'],
           rules: {
             'info-contact': 'error',
           },

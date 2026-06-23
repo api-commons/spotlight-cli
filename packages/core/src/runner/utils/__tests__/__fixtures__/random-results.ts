@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { ISpectralDiagnostic } from '../../../../types';
+import type { ISpotlightDiagnostic } from '../../../../types';
 
-export const results: ISpectralDiagnostic[] = [
+export const results: ISpotlightDiagnostic[] = [
   {
     code: 'code 01',
     path: ['a', 'b', 'c', 'd'],

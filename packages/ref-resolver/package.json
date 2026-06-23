@@ -1,6 +1,6 @@
 {
   "name": "@spotlight-rules/spotlight-ref-resolver",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "homepage": "https://github.com/api-commons/spotlight-cli",
   "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
@@ -18,7 +18,7 @@
     "url": "https://github.com/api-commons/spotlight-cli.git"
   },
   "dependencies": {
-    "@spotlight-rules/spotlight-runtime": "^1.1.2",
+    "@spotlight-rules/spotlight-runtime": "^1.0.0",
     "@stoplight/json-ref-readers": "1.2.2",
     "@stoplight/json-ref-resolver": "~3.1.6",
     "dependency-graph": "0.11.0",

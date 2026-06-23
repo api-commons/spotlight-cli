@@ -9,8 +9,8 @@ The migrator loads the ruleset, apply a number of conversions and return a valid
 ## Examples
 
 ```yaml
-# .spectral.yaml
-extends: spectral:oas
+# .spotlight.yaml
+extends: spotlight:oas
 formats: [oas2, json-schema-loose]
 rules:
   oas3-schema: warning
@@ -24,7 +24,7 @@ rules:
 ```
 
 ```js
-// .spectral.js (CommonJS)
+// .spotlight.js (CommonJS)
 const { oas: oas } = require("@spotlight-rules/spotlight-rulesets");
 const { oas2: oas2, jsonSchemaLoose: jsonSchemaLoose } = require("@spotlight-rules/spotlight-formats");
 const { pattern: pattern } = require("@spotlight-rules/spotlight-functions");
@@ -48,7 +48,7 @@ module.exports = {
 ```
 
 ```js
-// .spectral.js (ES Module)
+// .spotlight.js (ES Module)
 import { oas } from "@spotlight-rules/spotlight-rulesets";
 import { oas2, jsonSchemaLoose } from "@spotlight-rules/spotlight-formats";
 import { pattern } from "@spotlight-rules/spotlight-functions";
@@ -88,7 +88,7 @@ const path = require("path");
 migrateRuleset(path.join(__dirname, "spectral.json"), {
   fs,
   format: "commonjs", // esm available too, but not recommended for now
-}).then(fs.promises.writeFile.bind(fs.promises, path.join(__dirname, ".spectral.js")));
+}).then(fs.promises.writeFile.bind(fs.promises, path.join(__dirname, ".spotlight.js")));
 ```
 
 ### Caveats

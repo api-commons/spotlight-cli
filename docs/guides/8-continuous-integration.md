@@ -47,7 +47,7 @@ Learn more about [CircleCI Configuration](https://circleci.com/docs/2.0/config-i
 
 ## GitHub Action
 
-Spotlight is compatible with Stoplight's [Spectral GitHub Action](https://github.com/stoplightio/spectral-action), which can speed up running it in your GitHub repository. (A dedicated Spotlight action is on the [roadmap](https://spotlight-rules.com/roadmap/).)
+Spotlight is compatible with Stoplight's [Spotlight GitHub Action](https://github.com/stoplightio/spectral-action), which can speed up running it in your GitHub repository. (A dedicated Spotlight action is on the [roadmap](https://spotlight-rules.com/roadmap/).)
 
 ## GitLab
 

@@ -1,1 +1,1 @@
-{ 'extends': [['spectral:oas', 'off']] }
+{ 'extends': [['spotlight:oas', 'off']] }

@@ -32,7 +32,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.invalid-schema.oas3',
-                  name: 'org.spectral.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
+                  name: 'org.spotlight.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
                   time: '0',
                 },
                 failure: [
@@ -47,7 +47,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.invalid-schema.oas3',
-                  name: 'org.spectral.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
+                  name: 'org.spotlight.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
                   time: '0',
                 },
                 failure: [
@@ -62,7 +62,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.invalid-schema.oas3',
-                  name: 'org.spectral.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
+                  name: 'org.spotlight.oas3-schema(#/paths/~1pets/get/responses/200/headers/header-1)',
                   time: '0',
                 },
                 failure: [
@@ -99,7 +99,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.oas3',
-                  name: 'org.spectral.info-matches-stoplight(#/info/title)',
+                  name: 'org.spotlight.info-matches-stoplight(#/info/title)',
                   time: '0',
                 },
                 failure: [
@@ -136,7 +136,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.oas3',
-                  name: 'org.spectral.info-description(#/info)',
+                  name: 'org.spotlight.info-description(#/info)',
                   time: '0',
                 },
                 failure: [
@@ -151,7 +151,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '/home/Stoplight/spectral/src/__tests__/__fixtures__/petstore.oas3',
-                  name: 'org.spectral.info-matches-stoplight(#/info/title)',
+                  name: 'org.spotlight.info-matches-stoplight(#/info/title)',
                   time: '0',
                 },
                 failure: [
@@ -188,7 +188,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '',
-                  name: "org.spectral.special-xml-strings(#/root/'/%22/leaf)",
+                  name: "org.spotlight.special-xml-strings(#/root/'/%22/leaf)",
                   time: '0',
                 },
                 failure: [
@@ -203,7 +203,7 @@ describe('JUnit formatter', () => {
               {
                 $: {
                   classname: '',
-                  name: 'org.spectral.special-cdata-strings(#/root/%5D%5D%3E/%3C!%5BCDATA%5B/leaf)',
+                  name: 'org.spotlight.special-cdata-strings(#/root/%5D%5D%3E/%3C!%5BCDATA%5B/leaf)',
                   time: '0',
                 },
                 failure: [

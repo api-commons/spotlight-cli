@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { Document, IRuleResult, Ruleset, Spectral } from '@spotlight-rules/spotlight-core';
+import { Document, IRuleResult, Ruleset, Spotlight } from '@spotlight-rules/spotlight-core';
 import { readParsable, IFileReadOptions } from '@spotlight-rules/spotlight-runtime';
 import * as Parsers from '@spotlight-rules/spotlight-parsers';
 import { getRuleset, listFiles, segregateEntriesPerKind, readFileDescriptor } from './utils';
@@ -13,7 +13,7 @@ export interface LinterResult {
 }
 
 export async function lint(documents: Array<number | string>, flags: ILintConfig): Promise<LinterResult> {
-  const spectral = new Spectral({
+  const spectral = new Spotlight({
     resolver: getResolver(flags.resolver),
   });
 

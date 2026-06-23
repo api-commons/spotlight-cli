@@ -1,6 +1,6 @@
-import oasDocumentSchema from '/.tmp/spectral/functions-variant-2/custom-functions/oasDocumentSchema.js';
-import oasExample from '/.tmp/spectral/functions-variant-2/custom-functions/oasExample.js';
-import oasOp2xxResponse from '/.tmp/spectral/functions-variant-2/custom-functions/oasOp2xxResponse.js';
+import oasDocumentSchema from '/.tmp/spotlight/functions-variant-2/custom-functions/oasDocumentSchema.js';
+import oasExample from '/.tmp/spotlight/functions-variant-2/custom-functions/oasExample.js';
+import oasOp2xxResponse from '/.tmp/spotlight/functions-variant-2/custom-functions/oasOp2xxResponse.js';
 export default {
   documentationUrl: 'https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md',
   rules: {

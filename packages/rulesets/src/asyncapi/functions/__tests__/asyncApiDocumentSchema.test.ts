@@ -1,12 +1,12 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { Spectral } from '@spotlight-rules/spotlight-core';
+import { Spotlight } from '@spotlight-rules/spotlight-core';
 import { prepareResults } from '../asyncApiDocumentSchema';
 
 import { ErrorObject } from 'ajv';
 import { createWithRules } from '../../__tests__/__helpers__/tester';
 
 describe('asyncApiDocumentSchema', () => {
-  let s: Spectral;
+  let s: Spotlight;
 
   beforeEach(async () => {
     s = createWithRules(['asyncapi-schema']);

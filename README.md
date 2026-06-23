@@ -15,12 +15,12 @@ ruleset specification) and
 [spotlight-vscode](https://github.com/api-commons/spotlight-vscode) (the editor
 extension).
 
-> **Provenance.** Spotlight CLI is a fork of
-> [Stoplight Spectral](https://github.com/stoplightio/spectral) (Apache 2.0). It
-> stays compatible with existing Spectral rulesets: the `spectral:` ruleset
-> aliases (`spectral:oas`, `spectral:asyncapi`, `spectral:arazzo`) and
-> `.spectral.*` ruleset filenames continue to work unchanged. See
-> [FORK.md](./FORK.md) for attribution and the full list of changes.
+> **Provenance.** Spotlight CLI originated as a fork of
+> [Stoplight Spectral](https://github.com/stoplightio/spectral) (Apache 2.0) and
+> is released as an independent 1.0 under API Commons. Built-in rulesets are
+> referenced with the `spotlight:` aliases (`spotlight:oas`,
+> `spotlight:asyncapi`, `spotlight:arazzo`) and rulesets are discovered from
+> `.spotlight.*` files. See [FORK.md](./FORK.md) for attribution and changes.
 
 ## Features
 
@@ -45,16 +45,14 @@ This installs the `spotlight` command.
 ### 1. Create a ruleset
 
 Spotlight needs a **ruleset** to lint files. A ruleset is a JSON, YAML, or
-JavaScript file (commonly `.spotlight.yaml`, or `.spectral.yaml` for
-compatibility) containing a collection of rules. To start from the built-in
-rulesets:
+JavaScript file (commonly `.spotlight.yaml`) containing a collection of rules.
+To start from the built-in rulesets:
 
 ```bash
-echo 'extends: ["spectral:oas", "spectral:asyncapi", "spectral:arazzo"]' > .spotlight.yaml
+echo 'extends: ["spotlight:oas", "spotlight:asyncapi", "spotlight:arazzo"]' > .spotlight.yaml
 ```
 
-> The built-in ruleset aliases keep the `spectral:` prefix so that the large body
-> of existing rulesets keeps working. The ruleset format itself is documented in
+> The ruleset format is documented in
 > [spotlight-spec](https://github.com/api-commons/spotlight-spec).
 
 ### 2. Lint

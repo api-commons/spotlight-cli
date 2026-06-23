@@ -29,7 +29,7 @@ As an example, here's a script of Spotlight in action:
 
 ```js title="example-1.mjs" lineNumbers
 import spectralCore from "@spotlight-rules/spotlight-core";
-const { Spectral, Document } = spectralCore;
+const { Spotlight, Document } = spectralCore;
 import Parsers from "@spotlight-rules/spotlight-parsers"; // make sure to install the package if you intend to use default parsers!
 import { truthy } from "@spotlight-rules/spotlight-functions"; // this has to be installed as well
 
@@ -43,7 +43,7 @@ responses:
   "/my-file",
 );
 
-const spectral = new Spectral();
+const spectral = new Spotlight();
 spectral.setRuleset({
   // this will be our ruleset
   rules: {
@@ -70,11 +70,11 @@ Let's look at some other examples and how to work with external files.
 If you would like to run this example, make sure that you have:
 
 - An OpenAPI description document in the same directory as your script named `openapi.yaml`. You can use [this OpenAPI description for the Plaid API](https://github.com/stoplightio/Public-APIs/blob/master/reference/plaid/openapi.yaml).
-- A ruleset file named `.spectral.yaml`. It can have the following contents:
+- A ruleset file named `.spotlight.yaml`. It can have the following contents:
 
 ```yaml
 extends:
-  - spectral:oas
+  - spotlight:oas
 ```
 
 Here's a script that shows how to load an external API specification file, and an external YAML ruleset:
@@ -87,7 +87,7 @@ import { join } from "path";
 import { bundleAndLoadRuleset } from "@spotlight-rules/spotlight-ruleset-bundler/with-loader";
 import Parsers from "@spotlight-rules/spotlight-parsers"; // make sure to install the package if you intend to use default parsers!
 import spectralCore from "@spotlight-rules/spotlight-core";
-const { Spectral, Document } = spectralCore;
+const { Spotlight, Document } = spectralCore;
 import spectralRuntime from "@spotlight-rules/spotlight-runtime";
 const { fetch } = spectralRuntime;
 
@@ -100,9 +100,9 @@ const myDocument = new Document(
   "openapi.yaml",
 );
 
-const spectral = new Spectral();
+const spectral = new Spotlight();
 // load a ruleset file from your project's root directory.
-const rulesetFilepath = path.join(__dirname, ".spectral.yaml");
+const rulesetFilepath = path.join(__dirname, ".spotlight.yaml");
 spectral.setRuleset(await bundleAndLoadRuleset(rulesetFilepath, { fs, fetch }));
 
 spectral.run(myDocument).then(console.log);
@@ -110,15 +110,15 @@ spectral.run(myDocument).then(console.log);
 
 ### Load a JavaScript Ruleset
 
-Starting in Spectral v6.0, support was added for [rulesets to be written using JavaScript](./4-custom-rulesets.md#alternative-js-ruleset-format).
+Starting in Spotlight v6.0, support was added for [rulesets to be written using JavaScript](./4-custom-rulesets.md#alternative-js-ruleset-format).
 
 To load a JavaScript ruleset, you have to import it similar to how you would import a module:
 
 ```js lineNumbers
-import { Spectral } from "@spotlight-rules/spotlight-core";
+import { Spotlight } from "@spotlight-rules/spotlight-core";
 import ruleset from "./my-javascript-ruleset";
 
-const spectral = new Spectral();
+const spectral = new Spotlight();
 spectral.setRuleset(ruleset);
 ```
 
@@ -127,18 +127,18 @@ spectral.setRuleset(ruleset);
 Here's an example script of how you could run Spotlight in the browser:
 
 ```js title="example-3.mjs" lineNumbers
-import { Spectral } from "@spotlight-rules/spotlight-core";
+import { Spotlight } from "@spotlight-rules/spotlight-core";
 import { bundleAndLoadRuleset } from "@spotlight-rules/spotlight-ruleset-bundler/with-loader";
 
-// create a ruleset that extends the spectral:oas ruleset
-const myRuleset = `extends: spectral:oas
+// create a ruleset that extends the spotlight:oas ruleset
+const myRuleset = `extends: spotlight:oas
 rules: {}`;
 
 // try to load an external ruleset
 const fs = {
   promises: {
     async readFile(filepath) {
-      if (filepath === "/.spectral.yaml") {
+      if (filepath === "/.spotlight.yaml") {
         return myRuleset;
       }
 
@@ -147,8 +147,8 @@ const fs = {
   },
 };
 
-const spectral = new Spectral();
-s.setRuleset(await bundleAndLoadRuleset("/.spectral.yaml", { fs, fetch }));
+const spectral = new Spotlight();
+s.setRuleset(await bundleAndLoadRuleset("/.spotlight.yaml", { fs, fetch }));
 ```
 
 ### Load Multiple Rulesets
@@ -162,12 +162,12 @@ If you'd like to use the `bundleAndLoadRuleset` method to load multiple rulesets
 Spotlight supports HTTP(S) proxies when fetching remote assets:
 
 ```js title="example-4.mjs" lineNumbers
-import { Spectral } from "@spotlight-rules/spotlight-core";
+import { Spotlight } from "@spotlight-rules/spotlight-core";
 import ProxyAgent from "proxy-agent";
 import { createHttpAndFileResolver } from "@spotlight-rules/spotlight-ref-resolver";
 
 // start Spotlight using a proxy
-const spectral = new Spectral({
+const spectral = new Spotlight({
   resolver: createHttpAndFileResolver({ agent: new ProxyAgent(process.env.PROXY) }),
 });
 
@@ -186,7 +186,7 @@ For example:
 ```js title="example-5.cjs" lineNumbers
 const path = require("path");
 const fs = require("fs");
-const { Spectral } = require("@spotlight-rules/spotlight-cli");
+const { Spotlight } = require("@spotlight-rules/spotlight-cli");
 const { Resolver } = require("@stoplight/json-ref-resolver");
 
 const customFileResolver = new Resolver({
@@ -209,7 +209,7 @@ const customFileResolver = new Resolver({
   },
 });
 
-const spectral = new Spectral({ resolver: customFileResolver });
+const spectral = new Spotlight({ resolver: customFileResolver });
 
 // ... load document
 

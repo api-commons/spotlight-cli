@@ -8,16 +8,16 @@ import * as Parsers from '@spotlight-rules/spotlight-parsers';
 import { httpAndFileResolver } from '@spotlight-rules/spotlight-ref-resolver';
 
 import { Document } from '../document';
-import { Spectral } from '../spectral';
+import { Spotlight } from '../spotlight';
 
-describe('Spectral', () => {
+describe('Spotlight', () => {
   afterEach(() => {
     nock.cleanAll();
   });
 
   test('should report issues for correct files with correct ranges and paths', async () => {
     const documentUri = normalize(path.join(__dirname, './__fixtures__/document-with-external-refs.json'));
-    const spectral = new Spectral({ resolver: httpAndFileResolver });
+    const spectral = new Spotlight({ resolver: httpAndFileResolver });
     spectral.setRuleset({
       rules: {
         'requires-type': {
@@ -89,7 +89,7 @@ describe('Spectral', () => {
   });
 
   test('properly decorates results with metadata pertaining to the document being linted', async () => {
-    const s = new Spectral({ resolver: httpAndFileResolver });
+    const s = new Spotlight({ resolver: httpAndFileResolver });
     s.setRuleset({
       rules: {
         'unsecure-remote-reference': {
@@ -170,7 +170,7 @@ describe('Spectral', () => {
   });
 
   test('should recognize the source of remote $refs, and de-dupe results by fingerprint', async () => {
-    const s = new Spectral({ resolver: httpAndFileResolver });
+    const s = new Spotlight({ resolver: httpAndFileResolver });
     const documentUri = path.join(__dirname, './__fixtures__/gh-658/URIError.yaml');
 
     s.setRuleset({
@@ -271,7 +271,7 @@ describe('Spectral', () => {
   });
 
   test('should dedupe paths containing special characters', async () => {
-    const s = new Spectral({ resolver: httpAndFileResolver });
+    const s = new Spotlight({ resolver: httpAndFileResolver });
     const documentUri = path.join(__dirname, './__fixtures__/gh-2500/input.json');
 
     s.setRuleset((await import('./__fixtures__/gh-2500/ruleset')).default);

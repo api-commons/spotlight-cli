@@ -14,7 +14,7 @@ describe('isPackageImport util', () => {
     expect(isPackageImport(input)).toBe(true);
   });
 
-  it.each(['', 'spectral:oas', '/nimma/legacy', 'path', 'https://esm.sh/@spotlight-rules/spotlight-core'])(
+  it.each(['', 'spotlight:oas', '/nimma/legacy', 'path', 'https://esm.sh/@spotlight-rules/spotlight-core'])(
     'given invalid %s import, should return false',
     input => {
       expect(isPackageImport(input)).toBe(false);

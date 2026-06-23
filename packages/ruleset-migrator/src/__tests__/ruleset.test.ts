@@ -10,7 +10,7 @@ import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
 import { migrateRuleset } from '..';
 import fixtures from './__fixtures__/.cache/index.json';
 
-const cwd = '/.tmp/spectral';
+const cwd = '/.tmp/spotlight';
 
 vol.fromJSON(fixtures, cwd);
 
@@ -71,7 +71,7 @@ describe('migrator', () => {
     await vol.promises.writeFile(
       path.join(cwd, 'ruleset-migration-2.json'),
       JSON.stringify({
-        extends: 'spectral:oas',
+        extends: 'spotlight:oas',
         rules: {
           'valid-type': {
             given: '$',
@@ -181,8 +181,8 @@ export default {
 
   it('should follow links correctly', async () => {
     serveAssets({
-      'http://domain/bitbucket/projects/API/repos/spectral-rules/raw/.spectral.yml?at=refs%2Fheads%2Fmaster': {
-        extends: ['spectral:oas', 'oas-rules.yml'],
+      'http://domain/bitbucket/projects/API/repos/spectral-rules/raw/.spotlight.yml?at=refs%2Fheads%2Fmaster': {
+        extends: ['spotlight:oas', 'oas-rules.yml'],
         rules: {
           'valid-type': 'error',
         },
@@ -203,7 +203,7 @@ export default {
       path.join(cwd, 'ruleset.json'),
       JSON.stringify({
         extends: [
-          'http://domain/bitbucket/projects/API/repos/spectral-rules/raw/.spectral.yml?at=refs%2Fheads%2Fmaster',
+          'http://domain/bitbucket/projects/API/repos/spectral-rules/raw/.spotlight.yml?at=refs%2Fheads%2Fmaster',
         ],
       }),
     );
@@ -348,7 +348,7 @@ export default {
           fs: vol as any,
           npmRegistry: 'https://unpkg.com/',
         }),
-      ).toEqual(`import customFunction from "/.tmp/spectral/functions/customFunction.js";
+      ).toEqual(`import customFunction from "/.tmp/spotlight/functions/customFunction.js";
 export default {
   "rules": {
     "rule": {

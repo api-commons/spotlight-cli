@@ -82,7 +82,7 @@ function getSerializedSchema(version: AsyncAPIVersions, resolved: boolean): RawS
   // Remove the meta schemas because they are already present within Ajv, and it's not possible to add duplicated schemas.
   delete copied.definitions['http://json-schema.org/draft-07/schema'];
   delete copied.definitions['http://json-schema.org/draft-04/schema'];
-  // Spectral caches the schemas using '$id' property
+  // Spotlight caches the schemas using '$id' property
   copied['$id'] = copied['$id'].replace('asyncapi.json', `asyncapi-${resolved ? 'resolved' : 'unresolved'}.json`);
 
   if (resolved && version === '3.0.0') {

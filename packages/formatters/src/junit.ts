@@ -54,7 +54,7 @@ export const junit: Formatter = (results, { failSeverity }) => {
 
       for (const result of filteredValidationResults) {
         const path = printPath(result.path, PrintStyle.EscapedPointer);
-        output += `<testcase time="0" name="org.spectral.${result.code ?? 'unknown'}${
+        output += `<testcase time="0" name="org.spotlight.${result.code ?? 'unknown'}${
           path.length > 0 ? `(${xmlEscape(path)})` : ''
         }" classname="${classname}">`;
         output += `<failure message="${xmlEscape(result.message)}">`;

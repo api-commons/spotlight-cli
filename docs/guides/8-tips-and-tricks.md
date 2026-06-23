@@ -104,10 +104,10 @@ For JS API consumers, this would look like this:
 
 ```js
 "use strict";
-const { Spectral } = require("@spotlight-rules/spotlight-core");
+const { Spotlight } = require("@spotlight-rules/spotlight-core");
 const MyResolver = require("./my-resolver.js");
 
-const spectral = new Spectral({
+const spectral = new Spotlight({
   resolver: MyResolver,
 });
 ```

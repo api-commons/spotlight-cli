@@ -35,6 +35,6 @@ details.
 ## The `spectral:` ruleset aliases
 
 Built-in rulesets are still referenced with the historical `spectral:` scheme
-(`spectral:oas`, `spectral:asyncapi`, `spectral:arazzo`) for backwards
+(`spotlight:oas`, `spotlight:asyncapi`, `spotlight:arazzo`) for backwards
 compatibility with the large body of existing rulesets in the wild. This scheme
 is intentionally **not** renamed. See [FORK.md](./FORK.md).

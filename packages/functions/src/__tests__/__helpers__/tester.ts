@@ -1,5 +1,5 @@
 import {
-  Spectral,
+  Spotlight,
   Document,
   RuleDefinition,
   Ruleset,
@@ -15,7 +15,7 @@ export default async function <O = unknown>(
   opts: O | null = null,
   rule?: Partial<Omit<RuleDefinition, 'then'>> & { then?: Partial<RuleDefinition['then']> },
 ): Promise<Pick<IRuleResult, 'path' | 'message'>[]> {
-  const s = new Spectral();
+  const s = new Spotlight();
   s.setRuleset({
     rules: {
       'my-rule': {

@@ -1,7 +1,7 @@
 import type { IPosition } from '@stoplight/types';
-import type { ISpectralDiagnostic } from '../../types';
+import type { ISpotlightDiagnostic } from '../../types';
 
-const computeResultFingerprint = (rule: ISpectralDiagnostic): string => {
+const computeResultFingerprint = (rule: ISpotlightDiagnostic): string => {
   let id = String(rule.code);
 
   if (rule.path.length > 0) {
@@ -21,11 +21,11 @@ const computeResultFingerprint = (rule: ISpectralDiagnostic): string => {
   return id;
 };
 
-export const prepareResults = (results: ISpectralDiagnostic[]): ISpectralDiagnostic[] => {
+export const prepareResults = (results: ISpotlightDiagnostic[]): ISpotlightDiagnostic[] => {
   return sortResults(deduplicateResults(results));
 };
 
-const deduplicateResults = (results: ISpectralDiagnostic[]): ISpectralDiagnostic[] => {
+const deduplicateResults = (results: ISpotlightDiagnostic[]): ISpotlightDiagnostic[] => {
   const fingerprints = new Set<string>();
 
   return results.filter(result => {
@@ -95,7 +95,7 @@ export const comparePosition = (left: IPosition, right: IPosition): -1 | 0 | 1 =
   return normalize(diffChar);
 };
 
-export const compareResults = (left: ISpectralDiagnostic, right: ISpectralDiagnostic): -1 | 0 | 1 => {
+export const compareResults = (left: ISpotlightDiagnostic, right: ISpotlightDiagnostic): -1 | 0 | 1 => {
   const diffSource = compareSource(left.source, right.source);
 
   if (diffSource !== 0) {
@@ -119,6 +119,6 @@ export const compareResults = (left: ISpectralDiagnostic, right: ISpectralDiagno
   return normalize(diffPath);
 };
 
-export const sortResults = (results: ISpectralDiagnostic[]): ISpectralDiagnostic[] => {
+export const sortResults = (results: ISpotlightDiagnostic[]): ISpotlightDiagnostic[] => {
   return [...results].sort(compareResults);
 };

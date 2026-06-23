@@ -54,7 +54,7 @@ The Spotlight CLI supports loading documents as YAML or JSON, and validation of 
 
 ## Using a Ruleset File
 
-If you don't specify a ruleset file with the `--ruleset` parameter, the Spotlight CLI looks for a ruleset file called `.spectral.yml`, `.spectral.yaml`, `.spectral.json` or `.spectral.js` in the current working directory.
+If you don't specify a ruleset file with the `--ruleset` parameter, the Spotlight CLI looks for a ruleset file called `.spotlight.yml`, `.spotlight.yaml`, `.spotlight.json` or `.spotlight.js` in the current working directory.
 Spotlight won't lint the document if no ruleset is specified and no default ruleset file is found.
 
 Here you can build a [custom ruleset](../getting-started/3-rulesets.md), or extend and modify the core rulesets:

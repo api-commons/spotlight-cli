@@ -1,4 +1,4 @@
-import { ISpectralDiagnostic, Ruleset } from '@spotlight-rules/spotlight-core';
+import { ISpotlightDiagnostic, Ruleset } from '@spotlight-rules/spotlight-core';
 import type { DiagnosticSeverity } from '@stoplight/types';
 
 export type FormatterOptions = {
@@ -7,7 +7,7 @@ export type FormatterOptions = {
 
 export type FormatterContext = {
   ruleset: Ruleset;
-  spectralVersion: string;
+  spotlightVersion: string;
 };
 
-export type Formatter = (results: ISpectralDiagnostic[], options: FormatterOptions, ctx?: FormatterContext) => string;
+export type Formatter = (results: ISpotlightDiagnostic[], options: FormatterOptions, ctx?: FormatterContext) => string;

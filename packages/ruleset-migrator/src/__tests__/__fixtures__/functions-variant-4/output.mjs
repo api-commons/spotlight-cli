@@ -1,5 +1,5 @@
 import { oas3 as oas3$0, oas3_1 } from '@spotlight-rules/spotlight-formats';
-import oas3 from '/.tmp/spectral/functions-variant-4/functions/oas3.js';
+import oas3 from '/.tmp/spotlight/functions-variant-4/functions/oas3.js';
 export default {
   formats: [oas3$0, oas3_1],
   rules: {

@@ -1,6 +1,6 @@
 {
   "name": "@spotlight-rules/spotlight-formatters",
-  "version": "1.5.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/api-commons/spotlight-cli",
   "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
@@ -34,8 +34,8 @@
     "prebuild": "node scripts/bundle-html-templates.mjs"
   },
   "dependencies": {
-    "@spotlight-rules/spotlight-core": "^1.19.4",
-    "@spotlight-rules/spotlight-runtime": "^1.1.2",
+    "@spotlight-rules/spotlight-core": "^1.0.0",
+    "@spotlight-rules/spotlight-runtime": "^1.0.0",
     "@stoplight/path": "^1.3.2",
     "@stoplight/types": "^13.15.0",
     "@types/markdown-escape": "^1.1.3",

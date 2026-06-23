@@ -2,7 +2,7 @@
 
 Rulesets are collections of rules written in JSON, YAML, or [JavaScript](../guides/4-custom-rulesets.md#alternative-js-ruleset-format). Rulesets provide powerful linting of other JSON or YAML files, such as OpenAPI or AsyncAPI descriptions.
 
-Ruleset files are often named `.spectral.yaml`, but that's not a requirement.
+Ruleset files are often named `.spotlight.yaml`, but that's not a requirement.
 
 Rules take certain parameters and then call functions on parts of another YAML or JSON object being linted.
 
@@ -12,14 +12,14 @@ The fastest way to create a ruleset is to use the `extends` property to leverage
 
 Spotlight comes with three built-in rulesets:
 
-- `spectral:oas` - [OpenAPI v2/v3 rules](./4-openapi.md)
-- `spectral:asyncapi` - [AsyncAPI v2/v3 rules](./5-asyncapi.md)
-- `spectral:arazzo` - [Arazzo v1 rules](./6-arazzo.md)
+- `spotlight:oas` - [OpenAPI v2/v3 rules](./4-openapi.md)
+- `spotlight:asyncapi` - [AsyncAPI v2/v3 rules](./5-asyncapi.md)
+- `spotlight:arazzo` - [Arazzo v1 rules](./6-arazzo.md)
 
 To create a ruleset that extends both rulesets, open your terminal and run:
 
 ```bash
-echo 'extends: ["spectral:oas", "spectral:asyncapi", "spectral:arazzo"]' > .spectral.yaml
+echo 'extends: ["spotlight:oas", "spotlight:asyncapi", "spotlight:arazzo"]' > .spotlight.yaml
 ```
 
 The newly created ruleset file can then be used to lint any OpenAPI v2/v3 or AsyncAPI v2/v3 descriptions using the `spotlight lint` command:

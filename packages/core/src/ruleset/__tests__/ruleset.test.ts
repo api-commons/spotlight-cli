@@ -1081,7 +1081,7 @@ describe('Ruleset', () => {
 
           expect(ruleset.fromSource.bind(ruleset, null)).toThrowError(
             Error(
-              'Document must have some source assigned. If you use Spectral programmatically make sure to pass the source to Document',
+              'Document must have some source assigned. If you use Spotlight programmatically make sure to pass the source to Document',
             ),
           );
         });
@@ -1091,7 +1091,7 @@ describe('Ruleset', () => {
 
           expect(ruleset.fromSource.bind(ruleset, path.join(cwd, 'v2/spec.json'))).toThrowError(
             Error(
-              'Ruleset must have some source assigned. If you use Spectral programmatically make sure to pass the source to Ruleset',
+              'Ruleset must have some source assigned. If you use Spotlight programmatically make sure to pass the source to Ruleset',
             ),
           );
         });

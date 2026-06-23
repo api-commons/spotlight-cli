@@ -1,6 +1,6 @@
 ## JavaScript Ruleset Format
 
-Spectral v6.0 added support for a JavaScript ruleset format, similar to the JSON and YAML formats.
+Spotlight v6.0 added support for a JavaScript ruleset format, similar to the JSON and YAML formats.
 
 This has a few benefits:
 

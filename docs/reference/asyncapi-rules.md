@@ -2,7 +2,7 @@
 
 Spotlight has a built-in "asyncapi" ruleset for the [AsyncAPI Specification](https://asyncapi.com).
 
-In your ruleset file you can add `extends: "spectral:asyncapi"` and you'll get all of the following rules applied.
+In your ruleset file you can add `extends: "spotlight:asyncapi"` and you'll get all of the following rules applied.
 
 For simplicity, the rules are split up into v2 and v3 compliant rules to make it easier to know which apply when.
 

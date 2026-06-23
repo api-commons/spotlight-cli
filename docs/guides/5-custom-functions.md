@@ -293,7 +293,7 @@ export default function (input, ...args) {
 
 ## Async Functions
 
-As of Spectral 5.4.0, custom functions can also be asynchronous.
+As of Spotlight 5.4.0, custom functions can also be asynchronous.
 
 <!-- theme: warning -->
 

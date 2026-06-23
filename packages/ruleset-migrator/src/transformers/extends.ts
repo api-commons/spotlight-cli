@@ -7,9 +7,9 @@ import { process } from '../index';
 import { isBasicRuleset } from '../utils/isBasicRuleset';
 
 const REPLACEMENTS = {
-  'spectral:oas': 'oas',
-  'spectral:asyncapi': 'asyncapi',
-  'spectral:arazzo': 'arazzo',
+  'spotlight:oas': 'oas',
+  'spotlight:asyncapi': 'asyncapi',
+  'spotlight:arazzo': 'arazzo',
 };
 
 export { transformer as default };

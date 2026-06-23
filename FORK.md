@@ -1,60 +1,59 @@
 # About this fork
 
-**Spotlight CLI** is a fork of [Stoplight Spectral](https://github.com/stoplightio/spectral),
-maintained under the [API Commons](https://github.com/api-commons) organization.
+**Spotlight CLI** originated as a fork of
+[Stoplight Spectral](https://github.com/stoplightio/spectral), and is now
+released as an independent **1.0** under the
+[API Commons](https://github.com/api-commons) organization.
 
 Spectral is a flexible JSON/YAML linter with out-of-the-box support for OpenAPI,
-AsyncAPI, and Arazzo. API Commons forks it to:
-
-1. Maintain an openly-governed, vendor-neutral build of the linter for the API
-   Commons community.
-2. Pair the linter with **[spotlight-spec](https://github.com/api-commons/spotlight-spec)** —
-   a standalone, formally-documented specification of the Spectral ruleset
-   format (rules and rulesets), extracted as its own artifact with a JSON Schema
-   for validation independent of any single implementation.
-
-## Relationship to upstream
-
-This repository was seeded from a source download of the upstream `develop`
-branch (no shared git history). It is **not** a GitHub network fork. We track
-upstream manually and document divergence here.
+AsyncAPI, and Arazzo. Spotlight Rules carries that foundation forward as an
+openly-governed, vendor-neutral build, paired with
+**[spotlight-spec](https://github.com/api-commons/spotlight-spec)** — a
+standalone, formally-documented specification of the ruleset format with a JSON
+Schema for validation.
 
 ## Provenance
 
-- Upstream: https://github.com/stoplightio/spectral
-- Seeded from: `develop` branch, June 2026
-- License: Apache License 2.0 (unchanged) — see [LICENSE](./LICENSE) and [NOTICE](./NOTICE)
+- Upstream: https://github.com/stoplightio/spectral (Apache License 2.0)
+- Seeded from: a source download of the upstream `develop` branch, June 2026 (no
+  shared git history; **not** a GitHub network fork).
+- License: **Apache License 2.0, unchanged** — see [LICENSE](./LICENSE) and
+  [NOTICE](./NOTICE). The original copyright is held by Stoplight, Inc.;
+  attribution is preserved as required by the License.
 
-## Changes from upstream
+## The 1.0 reboot
 
-This section records every intentional divergence from upstream Spectral.
+With no existing users, Spotlight was rebooted as a clean 1.0 — everything
+product-facing is renamed to Spotlight, and the package versions restart at
+`1.0.0` (they no longer track upstream Spectral's version numbers).
 
-- **2026-06-23** — Initial import. Added `NOTICE`, `FORK.md`, and this fork
-  attribution. No functional source changes; byte-for-byte the upstream
-  `develop` snapshot apart from these added files.
-- **2026-06-23** — Rebrand (`rebrand/spotlight` branch).
-  - Renamed the 11 internal workspace packages `@stoplight/spectral-*` →
-    `@spotlight-rules/spotlight-*` and updated every internal import, dependency,
-    `tsconfig` path mapping, and test alias accordingly.
-  - Renamed the CLI binary `spectral` → `spotlight` (`bin`, yargs `scriptName`,
-    and the packaged-binary output path).
-  - Repointed `homepage`/`bugs`/`repository` URLs at `api-commons/spotlight-cli`.
-  - Added `SPOTLIGHT_SPEC.md` and `packages/core/src/ruleset/meta/README.md`
-    establishing [spotlight-spec](https://github.com/api-commons/spotlight-spec)
-    as the canonical published form of the ruleset meta-schema.
+- **Packages** — the 11 workspace packages publish as `@spotlight-rules/spotlight-*`,
+  starting at `1.0.0`.
+- **CLI binary** — `spotlight` (yargs `scriptName`, `bin`, packaged-binary output).
+- **JavaScript API** — the main class is exported as **`Spotlight`** (was
+  `Spectral`); the diagnostic type is `ISpotlightDiagnostic`.
+- **Ruleset aliases** — built-in rulesets are referenced as **`spotlight:oas`**,
+  `spotlight:asyncapi`, `spotlight:arazzo` (the `spectral:` scheme is **not**
+  carried over).
+- **Default ruleset files** — discovered from **`.spotlight.{yaml,yml,json,js}`**
+  (the `.spectral.*` names are **not** carried over).
+- **Internal** — the runtime keyword is `x-spotlight-runtime`; internal symbols
+  and the bundler builtins registry key use the `@spotlight-rules/spotlight`
+  namespace.
+- Repointed `homepage`/`bugs`/`repository` URLs at `api-commons/spotlight-cli`.
+- Removed upstream-specific docs (the Spectral version migration guides) and
+  reset per-package `CHANGELOG.md`s to a clean `1.0.0` entry.
 
-### Deliberately **not** changed (compatibility)
+## What is **not** renamed (and why)
 
-- The **`spectral:` ruleset alias scheme** (`spectral:oas`, `spectral:asyncapi`,
-  `spectral:arazzo`) is preserved. A huge number of rulesets in the wild
-  reference these; renaming the scheme would break them. See `SPOTLIGHT_SPEC.md`.
-- The default ruleset filename **`.spectral.yaml`** is preserved for the same
-  reason.
-- `CHANGELOG.md` files retain their original upstream package names (historical
-  record).
+- **Attribution** — `LICENSE`, `NOTICE`, and the "derived from Stoplight
+  Spectral" provenance throughout stay as-is. This is required by the Apache
+  License and does not depend on having users.
+- **External Stoplight utility dependencies** — `@stoplight/types`,
+  `@stoplight/json`, `@stoplight/yaml`, `@stoplight/path`, etc. are unrelated
+  libraries we depend on, not Spectral, and keep their names.
+- **`planning/spectral/`** — a research mirror of upstream Spectral's issues and
+  discussions; it is *about* Spectral and keeps its name.
 
-> The package versions were left at their upstream Spectral numbers (they
-> correspond to the exact Spectral snapshot that was forked). The packages are
-> published to npm under the **`@spotlight-rules`** scope (e.g.
-> `@spotlight-rules/spotlight-cli`). Note the npm scope (`@spotlight-rules`)
-> differs from the GitHub organization (`api-commons`).
+> The npm scope (`@spotlight-rules`) differs from the GitHub organization
+> (`api-commons`) and the site (`spotlight-rules.com`) — see the project READMEs.

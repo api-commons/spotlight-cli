@@ -1,5 +1,5 @@
 import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
-import { IRuleResult, Spectral, Document, RulesetDefinition } from '@spotlight-rules/spotlight-core';
+import { IRuleResult, Spotlight, Document, RulesetDefinition } from '@spotlight-rules/spotlight-core';
 import { httpAndFileResolver } from '@spotlight-rules/spotlight-ref-resolver';
 import oasRuleset from '../../oas/index';
 import aasRuleset from '../../asyncapi/index';
@@ -37,8 +37,8 @@ export default (ruleName: RuleName, tests: Scenario): void => {
   });
 };
 
-export function createWithRules(rules: (keyof Ruleset['rules'])[]): Spectral {
-  const s = new Spectral({ resolver: httpAndFileResolver });
+export function createWithRules(rules: (keyof Ruleset['rules'])[]): Spotlight {
+  const s = new Spotlight({ resolver: httpAndFileResolver });
 
   s.setRuleset({
     extends: [

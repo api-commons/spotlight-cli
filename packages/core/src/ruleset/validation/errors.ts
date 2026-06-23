@@ -93,7 +93,7 @@ export function convertAjvErrors(
   }
 
   return filteredErrors.flatMap(error => {
-    if (error.keyword === 'x-spectral-runtime') {
+    if (error.keyword === 'x-spotlight-runtime') {
       const flat = flatErrors(error.params.errors);
       const list = Array.isArray(flat) ? flat : [flat];
       return list.map(e => enrichWithLocation(e, sourceContext));

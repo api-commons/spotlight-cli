@@ -7,7 +7,7 @@ This project exposes the available formatters from the CLI for users that perfor
 ```ts
 import { pretty } from "@spotlight-rules/spotlight-formatters";
 
-const spectral = new Spectral();
+const spectral = new Spotlight();
 // ...
 const result = await spectral.run(document);
 

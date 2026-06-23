@@ -1,6 +1,6 @@
 # @spotlight-rules/spotlight-ref-resolver
 
-This package provides Spectral-compatible bindings for [@stoplight/json-ref-resolver](https://github.com/stoplightio/json-ref-resolver) and [@stoplight/json-ref-readers](https://github.com/stoplightio/json-ref-readers).
+This package provides Spotlight-compatible bindings for [@stoplight/json-ref-resolver](https://github.com/stoplightio/json-ref-resolver) and [@stoplight/json-ref-readers](https://github.com/stoplightio/json-ref-readers).
 
 You shouldn't need to install this package directly unless you want to create a custom JSON refs resolver
 

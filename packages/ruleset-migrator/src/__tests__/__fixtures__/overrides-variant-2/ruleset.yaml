@@ -1,5 +1,5 @@
 extends:
-  - 'spectral:oas'
+  - 'spotlight:oas'
 aliases:
   OperationObject:
     - '#PathItem[get,put,post,delete,options,head,patch,trace]'

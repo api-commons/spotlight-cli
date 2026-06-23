@@ -19,14 +19,14 @@
 import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";
-import { Spectral } from "@spotlight-rules/spotlight-core";
+import { Spotlight } from "@spotlight-rules/spotlight-core";
 import { bundleAndLoadRuleset } from "@spotlight-rules/spotlight-ruleset-bundler/with-loader";
 import { fetch } from "@spotlight-rules/spotlight-runtime";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const s = new Spectral();
-s.setRuleset(await bundleAndLoadRuleset(path.join(__dirname, ".spectral.yaml"), { fs, fetch }));
+const s = new Spotlight();
+s.setRuleset(await bundleAndLoadRuleset(path.join(__dirname, ".spotlight.yaml"), { fs, fetch }));
 
 // lint as usual
 ```

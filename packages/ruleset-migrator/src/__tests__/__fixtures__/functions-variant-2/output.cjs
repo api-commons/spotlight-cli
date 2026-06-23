@@ -1,6 +1,6 @@
-const oasDocumentSchema = _interopDefault(require('/.tmp/spectral/functions-variant-2/custom-functions/oasDocumentSchema.js'));
-const oasExample = _interopDefault(require('/.tmp/spectral/functions-variant-2/custom-functions/oasExample.js'));
-const oasOp2xxResponse = _interopDefault(require('/.tmp/spectral/functions-variant-2/custom-functions/oasOp2xxResponse.js'));
+const oasDocumentSchema = _interopDefault(require('/.tmp/spotlight/functions-variant-2/custom-functions/oasDocumentSchema.js'));
+const oasExample = _interopDefault(require('/.tmp/spotlight/functions-variant-2/custom-functions/oasExample.js'));
+const oasOp2xxResponse = _interopDefault(require('/.tmp/spotlight/functions-variant-2/custom-functions/oasOp2xxResponse.js'));
 module.exports = {
   documentationUrl: 'https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md',
   rules: {

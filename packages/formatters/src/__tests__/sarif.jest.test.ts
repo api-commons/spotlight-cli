@@ -76,7 +76,7 @@ describe('Sarif formatter', () => {
     const output = sarif(
       results,
       { failSeverity: DiagnosticSeverity.Error },
-      { ruleset, spectralVersion: sarifToolVersion },
+      { ruleset, spotlightVersion: sarifToolVersion },
     );
 
     const outputObject = JSON.parse(output);
@@ -87,7 +87,7 @@ describe('Sarif formatter', () => {
         {
           tool: {
             driver: {
-              name: 'spectral',
+              name: 'spotlight',
               rules: [
                 {
                   id: 'operation-description',
@@ -103,7 +103,7 @@ describe('Sarif formatter', () => {
                 },
               ],
               version: sarifToolVersion,
-              informationUri: 'https://github.com/stoplightio/spectral',
+              informationUri: 'https://github.com/api-commons/spotlight-cli',
             },
           },
           results: [

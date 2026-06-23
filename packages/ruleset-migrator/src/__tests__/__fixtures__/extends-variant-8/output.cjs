@@ -1,5 +1,5 @@
 const { falsy, truthy } = require('@spotlight-rules/spotlight-functions');
-const pascalCase = _interopDefault(require('/.tmp/spectral/extends-variant-8/assets/shared/functions/pascalCase.js'));
+const pascalCase = _interopDefault(require('/.tmp/spotlight/extends-variant-8/assets/shared/functions/pascalCase.js'));
 module.exports = {
   extends: [
     {

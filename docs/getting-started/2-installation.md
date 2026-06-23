@@ -28,7 +28,7 @@ yarn global add @spotlight-rules/spotlight-core
 
 ## Executable Binaries
 
-If you don't have Node.js and/or npm/Yarn, use the standalone packages from upstream Spectral for [all major platforms](https://github.com/stoplightio/spectral/releases). The quickest way to install the appropriate package for your operating system is via this shell script:
+If you don't have Node.js and/or npm/Yarn, use the standalone packages from upstream Spotlight for [all major platforms](https://github.com/stoplightio/spectral/releases). The quickest way to install the appropriate package for your operating system is via this shell script:
 
 ```bash
 curl -L https://raw.github.com/stoplightio/spectral/master/scripts/install.sh | sh
@@ -44,7 +44,7 @@ If the file you want to lint is on your computer, you'll need to mount the direc
 
 ```bash
 # make sure to update the value of `--ruleset` according to the actual location of your ruleset
-docker run --rm -it -v $(pwd):/tmp stoplight/spotlight lint --ruleset "/tmp/.spectral.js" "/tmp/file.yaml"
+docker run --rm -it -v $(pwd):/tmp stoplight/spotlight lint --ruleset "/tmp/.spotlight.js" "/tmp/file.yaml"
 ```
 
 To use the docker image on GitLab you need to set `entrypoint` to `""` like this:

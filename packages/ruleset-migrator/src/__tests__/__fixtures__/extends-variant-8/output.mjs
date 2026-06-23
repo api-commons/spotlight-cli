@@ -1,5 +1,5 @@
 import { falsy, truthy } from "@spotlight-rules/spotlight-functions";
-import pascalCase from "/.tmp/spectral/extends-variant-8/assets/shared/functions/pascalCase.js";
+import pascalCase from "/.tmp/spotlight/extends-variant-8/assets/shared/functions/pascalCase.js";
 export default {
   extends: [
     {

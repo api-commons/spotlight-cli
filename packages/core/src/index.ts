@@ -1,5 +1,5 @@
 export * from './consts';
-export * from './spectral';
+export * from './spotlight';
 export { Document, ParsedDocument } from './document';
 export * from './ruleset';
-export { ISpectralDiagnostic } from './types';
+export { ISpotlightDiagnostic } from './types';

@@ -3,7 +3,7 @@ import { truthy } from '@spotlight-rules/spotlight-functions';
 import * as Parsers from '@spotlight-rules/spotlight-parsers';
 import { Resolver } from '@spotlight-rules/spotlight-ref-resolver';
 import { Document } from '../document';
-import { Spectral } from '../spectral';
+import { Spotlight } from '../spotlight';
 import { Ruleset } from '../ruleset';
 
 describe('spectral', () => {
@@ -14,7 +14,7 @@ describe('spectral', () => {
 
         const resolve = jest.spyOn(customResolver, 'resolve');
 
-        const s = new Spectral({
+        const s = new Spotlight({
           resolver: customResolver,
         });
 
@@ -30,7 +30,7 @@ describe('spectral', () => {
       });
 
       test('should recognize the source of local $refs', () => {
-        const s = new Spectral();
+        const s = new Spotlight();
         const source = 'foo.yaml';
 
         const document = new Document(

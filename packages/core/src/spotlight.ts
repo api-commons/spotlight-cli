@@ -6,7 +6,7 @@ import { createHttpAndFileResolver, Resolver } from '@spotlight-rules/spotlight-
 import { Document, IDocument, IParsedResult, isParsedResult, ParsedDocument } from './document';
 import { DocumentInventory } from './documentInventory';
 import { Runner } from './runner';
-import type { IConstructorOpts, IRunOpts, ISpectralDiagnostic, ISpectralFullResult } from './types';
+import type { IConstructorOpts, IRunOpts, ISpotlightDiagnostic, ISpectralFullResult } from './types';
 import type { Format, ParserOptions, RulesetDefinition } from './ruleset/index';
 import { Ruleset } from './ruleset/ruleset';
 import { generateDocumentWideResult } from './utils/generateDocumentWideResult';
@@ -14,7 +14,7 @@ import { getDiagnosticSeverity } from './ruleset';
 
 export * from './types';
 
-export class Spectral {
+export class Spotlight {
   private readonly _resolver: Resolver;
 
   public ruleset?: Ruleset;
@@ -79,7 +79,7 @@ export class Spectral {
   public async run(
     target: IParsedResult | IDocument | Record<string, unknown> | string,
     opts: IRunOpts = {},
-  ): Promise<ISpectralDiagnostic[]> {
+  ): Promise<ISpotlightDiagnostic[]> {
     return (await this.runWithResolved(target, opts)).results;
   }
 
@@ -87,7 +87,7 @@ export class Spectral {
     this.ruleset = ruleset instanceof Ruleset ? ruleset : new Ruleset(ruleset);
   }
 
-  private _generateUnrecognizedFormatError(document: IDocument, formats: Format[]): ISpectralDiagnostic {
+  private _generateUnrecognizedFormatError(document: IDocument, formats: Format[]): ISpotlightDiagnostic {
     return generateDocumentWideResult(
       document,
       `The provided document does not match any of the registered formats [${formats
@@ -99,10 +99,10 @@ export class Spectral {
   }
 
   private _filterParserErrors(
-    diagnostics: ReadonlyArray<ISpectralDiagnostic>,
+    diagnostics: ReadonlyArray<ISpotlightDiagnostic>,
     parserOptions: ParserOptions,
-  ): ISpectralDiagnostic[] {
-    return diagnostics.reduce<ISpectralDiagnostic[]>((diagnostics, diagnostic) => {
+  ): ISpotlightDiagnostic[] {
+    return diagnostics.reduce<ISpotlightDiagnostic[]>((diagnostics, diagnostic) => {
       if (diagnostic.code !== 'parser') return diagnostics;
 
       let severity;

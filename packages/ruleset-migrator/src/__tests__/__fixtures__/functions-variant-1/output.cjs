@@ -1,10 +1,10 @@
 const { oas2, oas3 } = require('@spotlight-rules/spotlight-formats');
-const oasDocumentSchema = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasDocumentSchema.js'));
-const oasExample = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasExample.js'));
-const oasOp2xxResponse = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasOp2xxResponse.js'));
-const oasOpFormDataConsumeCheck = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasOpFormDataConsumeCheck.js'));
-const refSiblings = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/refSiblings.js'));
-const typedEnum = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/typedEnum.js'));
+const oasDocumentSchema = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/oasDocumentSchema.js'));
+const oasExample = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/oasExample.js'));
+const oasOp2xxResponse = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/oasOp2xxResponse.js'));
+const oasOpFormDataConsumeCheck = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/oasOpFormDataConsumeCheck.js'));
+const refSiblings = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/refSiblings.js'));
+const typedEnum = _interopDefault(require('/.tmp/spotlight/functions-variant-1/functions/typedEnum.js'));
 module.exports = {
   documentationUrl: 'https://meta.stoplight.io/docs/spectral/docs/reference/openapi-rules.md',
   formats: [oas2, oas3],

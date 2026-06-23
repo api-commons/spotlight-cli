@@ -1,7 +1,7 @@
 overrides:
   - files:
       - apis/*.json
-    extends: spectral:oas
+    extends: spotlight:oas
     formats:
       - oas2
       - oas3

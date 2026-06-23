@@ -11,7 +11,7 @@ type Module = 'core' | 'formats' | 'functions' | 'parsers' | 'ref-resolver' | 'r
 type GlobalModules = Record<`@spotlight-rules/spotlight-${Module}`, string>;
 type Overrides = Record<keyof GlobalModules, Record<string, unknown>>;
 
-const NAME = '@stoplight-spectral/builtins';
+const NAME = '@spotlight-rules/builtins';
 
 function registerModule(
   instanceId: number,

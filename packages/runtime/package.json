@@ -1,6 +1,6 @@
 {
   "name": "@spotlight-rules/spotlight-runtime",
-  "version": "1.1.5",
+  "version": "1.0.0",
   "homepage": "https://github.com/api-commons/spotlight-cli",
   "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
