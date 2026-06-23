@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { safePointerToPath } from '@stoplight/spectral-runtime';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { safePointerToPath } from '@api-commons/spotlight-runtime';
 import { decodePointer } from '@stoplight/json';
 
 import { optionSchemas } from './optionSchemas';

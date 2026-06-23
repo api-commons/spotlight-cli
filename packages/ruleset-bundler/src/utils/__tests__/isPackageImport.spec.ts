@@ -8,13 +8,13 @@ describe('isPackageImport util', () => {
     'lodash/get',
     'lodash/get.js',
     '@stoplight/path',
-    '@stoplight/spectral-core',
-    '@stoplight/spectral-core/dist/file.js',
+    '@api-commons/spotlight-core',
+    '@api-commons/spotlight-core/dist/file.js',
   ])('given valid %s package import, should return true', input => {
     expect(isPackageImport(input)).toBe(true);
   });
 
-  it.each(['', '/nimma/legacy', 'path', 'https://esm.sh/@stoplight/spectral-core'])(
+  it.each(['', '/nimma/legacy', 'path', 'https://esm.sh/@api-commons/spotlight-core'])(
     'given invalid %s import, should return false',
     input => {
       expect(isPackageImport(input)).toBe(false);

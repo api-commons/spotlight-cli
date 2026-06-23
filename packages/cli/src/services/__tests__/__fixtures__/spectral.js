@@ -1,4 +1,4 @@
-const { pattern } = require('@stoplight/spectral-functions');
+const { pattern } = require('@api-commons/spotlight-functions');
 
 module.exports = {
   rules: {

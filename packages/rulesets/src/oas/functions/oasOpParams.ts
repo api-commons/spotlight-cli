@@ -1,6 +1,6 @@
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import type { IFunctionResult } from '@api-commons/spotlight-core';
 import { isObject } from './utils/isObject';
-import { createRulesetFunction } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
 
 function computeFingerprint(param: Record<string, unknown>): string {
   return `${String(param.in)}-${String(param.name)}`;

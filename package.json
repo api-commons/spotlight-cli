@@ -13,12 +13,12 @@
     "API"
   ],
   "private": true,
-  "homepage": "https://github.com/stoplightio/spectral",
-  "bugs": "https://github.com/stoplightio/spectral/issues",
+  "homepage": "https://github.com/api-commons/spotlight-cli",
+  "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoplightio/spectral"
+    "url": "https://github.com/api-commons/spotlight-cli"
   },
   "license": "Apache-2.0",
   "engines": {

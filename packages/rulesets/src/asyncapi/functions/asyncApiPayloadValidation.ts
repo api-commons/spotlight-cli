@@ -1,13 +1,13 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { aas2_0, aas2_1, aas2_2, aas2_3, aas2_4, aas2_5, aas2_6, aas3_0 } from '@stoplight/spectral-formats';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { aas2_0, aas2_1, aas2_2, aas2_3, aas2_4, aas2_5, aas2_6, aas3_0 } from '@api-commons/spotlight-formats';
 import betterAjvErrors from '@stoplight/better-ajv-errors';
 
 import { getCopyOfSchema } from './utils/specs';
 
 import type { ValidateFunction } from 'ajv';
-import type { Format } from '@stoplight/spectral-core';
+import type { Format } from '@api-commons/spotlight-core';
 import type { AsyncAPISpecVersion } from './utils/specs';
 
 const asyncApi2SchemaObject = { $ref: 'asyncapi2#/definitions/schema' };

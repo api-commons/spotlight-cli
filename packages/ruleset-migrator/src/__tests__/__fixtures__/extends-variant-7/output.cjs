@@ -1,5 +1,5 @@
-const { oas2, oas3, oas3_0, oas3_1 } = require('@stoplight/spectral-formats');
-const { truthy } = require('@stoplight/spectral-functions');
+const { oas2, oas3, oas3_0, oas3_1 } = require('@api-commons/spotlight-formats');
+const { truthy } = require('@api-commons/spotlight-functions');
 const pascalCase$1 = _interopDefault(require('/.tmp/spectral/extends-variant-7/assets/fns/pascalCase.js'));
 const oas3$0 = _interopDefault(require('/.tmp/spectral/extends-variant-7/assets/functions/oas3.js'));
 const pascalCase$0 = _interopDefault(require('/.tmp/spectral/extends-variant-7/assets/functions/pascalCase.js'));

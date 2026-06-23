@@ -1,7 +1,7 @@
 ====test====
 Operation security defined, allow optional / no auth security
 ====asset:ruleset====
-const { oas } = require('@stoplight/spectral-rulesets');
+const { oas } = require('@api-commons/spotlight-rulesets');
 
 module.exports = {
   'extends': [[oas, 'off']],

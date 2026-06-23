@@ -1,6 +1,6 @@
-import { pattern } from '@stoplight/spectral-functions';
+import { pattern } from '@api-commons/spotlight-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@api-commons/spotlight-core';
 
 export { ruleset as default };
 

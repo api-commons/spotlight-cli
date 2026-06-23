@@ -1,5 +1,5 @@
-const { oas2 } = require('@stoplight/spectral-formats');
-const { truthy } = require('@stoplight/spectral-functions');
+const { oas2 } = require('@api-commons/spotlight-formats');
+const { truthy } = require('@api-commons/spotlight-functions');
 module.exports = {
   rules: {
     'oas3-schema': 'error',

@@ -1,6 +1,6 @@
 import parentRuleset from './indirect.2';
-import { falsy } from '@stoplight/spectral-functions';
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { falsy } from '@api-commons/spotlight-functions';
+import { RulesetDefinition } from '@api-commons/spotlight-core';
 
 const ruleset: RulesetDefinition = {
   extends: parentRuleset,

@@ -1,6 +1,6 @@
-import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@stoplight/spectral-formats';
-import { schema } from '@stoplight/spectral-functions';
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@api-commons/spotlight-formats';
+import { schema } from '@api-commons/spotlight-functions';
+import { RulesetDefinition } from '@api-commons/spotlight-core';
 
 import _base from './_base';
 

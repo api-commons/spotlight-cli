@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@stoplight/spectral-core';
+import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
 import { optionSchemas } from './optionSchemas';
 
 export type Options = {

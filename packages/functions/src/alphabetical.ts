@@ -1,6 +1,6 @@
 import { isObject } from 'lodash';
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { printValue } from '@stoplight/spectral-runtime';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { printValue } from '@api-commons/spotlight-runtime';
 
 import { optionSchemas } from './optionSchemas';
 

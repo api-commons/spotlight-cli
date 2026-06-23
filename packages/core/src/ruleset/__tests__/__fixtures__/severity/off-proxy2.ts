@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { truthy } from '@stoplight/spectral-functions';
+import { truthy } from '@api-commons/spotlight-functions';
 
 const ruleset1 = {
   rules: {

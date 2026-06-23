@@ -3,11 +3,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 import specs from '@asyncapi/specs';
-import { createRulesetFunction, IFunctionResult, Format } from '@stoplight/spectral-core';
-import { schema as schemaFn } from '@stoplight/spectral-functions';
+import { createRulesetFunction, IFunctionResult, Format } from '@api-commons/spotlight-core';
+import { schema as schemaFn } from '@api-commons/spotlight-functions';
 import type { ErrorObject } from 'ajv';
 import { getCopyOfSchema } from './utils/specs';
-import { aas2_0, aas2_1, aas2_2, aas2_3, aas2_4, aas2_5, aas2_6, aas3_0 } from '@stoplight/spectral-formats';
+import { aas2_0, aas2_1, aas2_2, aas2_3, aas2_4, aas2_5, aas2_6, aas3_0 } from '@api-commons/spotlight-formats';
 
 type AsyncAPIVersions = keyof typeof specs.schemas;
 type RawSchema = Record<string, unknown>;

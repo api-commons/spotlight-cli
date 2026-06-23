@@ -1,7 +1,7 @@
 import type { JsonPath, Segment } from '@stoplight/types';
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import type { IFunctionResult } from '@api-commons/spotlight-core';
 import { isObject } from './utils/isObject';
-import { createRulesetFunction } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
 
 const pathRegex = /(\{;?\??[a-zA-Z0-9_-]+\*?\})/g;
 

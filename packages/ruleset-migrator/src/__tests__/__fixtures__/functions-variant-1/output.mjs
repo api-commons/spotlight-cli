@@ -1,4 +1,4 @@
-import { oas2, oas3 } from '@stoplight/spectral-formats';
+import { oas2, oas3 } from '@api-commons/spotlight-formats';
 import oasDocumentSchema from '/.tmp/spectral/functions-variant-1/functions/oasDocumentSchema.js';
 import oasExample from '/.tmp/spectral/functions-variant-1/functions/oasExample.js';
 import oasOp2xxResponse from '/.tmp/spectral/functions-variant-1/functions/oasOp2xxResponse.js';

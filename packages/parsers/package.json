@@ -1,8 +1,8 @@
 {
-  "name": "@stoplight/spectral-parsers",
+  "name": "@api-commons/spotlight-parsers",
   "version": "1.0.5",
-  "homepage": "https://github.com/stoplightio/spectral",
-  "bugs": "https://github.com/stoplightio/spectral/issues",
+  "homepage": "https://github.com/api-commons/spotlight-cli",
+  "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
   "engines": {
     "node": "^16.20 || ^18.18 || >= 20.17"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoplightio/spectral.git"
+    "url": "https://github.com/api-commons/spotlight-cli.git"
   },
   "dependencies": {
     "@stoplight/json": "~3.21.0",

@@ -1,6 +1,6 @@
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@api-commons/spotlight-core';
 import shared from './shared';
-import { truthy } from '@stoplight/spectral-functions/src';
+import { truthy } from '@api-commons/spotlight-functions/src';
 
 export default {
   extends: [[shared, 'off']],

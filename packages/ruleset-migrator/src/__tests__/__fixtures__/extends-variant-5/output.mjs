@@ -1,4 +1,4 @@
-import { truthy } from '@stoplight/spectral-functions';
+import { truthy } from '@api-commons/spotlight-functions';
 export default {
   extends: [
     {

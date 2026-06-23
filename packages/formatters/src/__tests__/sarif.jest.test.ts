@@ -1,6 +1,6 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { IRuleResult } from '@stoplight/spectral-core';
-import { Ruleset } from '@stoplight/spectral-core';
+import type { IRuleResult } from '@api-commons/spotlight-core';
+import { Ruleset } from '@api-commons/spotlight-core';
 import { sarif } from '../sarif';
 
 const cwd = process.cwd();

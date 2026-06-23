@@ -1,4 +1,4 @@
-import type { Format } from '@stoplight/spectral-core';
+import type { Format } from '@api-commons/spotlight-core';
 import { isPlainObject } from '@stoplight/json';
 
 type MaybeOAS2 = { swagger: unknown } & Record<string, unknown>;

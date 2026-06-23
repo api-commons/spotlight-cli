@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
 
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import type { IFunctionResult } from '@api-commons/spotlight-core';
 
 export default createRulesetFunction<
   { servers?: Record<string, unknown>; channels?: Record<string, { servers?: Array<string> }> },

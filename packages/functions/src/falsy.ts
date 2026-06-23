@@ -1,4 +1,4 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
 
 import { optionSchemas } from './optionSchemas';
 

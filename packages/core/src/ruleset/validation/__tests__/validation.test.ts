@@ -1,4 +1,4 @@
-import '@stoplight/spectral-test-utils/matchers';
+import '@api-commons/spotlight-test-utils/matchers';
 
 import { assertValidRuleset, RulesetValidationError } from '../index';
 import AggregateError = require('es-aggregate-error');

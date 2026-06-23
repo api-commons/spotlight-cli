@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@api-commons/spotlight-core';
 import type { JsonPath } from '@stoplight/types';
 import { isObject } from './utils/isObject';
 

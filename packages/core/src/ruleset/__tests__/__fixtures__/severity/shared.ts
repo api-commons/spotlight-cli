@@ -1,5 +1,5 @@
-import { truthy, pattern } from '@stoplight/spectral-functions';
-import type { RulesetDefinition } from '@stoplight/spectral-core';
+import { truthy, pattern } from '@api-commons/spotlight-functions';
+import type { RulesetDefinition } from '@api-commons/spotlight-core';
 
 export { ruleset as default };
 

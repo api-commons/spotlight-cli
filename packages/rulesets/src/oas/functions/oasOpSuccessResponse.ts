@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { oas3 } from '@stoplight/spectral-formats';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { oas3 } from '@api-commons/spotlight-formats';
 
 export default createRulesetFunction<Record<string, unknown>, null>(
   {

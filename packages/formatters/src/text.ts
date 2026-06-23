@@ -1,5 +1,5 @@
 import { Dictionary } from '@stoplight/types';
-import { IRuleResult } from '@stoplight/spectral-core';
+import { IRuleResult } from '@api-commons/spotlight-core';
 import { Formatter } from './types';
 import { getSeverityName, groupBySource } from './utils';
 

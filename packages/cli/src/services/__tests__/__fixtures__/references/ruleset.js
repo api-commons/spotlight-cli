@@ -1,4 +1,4 @@
-const { schema } = require('@stoplight/spectral-functions');
+const { schema } = require('@api-commons/spotlight-functions');
 
 module.exports = {
   rules: {

@@ -5,7 +5,7 @@ export default {
     '^.+\\.(t|j)s$': ['@swc/jest'],
   },
   moduleNameMapper: {
-    '^@stoplight/spectral-test-harness$':
+    '^@api-commons/spotlight-test-harness$':
       process.platform === 'win32' ? '<rootDir>/src/runtime/win.ts' : '<rootDir>/src/runtime/nix.ts',
   },
   testMatch: ['<rootDir>/tests/**/*.test.js'],
