@@ -1,6 +1,6 @@
 import { DeepPartial } from '@stoplight/types';
 import arazzoStepIdUniqueness from '../arazzoStepIdUniqueness';
-import type { RulesetFunctionContext } from '@api-commons/spotlight-core';
+import type { RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
 
 const runRule = (target: { steps: Array<{ stepId: string }> }) => {
   const context: DeepPartial<RulesetFunctionContext> = {

@@ -15,7 +15,7 @@ schemas:
 ====command====
 {bin} lint {document} -r "{asset:ruleset.js}" --ignore-unknown-format
 ====asset:ruleset.js====
-const { truthy, pattern } = require("@api-commons/spotlight-functions");
+const { truthy, pattern } = require("@spotlight-rules/spotlight-functions");
 
 module.exports = {
    "rules": {

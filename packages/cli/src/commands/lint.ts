@@ -1,6 +1,6 @@
 import { DiagnosticSeverity, Dictionary } from '@stoplight/types';
 import { isPlainObject } from '@stoplight/json';
-import { getDiagnosticSeverity, IRuleResult } from '@api-commons/spotlight-core';
+import { getDiagnosticSeverity, IRuleResult } from '@spotlight-rules/spotlight-core';
 import { difference, isError, pick } from 'lodash';
 import type { ReadStream } from 'tty';
 import type { CommandModule } from 'yargs';

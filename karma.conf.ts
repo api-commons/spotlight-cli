@@ -44,8 +44,8 @@ module.exports = (config: Config): void => {
       bundlerOptions: {
         resolve: {
           alias: {
-            '@api-commons/spotlight-test-utils': require.resolve('./test-utils/browser/index.js'),
-            '@api-commons/spotlight-test-utils/matchers': path.join(__dirname, './test-utils/matchers.ts'),
+            '@spotlight-rules/spotlight-test-utils': require.resolve('./test-utils/browser/index.js'),
+            '@spotlight-rules/spotlight-test-utils/matchers': path.join(__dirname, './test-utils/matchers.ts'),
             nimma: require.resolve('./node_modules/nimma/dist/legacy/cjs/index.js'),
             'nimma/fallbacks': require.resolve('./node_modules/nimma/dist/legacy/cjs/fallbacks/index.js'),
             'nimma/legacy': require.resolve('./node_modules/nimma/dist/legacy/cjs/index.js'),

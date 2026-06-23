@@ -1,6 +1,6 @@
 import { IDiagnostic, JsonPath } from '@stoplight/types';
 import type { JSONSchema7 } from 'json-schema';
-import type { Resolver } from '@api-commons/spotlight-ref-resolver';
+import type { Resolver } from '@spotlight-rules/spotlight-ref-resolver';
 
 export interface IConstructorOpts {
   resolver?: Resolver;

@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { serveAssets } from '@api-commons/spotlight-test-utils';
-import { fetch } from '@api-commons/spotlight-runtime';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
+import { fetch } from '@spotlight-rules/spotlight-runtime';
 
 import { BundleOptions, bundleRuleset } from '../../index';
 import type { IO } from '../../types';
@@ -127,7 +127,7 @@ fs.writeFileSync(path.join(__dirname, './output.js'), 'export default {}');
 
   it('should respect ignore list', async () => {
     serveAssets({
-      '/tmp/input.js': `import { createRulesetFunction } from '@api-commons/spotlight-core/ruleset/validation';
+      '/tmp/input.js': `import { createRulesetFunction } from '@spotlight-rules/spotlight-core/ruleset/validation';
 import { parse } from '@stoplight/yaml';
 import { isPlainObject } from '@stoplight/json';
 
@@ -141,13 +141,13 @@ export default createRulesetFunction({}, input => {
       target: 'browser',
       plugins: [
         esmCdn({
-          ignoreList: [/^@api-commons\/spotlight-/, '@stoplight/json'],
+          ignoreList: [/^@spotlight-rules\/spotlight-/, '@stoplight/json'],
         }),
         virtualFs(io),
       ],
     });
 
-    expect(code).toEqual(`import { createRulesetFunction } from '@api-commons/spotlight-core/ruleset/validation';
+    expect(code).toEqual(`import { createRulesetFunction } from '@spotlight-rules/spotlight-core/ruleset/validation';
 import { parse } from 'https://esm.sh/@stoplight/yaml';
 import { isPlainObject } from '@stoplight/json';
 

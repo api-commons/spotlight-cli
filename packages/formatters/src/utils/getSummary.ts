@@ -1,5 +1,5 @@
 import { DiagnosticSeverity, Dictionary } from '@stoplight/types';
-import { IRuleResult } from '@api-commons/spotlight-core';
+import { IRuleResult } from '@spotlight-rules/spotlight-core';
 import { groupBySeverity } from './groupBySeverity';
 import { pluralize } from './pluralize';
 

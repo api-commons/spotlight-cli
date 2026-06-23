@@ -1,7 +1,7 @@
-import { serveAssets } from '@api-commons/spotlight-test-utils';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
 import * as path from 'path';
 import * as fs from 'fs';
-import { fetch } from '@api-commons/spotlight-runtime';
+import { fetch } from '@spotlight-rules/spotlight-runtime';
 import { bundleAndLoadRuleset } from '../node';
 import { IO } from '../../types';
 import { DiagnosticSeverity } from '@stoplight/types';

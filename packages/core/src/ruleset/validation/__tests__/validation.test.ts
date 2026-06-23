@@ -1,4 +1,4 @@
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
 import { assertValidRuleset, RulesetValidationError } from '../index';
 import AggregateError = require('es-aggregate-error');

@@ -1,4 +1,4 @@
-const { truthy } = require('@api-commons/spotlight-functions');
+const { truthy } = require('@spotlight-rules/spotlight-functions');
 module.exports = {
   rules: {
     rule: {

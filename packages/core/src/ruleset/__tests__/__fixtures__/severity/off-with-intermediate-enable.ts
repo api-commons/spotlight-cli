@@ -1,4 +1,4 @@
-import { truthy } from '@api-commons/spotlight-functions';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 
 // Test case: nested extends with 'off' severity and intermediate rule enable
 // The key scenario is: grandparent -> parent (enables rule) -> child (extends with 'off')

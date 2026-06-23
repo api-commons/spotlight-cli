@@ -2,10 +2,10 @@ import { vol } from 'memfs';
 import * as path from '@stoplight/path';
 import * as prettier from 'prettier/standalone';
 import * as parserBabel from 'prettier/parser-babel';
-import { Ruleset } from '@api-commons/spotlight-core';
+import { Ruleset } from '@spotlight-rules/spotlight-core';
 import { DiagnosticSeverity } from '@stoplight/types';
 import fetchMockLib, { FetchMock as FetchMockInstance } from 'fetch-mock';
-import { serveAssets } from '@api-commons/spotlight-test-utils';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
 
 import { migrateRuleset } from '..';
 import fixtures from './__fixtures__/.cache/index.json';
@@ -93,10 +93,10 @@ describe('migrator', () => {
       }),
     )(_module, (id: string): unknown => {
       switch (id) {
-        case '@api-commons/spotlight-functions':
-          return require('@api-commons/spotlight-functions') as unknown;
-        case '@api-commons/spotlight-rulesets':
-          return require('@api-commons/spotlight-rulesets') as unknown;
+        case '@spotlight-rules/spotlight-functions':
+          return require('@spotlight-rules/spotlight-functions') as unknown;
+        case '@spotlight-rules/spotlight-rulesets':
+          return require('@spotlight-rules/spotlight-rulesets') as unknown;
         default:
           throw new ReferenceError(`${id} not found`);
       }
@@ -105,7 +105,7 @@ describe('migrator', () => {
     const ruleset = new Ruleset(_module.exports);
 
     expect(Object.keys(ruleset.rules)).toEqual([
-      ...Object.keys(require('@api-commons/spotlight-rulesets').oas.rules),
+      ...Object.keys(require('@spotlight-rules/spotlight-rulesets').oas.rules),
       'valid-type',
     ]);
 
@@ -172,7 +172,7 @@ describe('migrator', () => {
         format: 'esm',
         fs: vol as any,
       }),
-    ).resolves.toEqual(`import {jsonSchemaDraft2} from "@api-commons/spotlight-formats";
+    ).resolves.toEqual(`import {jsonSchemaDraft2} from "@spotlight-rules/spotlight-formats";
 export default {
   "formats": [jsonSchemaDraft2]
 };
@@ -213,7 +213,7 @@ export default {
         format: 'esm',
         fs: vol as any,
       }),
-    ).toEqual(`import {oas} from "@api-commons/spotlight-rulesets";
+    ).toEqual(`import {oas} from "@spotlight-rules/spotlight-rulesets";
 export default {
   "extends": [{
     "extends": [oas, {
@@ -300,8 +300,8 @@ export default {
           fs: vol as any,
           npmRegistry: 'https://unpkg.com/',
         }),
-      ).toEqual(`import {oas2} from "https://unpkg.com/@api-commons/spotlight-formats";
-import {truthy} from "https://unpkg.com/@api-commons/spotlight-functions";
+      ).toEqual(`import {oas2} from "https://unpkg.com/@spotlight-rules/spotlight-formats";
+import {truthy} from "https://unpkg.com/@spotlight-rules/spotlight-functions";
 import test from "https://unpkg.com/custom-npm-ruleset/functions/test.js";
 export default {
   "extends": [{

@@ -1,11 +1,11 @@
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
 import { join, resolve } from '@stoplight/path';
 import nock from 'nock';
 import * as yargs from 'yargs';
 import { DiagnosticSeverity } from '@stoplight/types';
-import { RulesetValidationError } from '@api-commons/spotlight-core';
-import '@api-commons/spotlight-test-utils/matchers';
+import { RulesetValidationError } from '@spotlight-rules/spotlight-core';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 import AggregateError = require('es-aggregate-error');
 import * as process from 'process';
 

@@ -1,5 +1,5 @@
 import { DiagnosticSeverity, Dictionary } from '@stoplight/types';
-import type { IRuleResult } from '@api-commons/spotlight-core';
+import type { IRuleResult } from '@spotlight-rules/spotlight-core';
 
 export const groupBySeverity = (results: IRuleResult[]): Dictionary<IRuleResult[], DiagnosticSeverity> =>
   results.reduce<Dictionary<IRuleResult[], DiagnosticSeverity>>(

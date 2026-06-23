@@ -1,6 +1,6 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { falsy, pattern, truthy } from '@api-commons/spotlight-functions';
-import { RulesetDefinition } from '@api-commons/spotlight-core';
+import { falsy, pattern, truthy } from '@spotlight-rules/spotlight-functions';
+import { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 export { ruleset as default };
 

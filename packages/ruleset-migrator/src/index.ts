@@ -1,6 +1,6 @@
 import { parseWithPointers as parseJsonWithPointers, pathToPointer, safeStringify } from '@stoplight/json';
 import { parseWithPointers as parseYamlWithPointers } from '@stoplight/yaml';
-import { fetch as defaultFetch } from '@api-commons/spotlight-runtime';
+import { fetch as defaultFetch } from '@spotlight-rules/spotlight-runtime';
 import { dirname, extname, isURL } from '@stoplight/path';
 import { Fetch, Hook, MigrationOptions, TransformerCtx } from './types';
 import transformers from './transformers';

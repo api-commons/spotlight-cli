@@ -1,5 +1,5 @@
-import { oas2 } from '@api-commons/spotlight-formats';
-import { truthy } from '@api-commons/spotlight-functions';
+import { oas2 } from '@spotlight-rules/spotlight-formats';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 export default {
   rules: {
     'oas3-schema': 'error',

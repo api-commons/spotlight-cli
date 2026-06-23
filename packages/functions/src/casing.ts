@@ -1,5 +1,5 @@
 import { escapeRegExp } from 'lodash';
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 
 import { optionSchemas } from './optionSchemas';
 import { CasingType, CasingOptions as Options } from './types';

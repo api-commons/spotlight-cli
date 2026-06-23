@@ -7,7 +7,7 @@
 > linter consumes is specified independently in
 > [spotlight-spec](https://github.com/api-commons/spotlight-spec).
 >
-> This fork renames the packages (`@api-commons/spotlight-*`) and the CLI binary
+> This fork renames the packages (`@spotlight-rules/spotlight-*`) and the CLI binary
 > (`spotlight`); the `spectral:` ruleset aliases are kept for compatibility. The
 > docs below are inherited from upstream and still link to Stoplight's hosted
 > documentation. See [FORK.md](./FORK.md) and [SPOTLIGHT_SPEC.md](./SPOTLIGHT_SPEC.md).
@@ -15,7 +15,7 @@
 ---
 
 [![Demo of Spectral linting an OpenAPI document from the CLI](./docs/img/readme-header.svg)](https://stoplight.io/api-governance?utm_source=github&utm_medium=spectral&utm_campaign=readme)
-[![CircleCI](https://img.shields.io/circleci/build/github/stoplightio/spectral/develop)](https://circleci.com/gh/stoplightio/spectral) [![npm Downloads](https://img.shields.io/npm/dw/@api-commons/spotlight-core?color=blue)](https://www.npmjs.com/package/@api-commons/spotlight-core) [![Stoplight Forest](https://img.shields.io/ecologi/trees/stoplightinc)][stoplight_forest]
+[![CircleCI](https://img.shields.io/circleci/build/github/stoplightio/spectral/develop)](https://circleci.com/gh/stoplightio/spectral) [![npm Downloads](https://img.shields.io/npm/dw/@spotlight-rules/spotlight-core?color=blue)](https://www.npmjs.com/package/@spotlight-rules/spotlight-core) [![Stoplight Forest](https://img.shields.io/ecologi/trees/stoplightinc)][stoplight_forest]
 
 - **Custom Rulesets**: Create custom rules to lint JSON or YAML objects
 - **Ready-to-use Rulesets**: Validate and lint **OpenAPI v2 & v3.x**, **AsyncAPI**, and **Arazzo v1** Documents
@@ -39,13 +39,13 @@
 The easiest way to install spectral is to use either [npm](https://www.npmjs.com/):
 
 ```bash
-npm install -g @api-commons/spotlight-cli
+npm install -g @spotlight-rules/spotlight-cli
 ```
 
 Or [yarn](https://yarnpkg.com/):
 
 ```
-yarn global add @api-commons/spotlight-cli
+yarn global add @spotlight-rules/spotlight-cli
 ```
 
 There are also [additional installation options](https://meta.stoplight.io/docs/spectral/ZG9jOjYyMDc0Mw-installation).

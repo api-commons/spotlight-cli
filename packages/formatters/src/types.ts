@@ -1,4 +1,4 @@
-import { ISpectralDiagnostic, Ruleset } from '@api-commons/spotlight-core';
+import { ISpectralDiagnostic, Ruleset } from '@spotlight-rules/spotlight-core';
 import type { DiagnosticSeverity } from '@stoplight/types';
 
 export type FormatterOptions = {

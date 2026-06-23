@@ -1,5 +1,5 @@
-import { truthy, pattern } from '@api-commons/spotlight-functions';
-import type { RulesetDefinition } from '@api-commons/spotlight-core';
+import { truthy, pattern } from '@spotlight-rules/spotlight-functions';
+import type { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 export { ruleset as default };
 

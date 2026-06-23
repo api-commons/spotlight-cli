@@ -1,4 +1,4 @@
-import { asyncapi, oas } from '@api-commons/spotlight-rulesets';
+import { asyncapi, oas } from '@spotlight-rules/spotlight-rulesets';
 export default {
   extends: [oas, asyncapi],
 };

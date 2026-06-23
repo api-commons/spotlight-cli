@@ -1,5 +1,5 @@
 import { Dictionary } from '@stoplight/types';
-import type { IRuleResult } from '@api-commons/spotlight-core';
+import type { IRuleResult } from '@spotlight-rules/spotlight-core';
 
 export const groupBySource = (results: IRuleResult[]): Dictionary<IRuleResult[]> => {
   return results.reduce<Dictionary<IRuleResult[]>>((grouped, result) => {

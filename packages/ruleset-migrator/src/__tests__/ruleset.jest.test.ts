@@ -63,8 +63,8 @@ describe('migrator', () => {
             },
           },
         }),
-      ).toEqual(`import {oas2} from "@api-commons/spotlight-formats";
-import {truthy} from "@api-commons/spotlight-functions";
+      ).toEqual(`import {oas2} from "@spotlight-rules/spotlight-formats";
+import {truthy} from "@spotlight-rules/spotlight-functions";
 import test from "${cwd}/node_modules/my-npm-ruleset/functions/test.js";
 export default {
   "extends": [{

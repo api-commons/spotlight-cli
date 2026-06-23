@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
-import { safePointerToPath } from '@api-commons/spotlight-runtime';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
+import { safePointerToPath } from '@spotlight-rules/spotlight-runtime';
 import { decodePointer } from '@stoplight/json';
 
 import { optionSchemas } from './optionSchemas';

@@ -28,8 +28,8 @@ import type { DiagnosticSeverity, IRange } from '@stoplight/types';
 import chalk from 'chalk';
 import stripAnsi = require('strip-ansi');
 import table from 'text-table';
-import { printPath, PrintStyle } from '@api-commons/spotlight-runtime';
-import type { IRuleResult } from '@api-commons/spotlight-core';
+import { printPath, PrintStyle } from '@spotlight-rules/spotlight-runtime';
+import type { IRuleResult } from '@spotlight-rules/spotlight-core';
 
 import type { Formatter } from './types';
 import { getColorForSeverity, getHighestSeverity, getSeverityName, getSummary, groupBySource } from './utils';

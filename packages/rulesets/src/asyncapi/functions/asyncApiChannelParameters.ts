@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 
-import type { IFunctionResult } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import { parseUrlVariables } from '../../shared/functions/serverVariables/utils/parseUrlVariables';
 import { getMissingProps } from '../../shared/utils/getMissingProps';
 import { getRedundantProps } from '../../shared/utils/getRedundantProps';

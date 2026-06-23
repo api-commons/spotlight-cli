@@ -1,4 +1,4 @@
-import { truthy } from '@api-commons/spotlight-functions';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 
 // Test case 4: Non-recommended rule enabled then off
 // grandparent (recommended:false) -> parent (enables with true) -> child (off)

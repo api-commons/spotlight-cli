@@ -1,4 +1,4 @@
-import { aas2_0 } from '@api-commons/spotlight-formats';
+import { aas2_0 } from '@spotlight-rules/spotlight-formats';
 import asyncApiPayloadValidation from '../asyncApiPayloadValidation';
 
 function runPayloadValidation(targetVal: any) {

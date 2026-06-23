@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
 import type { JsonPath } from '@stoplight/types';
 import arazzoRuntimeExpressionValidation from './arazzoRuntimeExpressionValidation';
 import { ArazzoSpecification } from './types/arazzoTypes';

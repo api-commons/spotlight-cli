@@ -2,7 +2,7 @@
 
 import * as yargs from 'yargs';
 
-import { DEFAULT_REQUEST_OPTIONS } from '@api-commons/spotlight-runtime';
+import { DEFAULT_REQUEST_OPTIONS } from '@spotlight-rules/spotlight-runtime';
 import lintCommand from './commands/lint';
 
 if (typeof process.env.PROXY === 'string') {

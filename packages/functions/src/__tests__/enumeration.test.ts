@@ -1,6 +1,6 @@
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
-import { RulesetValidationError } from '@api-commons/spotlight-core';
+import { RulesetValidationError } from '@spotlight-rules/spotlight-core';
 import enumeration from '../enumeration';
 import testFunction from './__helpers__/tester';
 import AggregateError = require('es-aggregate-error');

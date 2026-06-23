@@ -1,5 +1,5 @@
-const { oas2, oas3 } = require('@api-commons/spotlight-formats');
-const { enumeration, falsy, pattern, schema, truthy } = require('@api-commons/spotlight-functions');
+const { oas2, oas3 } = require('@spotlight-rules/spotlight-formats');
+const { enumeration, falsy, pattern, schema, truthy } = require('@spotlight-rules/spotlight-functions');
 module.exports = {
   rules: {
     'api-home': {

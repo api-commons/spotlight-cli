@@ -1,11 +1,11 @@
 import { normalize } from '@stoplight/path';
-import { truthy, pattern } from '@api-commons/spotlight-functions';
+import { truthy, pattern } from '@spotlight-rules/spotlight-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as fs from 'fs';
 import nock from 'nock';
 import * as path from '@stoplight/path';
-import * as Parsers from '@api-commons/spotlight-parsers';
-import { httpAndFileResolver } from '@api-commons/spotlight-ref-resolver';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
+import { httpAndFileResolver } from '@spotlight-rules/spotlight-ref-resolver';
 
 import { Document } from '../document';
 import { Spectral } from '../spectral';

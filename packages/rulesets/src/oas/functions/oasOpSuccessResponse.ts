@@ -1,5 +1,5 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
-import { oas3 } from '@api-commons/spotlight-formats';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
+import { oas3 } from '@spotlight-rules/spotlight-formats';
 
 export default createRulesetFunction<Record<string, unknown>, null>(
   {

@@ -15,7 +15,7 @@ paths:
         '200':
           description: ''
 ====asset:ruleset====
-const { alphabetical } = require('@api-commons/spotlight-functions');
+const { alphabetical } = require('@spotlight-rules/spotlight-functions');
 
 module.exports = {
   rules: {

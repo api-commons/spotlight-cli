@@ -1,10 +1,10 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
-import { schema as schemaFn } from '@api-commons/spotlight-functions';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
+import { schema as schemaFn } from '@spotlight-rules/spotlight-functions';
 
 import { mergeTraits } from './utils/mergeTraits';
 
 import type { JsonPath } from '@stoplight/types';
-import type { IFunctionResult, RulesetFunctionContext } from '@api-commons/spotlight-core';
+import type { IFunctionResult, RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
 import type { JSONSchema7 } from 'json-schema';
 
 interface MessageExample {

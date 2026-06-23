@@ -1,4 +1,4 @@
-import { length as length$0, truthy } from '@api-commons/spotlight-functions';
+import { length as length$0, truthy } from '@spotlight-rules/spotlight-functions';
 export default {
   rules: {
     rule: {

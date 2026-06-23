@@ -5,25 +5,25 @@ You can install Spectral using [npm](https://www.npmjs.com/).
 To install the [Spectral CLI client](../guides/2-cli.md), use:
 
 ```bash
-npm install -g @api-commons/spotlight-cli
+npm install -g @spotlight-rules/spotlight-cli
 ```
 
 Or if you are a [Yarn](https://yarnpkg.com/) user:
 
 ```bash
-yarn global add @api-commons/spotlight-cli
+yarn global add @spotlight-rules/spotlight-cli
 ```
 
 To consume the [Spectral Javascript API](../guides/3-javascript.md), use:
 
 ```bash
-npm install -g @api-commons/spotlight-core
+npm install -g @spotlight-rules/spotlight-core
 ```
 
 Or if you are a [Yarn](https://yarnpkg.com/) user:
 
 ```bash
-yarn global add @api-commons/spotlight-core
+yarn global add @spotlight-rules/spotlight-core
 ```
 
 ## Executable Binaries

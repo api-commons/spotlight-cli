@@ -1,5 +1,5 @@
-import type { RulesetFunctionContext } from '@api-commons/spotlight-core';
-import { oas2, oas3, oas3_0, oas3_1 } from '@api-commons/spotlight-formats';
+import type { RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
+import { oas2, oas3, oas3_0, oas3_1 } from '@spotlight-rules/spotlight-formats';
 import type { DeepPartial } from '@stoplight/types';
 
 import oasSchema from '../../functions/oasSchema';

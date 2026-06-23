@@ -1,4 +1,4 @@
-import type { IFunctionResult } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import getAllSuccessActions from './utils/getAllSuccessActions';
 import arazzoCriterionValidation from './arazzoCriterionValidation';
 import arazzoRuntimeExpressionValidation from './arazzoRuntimeExpressionValidation';

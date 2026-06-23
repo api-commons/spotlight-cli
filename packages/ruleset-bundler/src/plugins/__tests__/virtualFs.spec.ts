@@ -1,6 +1,6 @@
 import * as fs from 'fs';
-import { serveAssets } from '@api-commons/spotlight-test-utils';
-import { fetch } from '@api-commons/spotlight-runtime';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
+import { fetch } from '@spotlight-rules/spotlight-runtime';
 
 import { bundleRuleset } from '../../index';
 import { virtualFs } from '../virtualFs';

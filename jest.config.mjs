@@ -12,7 +12,7 @@ const projectDefault = {
     ...Object.fromEntries(
       Object.entries(pathsToModuleNameMapper(compilerOptions.paths)).map(([k, v]) => [k, path.join(__dirname, v)]),
     ),
-    '^@api\\-commons/spotlight\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
+    '^@spotlight\\-rules/spotlight\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
   },
   testEnvironment: 'node',
   transform: {
@@ -29,7 +29,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-cli',
+        name: '@spotlight-rules/spotlight-cli',
         color: 'greenBright',
       },
       testMatch: ['<rootDir>/packages/cli/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -37,7 +37,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-core',
+        name: '@spotlight-rules/spotlight-core',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/core/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -45,7 +45,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-formats',
+        name: '@spotlight-rules/spotlight-formats',
         color: 'redBright',
       },
       testMatch: ['<rootDir>/packages/formats/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -53,7 +53,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-functions',
+        name: '@spotlight-rules/spotlight-functions',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/functions/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -61,7 +61,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-ruleset-bundler',
+        name: '@spotlight-rules/spotlight-ruleset-bundler',
         color: 'blueBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/ruleset-bundler/jest.setup.mjs'],
@@ -70,20 +70,20 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-ruleset-migrator',
+        name: '@spotlight-rules/spotlight-ruleset-migrator',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/ruleset-migrator/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
-      displayName: '@api-commons/spotlight-parsers',
+      displayName: '@spotlight-rules/spotlight-parsers',
       testMatch: ['<rootDir>/packages/parsers/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-ref-resolver',
+        name: '@spotlight-rules/spotlight-ref-resolver',
         color: 'yellow',
       },
       testMatch: ['<rootDir>/packages/ref-resolver/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -91,7 +91,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-rulesets',
+        name: '@spotlight-rules/spotlight-rulesets',
         color: 'cyanBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/rulesets/jest.setup.mjs'],
@@ -100,7 +100,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-runtime',
+        name: '@spotlight-rules/spotlight-runtime',
         color: 'blue',
       },
       testMatch: ['<rootDir>/packages/runtime/src/**/__tests__/*.{test,spec}.ts'],
@@ -108,7 +108,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@api-commons/spotlight-formatters',
+        name: '@spotlight-rules/spotlight-formatters',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/formatters/src/**/__tests__/*.{test,spec}.ts'],

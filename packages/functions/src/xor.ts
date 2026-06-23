@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
 import { optionSchemas } from './optionSchemas';
 
 export type Options = {

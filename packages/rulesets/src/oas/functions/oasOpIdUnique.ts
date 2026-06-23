@@ -1,5 +1,5 @@
-import type { IFunctionResult } from '@api-commons/spotlight-core';
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 import { getAllOperations } from './utils/getAllOperations';
 import { isObject } from './utils/isObject';
 

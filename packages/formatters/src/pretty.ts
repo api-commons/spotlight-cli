@@ -24,7 +24,7 @@
  * @author Ava Thorn
  */
 
-import { printPath, PrintStyle } from '@api-commons/spotlight-runtime';
+import { printPath, PrintStyle } from '@spotlight-rules/spotlight-runtime';
 import { IDiagnostic, IRange } from '@stoplight/types';
 import chalk from 'chalk';
 

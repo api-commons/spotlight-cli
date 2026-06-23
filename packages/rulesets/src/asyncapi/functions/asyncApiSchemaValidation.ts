@@ -1,6 +1,6 @@
 import type { JsonPath } from '@stoplight/types';
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
-import { schema } from '@api-commons/spotlight-functions';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { schema } from '@spotlight-rules/spotlight-functions';
 
 export type Options = { type: 'default' | 'examples' };
 

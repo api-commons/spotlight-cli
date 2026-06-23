@@ -1,4 +1,4 @@
-import { printPath, PrintStyle } from '@api-commons/spotlight-runtime';
+import { printPath, PrintStyle } from '@spotlight-rules/spotlight-runtime';
 import { Formatter, FormatterContext } from './types';
 import { groupBySource } from './utils';
 import { DiagnosticSeverity } from '@stoplight/types';

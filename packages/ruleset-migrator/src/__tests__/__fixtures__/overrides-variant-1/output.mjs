@@ -1,5 +1,5 @@
-import { oas2, oas3 } from "@api-commons/spotlight-formats";
-import { oas } from "@api-commons/spotlight-rulesets";
+import { oas2, oas3 } from "@spotlight-rules/spotlight-formats";
+import { oas } from "@spotlight-rules/spotlight-rulesets";
 export default {
   overrides: [
     {

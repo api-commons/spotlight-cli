@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { Spectral } from '@api-commons/spotlight-core';
+import { Spectral } from '@spotlight-rules/spotlight-core';
 import { prepareResults } from '../asyncApiDocumentSchema';
 
 import { ErrorObject } from 'ajv';

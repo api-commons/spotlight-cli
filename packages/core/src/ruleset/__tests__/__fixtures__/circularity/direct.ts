@@ -1,4 +1,4 @@
-import { falsy } from '@api-commons/spotlight-functions';
+import { falsy } from '@spotlight-rules/spotlight-functions';
 
 const ruleset = {
   get extends() {

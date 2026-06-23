@@ -56,8 +56,8 @@ Loose JSON Schema can be validated
   ]
 }
 ====asset:loose-schema-ruleset====
-const { jsonSchemaLoose } = require('@api-commons/spotlight-formats');
-const { falsy, truthy } = require('@api-commons/spotlight-functions');
+const { jsonSchemaLoose } = require('@spotlight-rules/spotlight-formats');
+const { falsy, truthy } = require('@spotlight-rules/spotlight-functions');
 
 module.exports = {
   "formats": [jsonSchemaLoose],

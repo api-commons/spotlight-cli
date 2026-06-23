@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { truthy } from '@api-commons/spotlight-functions';
-import * as Parsers from '@api-commons/spotlight-parsers';
-import { Resolver } from '@api-commons/spotlight-ref-resolver';
+import { truthy } from '@spotlight-rules/spotlight-functions';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
+import { Resolver } from '@spotlight-rules/spotlight-ref-resolver';
 import { Document } from '../document';
 import { Spectral } from '../spectral';
 import { Ruleset } from '../ruleset';

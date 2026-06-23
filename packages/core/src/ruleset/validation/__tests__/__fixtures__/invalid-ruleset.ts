@@ -1,4 +1,4 @@
-import { truthy } from '@api-commons/spotlight-functions';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 
 export default {
   rules: {

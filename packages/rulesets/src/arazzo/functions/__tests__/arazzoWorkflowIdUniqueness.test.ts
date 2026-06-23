@@ -1,4 +1,4 @@
-import { IFunctionResult } from '@api-commons/spotlight-core';
+import { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import arazzoWorkflowIdUniqueness from '../arazzoWorkflowIdUniqueness';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 

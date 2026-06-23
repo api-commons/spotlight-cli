@@ -2,7 +2,7 @@
 Respect overrides with extends
 ====asset:base.js====
 const { DiagnosticSeverity } = require('@stoplight/types');
-const { pattern } = require('@api-commons/spotlight-functions');
+const { pattern } = require('@spotlight-rules/spotlight-functions');
 
 module.exports = {
   rules: {

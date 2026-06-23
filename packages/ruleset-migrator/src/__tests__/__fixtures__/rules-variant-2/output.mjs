@@ -1,4 +1,4 @@
-import { undefined as undefined$0 } from "@api-commons/spotlight-functions";
+import { undefined as undefined$0 } from "@spotlight-rules/spotlight-functions";
 export default {
   rules: {
     'oas3-unused-components': 'error',

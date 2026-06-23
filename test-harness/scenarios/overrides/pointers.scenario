@@ -2,7 +2,7 @@
 Respect overrides with pointers
 ====asset:base.js====
 const { DiagnosticSeverity } = require('@stoplight/types');
-const { schema } = require('@api-commons/spotlight-functions');
+const { schema } = require('@spotlight-rules/spotlight-functions');
 
 module.exports = {
   rules: {

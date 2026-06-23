@@ -1,6 +1,6 @@
-import { serveAssets } from '@api-commons/spotlight-test-utils';
-import { IRuleResult, Spectral, Document, RulesetDefinition } from '@api-commons/spotlight-core';
-import { httpAndFileResolver } from '@api-commons/spotlight-ref-resolver';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
+import { IRuleResult, Spectral, Document, RulesetDefinition } from '@spotlight-rules/spotlight-core';
+import { httpAndFileResolver } from '@spotlight-rules/spotlight-ref-resolver';
 import oasRuleset from '../../oas/index';
 import aasRuleset from '../../asyncapi/index';
 import arazzoRuleset from '../../arazzo/index';

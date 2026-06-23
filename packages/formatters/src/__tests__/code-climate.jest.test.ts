@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { IRuleResult } from '@api-commons/spotlight-core';
+import type { IRuleResult } from '@spotlight-rules/spotlight-core';
 import { codeClimate } from '../code-climate';
 
 const cwd = process.cwd();

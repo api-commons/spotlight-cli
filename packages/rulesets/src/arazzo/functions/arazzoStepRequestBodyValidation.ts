@@ -1,4 +1,4 @@
-import { IFunctionResult } from '@api-commons/spotlight-core';
+import { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import arazzoRuntimeExpressionValidation from './arazzoRuntimeExpressionValidation';
 import { ArazzoSpecification } from './types/arazzoTypes';
 

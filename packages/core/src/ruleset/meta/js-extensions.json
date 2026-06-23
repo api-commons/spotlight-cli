@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "@api-commons/spotlight-core/meta/extensions",
+  "$id": "@spotlight-rules/spotlight-core/meta/extensions",
   "$defs": {
     "Extends": {
       "$anchor": "extends",

@@ -1,8 +1,8 @@
 import { isObject } from './utils/isObject';
 import type { Dictionary, JsonPath, Optional } from '@stoplight/types';
 import oasSchema, { Options as SchemaOptions } from './oasSchema';
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
-import { oas2 } from '@api-commons/spotlight-formats';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { oas2 } from '@spotlight-rules/spotlight-formats';
 import traverse from 'json-schema-traverse';
 
 export type Options = {

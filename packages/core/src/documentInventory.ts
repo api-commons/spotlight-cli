@@ -3,12 +3,12 @@ import { extname, resolve } from '@stoplight/path';
 import { Dictionary, IParserResult, JsonPath } from '@stoplight/types';
 import { isObjectLike } from 'lodash';
 import { Document, IDocument } from './document';
-import { Resolver, ResolveResult } from '@api-commons/spotlight-ref-resolver';
+import { Resolver, ResolveResult } from '@spotlight-rules/spotlight-ref-resolver';
 
 import { formatParserDiagnostics, formatResolverErrors } from './errorMessages';
-import * as Parsers from '@api-commons/spotlight-parsers';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
 import { IRuleResult } from './types';
-import { getClosestJsonPath, isAbsoluteRef, traverseObjUntilRef } from '@api-commons/spotlight-runtime';
+import { getClosestJsonPath, isAbsoluteRef, traverseObjUntilRef } from '@spotlight-rules/spotlight-runtime';
 import { Format } from './ruleset/format';
 
 export type DocumentInventoryItem = {

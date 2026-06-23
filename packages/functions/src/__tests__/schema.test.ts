@@ -1,8 +1,8 @@
 import type { JSONSchema6 as JSONSchema } from 'json-schema';
 import schema from '../schema';
-import { RulesetValidationError } from '@api-commons/spotlight-core';
+import { RulesetValidationError } from '@spotlight-rules/spotlight-core';
 import testFunction from './__helpers__/tester';
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 import AggregateError = require('es-aggregate-error');
 
 const runSchema = testFunction.bind(null, schema);

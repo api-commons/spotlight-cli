@@ -1,4 +1,4 @@
-const { oas } = require('@api-commons/spotlight-rulesets');
+const { oas } = require('@spotlight-rules/spotlight-rulesets');
 module.exports = {
   extends: oas,
 };

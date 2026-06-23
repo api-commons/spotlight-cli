@@ -1,6 +1,6 @@
 import typedEnum from '../typedEnum';
-import { Document } from '@api-commons/spotlight-core';
-import * as Parsers from '@api-commons/spotlight-parsers';
+import { Document } from '@spotlight-rules/spotlight-core';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
 
 function runTypedEnum(targetVal: any) {
   const doc = new Document(JSON.stringify(targetVal), Parsers.Json);

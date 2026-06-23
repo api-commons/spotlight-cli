@@ -1,4 +1,4 @@
-import { truthy } from '@api-commons/spotlight-functions';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 
 // Test case 2: Mixed severity modifiers followed by off
 // grandparent -> parent (off, re-enables with 'warn') -> child (off)

@@ -1,8 +1,8 @@
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
 import defined from '../defined';
 import testFunction from './__helpers__/tester';
-import { RulesetValidationError } from '@api-commons/spotlight-core';
+import { RulesetValidationError } from '@spotlight-rules/spotlight-core';
 import AggregateError = require('es-aggregate-error');
 
 const runDefined = testFunction.bind(null, defined);

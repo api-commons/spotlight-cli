@@ -1,5 +1,5 @@
-import { truthy } from '@api-commons/spotlight-functions';
-import type { RulesetDefinition } from '@api-commons/spotlight-core';
+import { truthy } from '@spotlight-rules/spotlight-functions';
+import type { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 // Test case 6: Child re-enables rule after extending with off
 // grandparent -> parent -> child (extends with 'off', but re-enables my-rule with true)

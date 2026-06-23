@@ -1,5 +1,5 @@
-import { oas2, oas3 } from '@api-commons/spotlight-formats';
-import { enumeration, falsy, pattern, schema, truthy } from '@api-commons/spotlight-functions';
+import { oas2, oas3 } from '@spotlight-rules/spotlight-formats';
+import { enumeration, falsy, pattern, schema, truthy } from '@spotlight-rules/spotlight-functions';
 export default {
   rules: {
     'api-home': {

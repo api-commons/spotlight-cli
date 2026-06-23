@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "@api-commons/spotlight-core/meta/shared",
+  "$id": "@spotlight-rules/spotlight-core/meta/shared",
   "$defs": {
     "Formats": {
       "$anchor": "formats",

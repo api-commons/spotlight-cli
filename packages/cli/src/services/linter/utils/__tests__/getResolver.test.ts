@@ -1,5 +1,5 @@
 import { join, relative } from '@stoplight/path';
-import { createHttpAndFileResolver } from '@api-commons/spotlight-ref-resolver';
+import { createHttpAndFileResolver } from '@spotlight-rules/spotlight-ref-resolver';
 import { getResolver } from '../getResolver';
 
 const customResolver = require('./__fixtures__/resolver');

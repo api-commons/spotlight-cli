@@ -1,4 +1,4 @@
-import type { Format } from '@api-commons/spotlight-core';
+import type { Format } from '@spotlight-rules/spotlight-core';
 import { isPlainObject } from '@stoplight/json';
 import type { JSONSchema4, JSONSchema6, JSONSchema7 } from 'json-schema';
 

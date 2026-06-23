@@ -1,5 +1,5 @@
-const { oas2 } = require('@api-commons/spotlight-formats');
-const { truthy } = require('@api-commons/spotlight-functions');
+const { oas2 } = require('@spotlight-rules/spotlight-formats');
+const { truthy } = require('@spotlight-rules/spotlight-functions');
 module.exports = {
   rules: {
     'oas3-schema': 'error',

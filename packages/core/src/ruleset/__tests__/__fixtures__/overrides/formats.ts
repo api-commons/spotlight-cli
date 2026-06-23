@@ -1,6 +1,6 @@
-import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@api-commons/spotlight-formats';
-import { schema } from '@api-commons/spotlight-functions';
-import { RulesetDefinition } from '@api-commons/spotlight-core';
+import { jsonSchemaDraft4, jsonSchemaDraft7 } from '@spotlight-rules/spotlight-formats';
+import { schema } from '@spotlight-rules/spotlight-functions';
+import { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 import _base from './_base';
 

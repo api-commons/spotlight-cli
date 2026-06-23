@@ -1,4 +1,4 @@
-const { length: length$0, truthy } = require('@api-commons/spotlight-functions');
+const { length: length$0, truthy } = require('@spotlight-rules/spotlight-functions');
 module.exports = {
   rules: {
     rule: {

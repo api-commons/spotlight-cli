@@ -1,5 +1,5 @@
-import { truthy } from '@api-commons/spotlight-functions';
-import { oas } from '@api-commons/spotlight-rulesets';
+import { truthy } from '@spotlight-rules/spotlight-functions';
+import { oas } from '@spotlight-rules/spotlight-rulesets';
 export default {
   extends: [oas],
   aliases: {

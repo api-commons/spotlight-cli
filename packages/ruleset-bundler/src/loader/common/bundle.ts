@@ -1,4 +1,4 @@
-import { migrateRuleset } from '@api-commons/spotlight-ruleset-migrator';
+import { migrateRuleset } from '@spotlight-rules/spotlight-ruleset-migrator';
 import * as path from '@stoplight/path';
 import { ErrorWithCause } from 'pony-cause';
 

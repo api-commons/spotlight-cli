@@ -1,5 +1,5 @@
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
-import { printValue } from '@api-commons/spotlight-runtime';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { printValue } from '@spotlight-rules/spotlight-runtime';
 
 import { optionSchemas } from './optionSchemas';
 

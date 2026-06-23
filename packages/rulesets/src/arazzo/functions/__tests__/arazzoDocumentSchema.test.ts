@@ -1,6 +1,6 @@
-import type { RulesetFunctionContext } from '@api-commons/spotlight-core';
+import type { RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
 import arazzoDocumentSchema from '../arazzoDocumentSchema';
-import { arazzo1_0 } from '@api-commons/spotlight-formats';
+import { arazzo1_0 } from '@spotlight-rules/spotlight-formats';
 
 function runSchema(target: unknown, context?: Partial<RulesetFunctionContext>) {
   return arazzoDocumentSchema(target, null, {

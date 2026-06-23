@@ -1,4 +1,4 @@
-const { undefined: undefined$0 } = require('@api-commons/spotlight-functions');
+const { undefined: undefined$0 } = require('@spotlight-rules/spotlight-functions');
 module.exports = {
   rules: {
     'oas3-unused-components': 'error',

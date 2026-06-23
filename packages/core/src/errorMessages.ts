@@ -2,7 +2,7 @@ import { DiagnosticSeverity, IDiagnostic, JsonPath, Segment } from '@stoplight/t
 import { uniqBy } from 'lodash';
 import { Document, IDocument } from './document';
 import { IRuleResult } from './types';
-import { ResolveError } from '@api-commons/spotlight-ref-resolver';
+import { ResolveError } from '@spotlight-rules/spotlight-ref-resolver';
 
 const toUpperCase = (word: string): string => word.toUpperCase();
 const splitWord = (word: string, end: string, start: string): string => `${end} ${start.toLowerCase()}`;

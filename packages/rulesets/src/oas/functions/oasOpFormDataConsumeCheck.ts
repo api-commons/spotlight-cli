@@ -1,4 +1,4 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 import { isObject } from './utils/isObject';
 
 const validConsumeValue = /(application\/x-www-form-urlencoded|multipart\/form-data)/;

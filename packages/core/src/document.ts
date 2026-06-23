@@ -1,9 +1,9 @@
 import { normalize } from '@stoplight/path';
 import { DeepReadonly, GetLocationForJsonPath, IParserResult, IRange, JsonPath, Optional } from '@stoplight/types';
 import { formatParserDiagnostics } from './errorMessages';
-import { startsWithProtocol } from '@api-commons/spotlight-runtime';
+import { startsWithProtocol } from '@spotlight-rules/spotlight-runtime';
 import { isPlainObject } from '@stoplight/json';
-import { IParser } from '@api-commons/spotlight-parsers';
+import { IParser } from '@spotlight-rules/spotlight-parsers';
 import { IRuleResult } from './types';
 import { Format } from './ruleset/format';
 

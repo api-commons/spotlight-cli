@@ -1,4 +1,4 @@
-import { Ruleset } from '@api-commons/spotlight-core';
+import { Ruleset } from '@spotlight-rules/spotlight-core';
 
 import { bundle } from './common/bundle';
 import { runtime } from '../presets/runtime';

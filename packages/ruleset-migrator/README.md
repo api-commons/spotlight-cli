@@ -1,4 +1,4 @@
-# @api-commons/spotlight-ruleset-migrator
+# @spotlight-rules/spotlight-ruleset-migrator
 
 This project serves as a converter between the legacy ruleset format and a new one.
 It's used internally, albeit it can be used externally too, also in browsers.
@@ -25,9 +25,9 @@ rules:
 
 ```js
 // .spectral.js (CommonJS)
-const { oas: oas } = require("@api-commons/spotlight-rulesets");
-const { oas2: oas2, jsonSchemaLoose: jsonSchemaLoose } = require("@api-commons/spotlight-formats");
-const { pattern: pattern } = require("@api-commons/spotlight-functions");
+const { oas: oas } = require("@spotlight-rules/spotlight-rulesets");
+const { oas2: oas2, jsonSchemaLoose: jsonSchemaLoose } = require("@spotlight-rules/spotlight-formats");
+const { pattern: pattern } = require("@spotlight-rules/spotlight-functions");
 module.exports = {
   extends: oas,
   formats: [oas2, jsonSchemaLoose],
@@ -49,9 +49,9 @@ module.exports = {
 
 ```js
 // .spectral.js (ES Module)
-import { oas } from "@api-commons/spotlight-rulesets";
-import { oas2, jsonSchemaLoose } from "@api-commons/spotlight-formats";
-import { pattern } from "@api-commons/spotlight-functions";
+import { oas } from "@spotlight-rules/spotlight-rulesets";
+import { oas2, jsonSchemaLoose } from "@spotlight-rules/spotlight-formats";
+import { pattern } from "@spotlight-rules/spotlight-functions";
 export default {
   extends: oas,
   formats: [oas2, jsonSchemaLoose],
@@ -76,12 +76,12 @@ export default {
 ### With spectral-ruleset-bundler
 
 If you need to transform the YAML/JSON ruleset and load it in a single step, we've got you covered.
-Please refer to [@api-commons/spotlight-ruleset-bundler](https://www.npmjs.com/package/@api-commons/spotlight-ruleset-bundler).
+Please refer to [@spotlight-rules/spotlight-ruleset-bundler](https://www.npmjs.com/package/@spotlight-rules/spotlight-ruleset-bundler).
 
 ### Programmatically
 
 ```ts
-const { migrateRuleset } = require("@api-commons/spotlight-ruleset-migrator");
+const { migrateRuleset } = require("@spotlight-rules/spotlight-ruleset-migrator");
 const fs = require("fs");
 const path = require("path");
 

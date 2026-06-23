@@ -1,6 +1,6 @@
-import { oas2 } from '@api-commons/spotlight-formats';
-import { truthy } from '@api-commons/spotlight-functions';
-import type { RulesetDefinition } from '@api-commons/spotlight-core';
+import { oas2 } from '@spotlight-rules/spotlight-formats';
+import { truthy } from '@spotlight-rules/spotlight-functions';
+import type { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 export { ruleset as default };
 

@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 
-import type { IFunctionResult } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
 
 export default createRulesetFunction<
   { servers?: Record<string, unknown>; channels?: Record<string, { servers?: Array<string> }> },

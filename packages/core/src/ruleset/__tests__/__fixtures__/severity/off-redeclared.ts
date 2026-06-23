@@ -1,6 +1,6 @@
-import { RulesetDefinition } from '@api-commons/spotlight-core';
+import { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 import shared from './shared';
-import { truthy } from '@api-commons/spotlight-functions/src';
+import { truthy } from '@spotlight-rules/spotlight-functions/src';
 
 export default {
   extends: [[shared, 'off']],

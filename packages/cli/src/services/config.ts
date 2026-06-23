@@ -1,5 +1,5 @@
 import { Dictionary } from '@stoplight/types';
-import { HumanReadableDiagnosticSeverity } from '@api-commons/spotlight-core';
+import { HumanReadableDiagnosticSeverity } from '@spotlight-rules/spotlight-core';
 
 export type FailSeverity = HumanReadableDiagnosticSeverity;
 

@@ -134,7 +134,7 @@ rules:
     beforeEach(() => {
       const mockResolve = jest.fn((id: string) => {
         // Simulate Node.js require.resolve behavior
-        if (id.startsWith('@api-commons/spotlight-')) {
+        if (id.startsWith('@spotlight-rules/spotlight-')) {
           return path.join('/node_modules', id, 'index.js');
         }
         return null;

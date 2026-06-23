@@ -1,4 +1,4 @@
-const { oas2, oas3 } = require('@api-commons/spotlight-formats');
+const { oas2, oas3 } = require('@spotlight-rules/spotlight-formats');
 const oasDocumentSchema = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasDocumentSchema.js'));
 const oasExample = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasExample.js'));
 const oasOp2xxResponse = _interopDefault(require('/.tmp/spectral/functions-variant-1/functions/oasOp2xxResponse.js'));

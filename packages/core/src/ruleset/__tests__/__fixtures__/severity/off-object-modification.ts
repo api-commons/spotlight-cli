@@ -1,4 +1,4 @@
-import { truthy } from '@api-commons/spotlight-functions';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 
 // Test case 3: Object rule modification followed by off
 // grandparent -> parent (modifies rule with object) -> child (off)

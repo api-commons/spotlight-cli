@@ -1,9 +1,9 @@
 import type { ErrorObject } from 'ajv';
 import betterAjvErrors from '@stoplight/better-ajv-errors';
-import { detectDialect } from '@api-commons/spotlight-formats';
+import { detectDialect } from '@spotlight-rules/spotlight-formats';
 import { createAjvInstances } from './ajv';
 import MissingRefError from 'ajv/dist/compile/ref_error';
-import { createRulesetFunction, IFunctionResult, JSONSchema, RulesetFunctionContext } from '@api-commons/spotlight-core';
+import { createRulesetFunction, IFunctionResult, JSONSchema, RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
 import { isError } from 'lodash';
 
 import { optionSchemas } from '../optionSchemas';

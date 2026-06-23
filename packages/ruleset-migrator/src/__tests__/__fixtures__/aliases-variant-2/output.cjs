@@ -1,4 +1,4 @@
-const { oas2, oas3_0, oas3_1 } = require('@api-commons/spotlight-formats');
+const { oas2, oas3_0, oas3_1 } = require('@spotlight-rules/spotlight-formats');
 module.exports = {
   aliases: {
     schema: {

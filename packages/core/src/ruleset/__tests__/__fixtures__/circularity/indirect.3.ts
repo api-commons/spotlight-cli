@@ -1,5 +1,5 @@
 import ruleset from './indirect.1';
-import {falsy} from "@api-commons/spotlight-functions";
+import {falsy} from "@spotlight-rules/spotlight-functions";
 
 export default {
   get extends() {

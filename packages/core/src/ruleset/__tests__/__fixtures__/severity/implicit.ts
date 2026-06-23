@@ -1,4 +1,4 @@
-import type { RulesetDefinition } from '@api-commons/spotlight-core';
+import type { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 import shared from './shared';
 
 export { ruleset as default };

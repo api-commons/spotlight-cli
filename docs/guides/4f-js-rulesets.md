@@ -20,8 +20,8 @@ cd style-guide
 Next, install two dependencies using [npm](https://www.npmjs.com/):
 
 ```
-npm install --save @api-commons/spotlight-functions
-npm install --save @api-commons/spotlight-formats
+npm install --save @spotlight-rules/spotlight-functions
+npm install --save @spotlight-rules/spotlight-formats
 ```
 
 Installing these packages isn't required for creating a JavaScript ruleset, but you'll use them in the example to create some common rules used with Spectral and to target a specific OpenAPI format.
@@ -35,8 +35,8 @@ touch spectral.js
 Inside the file, create a couple of rules:
 
 ```js
-import { truthy, undefined as pattern, schema } from "@api-commons/spotlight-functions";
-import { oas3 } from "@api-commons/spotlight-formats";
+import { truthy, undefined as pattern, schema } from "@spotlight-rules/spotlight-functions";
+import { oas3 } from "@spotlight-rules/spotlight-formats";
 
 export default {
   rules: {

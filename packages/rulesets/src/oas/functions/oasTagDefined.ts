@@ -1,8 +1,8 @@
 // This function will check an API doc to verify that any tag that appears on
 // an operation is also present in the global tags array.
 
-import type { IFunctionResult } from '@api-commons/spotlight-core';
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 import { getAllOperations } from './utils/getAllOperations';
 import { isObject } from './utils/isObject';
 

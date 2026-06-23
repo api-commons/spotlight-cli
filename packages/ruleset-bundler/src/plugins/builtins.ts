@@ -1,14 +1,14 @@
-import * as core from '@api-commons/spotlight-core';
-import * as formats from '@api-commons/spotlight-formats';
-import * as functions from '@api-commons/spotlight-functions';
-import * as parsers from '@api-commons/spotlight-parsers';
-import * as refResolver from '@api-commons/spotlight-ref-resolver';
-import * as rulesets from '@api-commons/spotlight-rulesets';
-import * as runtime from '@api-commons/spotlight-runtime';
+import * as core from '@spotlight-rules/spotlight-core';
+import * as formats from '@spotlight-rules/spotlight-formats';
+import * as functions from '@spotlight-rules/spotlight-functions';
+import * as parsers from '@spotlight-rules/spotlight-parsers';
+import * as refResolver from '@spotlight-rules/spotlight-ref-resolver';
+import * as rulesets from '@spotlight-rules/spotlight-rulesets';
+import * as runtime from '@spotlight-rules/spotlight-runtime';
 import type { Plugin, InputOptions } from 'rollup';
 
 type Module = 'core' | 'formats' | 'functions' | 'parsers' | 'ref-resolver' | 'rulesets' | 'runtime';
-type GlobalModules = Record<`@api-commons/spotlight-${Module}`, string>;
+type GlobalModules = Record<`@spotlight-rules/spotlight-${Module}`, string>;
 type Overrides = Record<keyof GlobalModules, Record<string, unknown>>;
 
 const NAME = '@stoplight-spectral/builtins';
@@ -38,13 +38,13 @@ export const builtins = (overrides: Partial<Overrides> = {}): Plugin => {
   const instanceId = Math.round(Math.random() * 1_000_000);
 
   const modules = Object.fromEntries([
-    registerModule(instanceId, '@api-commons/spotlight-core', core, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-formats', formats, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-functions', functions, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-parsers', parsers, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-ref-resolver', refResolver, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-rulesets', rulesets, overrides),
-    registerModule(instanceId, '@api-commons/spotlight-runtime', runtime, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-core', core, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-formats', formats, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-functions', functions, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-parsers', parsers, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-ref-resolver', refResolver, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-rulesets', rulesets, overrides),
+    registerModule(instanceId, '@spotlight-rules/spotlight-runtime', runtime, overrides),
   ]) as GlobalModules;
 
   return {

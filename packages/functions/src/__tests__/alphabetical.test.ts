@@ -1,12 +1,12 @@
-import * as Parsers from '@api-commons/spotlight-parsers';
-import { Document, RulesetValidationError } from '@api-commons/spotlight-core';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
+import { Document, RulesetValidationError } from '@spotlight-rules/spotlight-core';
 import testFunction from './__helpers__/tester';
 import alphabetical from '../alphabetical';
 import AggregateError = require('es-aggregate-error');
 
 const runAlphabetical = testFunction.bind(null, alphabetical);
 
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
 describe('Core Functions / Alphabetical', () => {
   it('given falsy target, should return no error message', async () => {

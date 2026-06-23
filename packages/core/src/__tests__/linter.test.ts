@@ -1,8 +1,8 @@
-import { falsy, pattern, truthy } from '@api-commons/spotlight-functions';
+import { falsy, pattern, truthy } from '@spotlight-rules/spotlight-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 import { parse } from '@stoplight/yaml';
-import * as Parsers from '@api-commons/spotlight-parsers';
-import { Resolver } from '@api-commons/spotlight-ref-resolver';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
+import { Resolver } from '@spotlight-rules/spotlight-ref-resolver';
 
 import { IParsedResult } from '../document';
 import { Document, Spectral, Format, RulesetDefinition, Ruleset } from '..';

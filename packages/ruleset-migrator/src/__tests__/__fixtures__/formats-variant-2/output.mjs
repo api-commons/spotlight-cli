@@ -1,5 +1,5 @@
-import { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } from '@api-commons/spotlight-formats';
-import { truthy } from '@api-commons/spotlight-functions';
+import { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } from '@spotlight-rules/spotlight-formats';
+import { truthy } from '@spotlight-rules/spotlight-functions';
 export default {
   formats: [oas2, oas3_1, oas3_0, jsonSchemaLoose],
   rules: {

@@ -211,7 +211,7 @@ components:
         kafka:
           clientId: my-app-id
 ====asset:ruleset====
-const { asyncapi } = require('@api-commons/spotlight-rulesets');
+const { asyncapi } = require('@spotlight-rules/spotlight-rulesets');
 module.exports = asyncapi;
 ====command====
 {bin} lint {document} --ruleset "{asset:ruleset}"

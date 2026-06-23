@@ -1,5 +1,5 @@
-import { serveAssets } from '@api-commons/spotlight-test-utils';
-import { fetch } from '@api-commons/spotlight-runtime';
+import { serveAssets } from '@spotlight-rules/spotlight-test-utils';
+import { fetch } from '@spotlight-rules/spotlight-runtime';
 import * as fs from 'fs';
 import { bundleRuleset } from '../index';
 import { IO } from '../types';

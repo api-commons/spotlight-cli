@@ -1,6 +1,6 @@
-import { oas2, oas3_0 } from '@api-commons/spotlight-formats';
-import { printValue } from '@api-commons/spotlight-runtime';
-import { createRulesetFunction, Document, IFunctionResult } from '@api-commons/spotlight-core';
+import { oas2, oas3_0 } from '@spotlight-rules/spotlight-formats';
+import { printValue } from '@spotlight-rules/spotlight-runtime';
+import { createRulesetFunction, Document, IFunctionResult } from '@spotlight-rules/spotlight-core';
 import type { JSONSchema4TypeName, JSONSchema6TypeName, JSONSchema7TypeName } from 'json-schema';
 
 function getDataType(

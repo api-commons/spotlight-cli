@@ -16,7 +16,7 @@ schemas:
 ====command====
 {bin} lint {document} -r "{asset:ruleset.js}"
 ====asset:ruleset.js====
-const { truthy } = require("@api-commons/spotlight-functions");
+const { truthy } = require("@spotlight-rules/spotlight-functions");
 
 function validAddress(input) {
   throw new TypeError(`Cannot read properties of null (reading 'test')`);

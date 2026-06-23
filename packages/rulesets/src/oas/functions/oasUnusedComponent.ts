@@ -1,5 +1,5 @@
-import { unreferencedReusableObject } from '@api-commons/spotlight-functions';
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
+import { unreferencedReusableObject } from '@spotlight-rules/spotlight-functions';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
 import { isObject } from './utils/isObject';
 
 export default createRulesetFunction<{ components: Record<string, unknown> }, null>(

@@ -1,7 +1,7 @@
-import '@api-commons/spotlight-test-utils/matchers';
+import '@spotlight-rules/spotlight-test-utils/matchers';
 
-import { oas2 } from '@api-commons/spotlight-formats';
-import { pattern, truthy } from '@api-commons/spotlight-functions';
+import { oas2 } from '@spotlight-rules/spotlight-formats';
+import { pattern, truthy } from '@spotlight-rules/spotlight-functions';
 import * as path from '@stoplight/path';
 import { DiagnosticSeverity } from '@stoplight/types';
 import AggregateError = require('es-aggregate-error');

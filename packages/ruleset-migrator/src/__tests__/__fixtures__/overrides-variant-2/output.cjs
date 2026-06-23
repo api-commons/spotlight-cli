@@ -1,5 +1,5 @@
-const { truthy } = require('@api-commons/spotlight-functions');
-const { oas } = require('@api-commons/spotlight-rulesets');
+const { truthy } = require('@spotlight-rules/spotlight-functions');
+const { oas } = require('@spotlight-rules/spotlight-rulesets');
 module.exports = {
   extends: [oas],
   aliases: {

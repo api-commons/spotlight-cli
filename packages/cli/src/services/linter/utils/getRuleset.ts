@@ -1,17 +1,17 @@
 import { Optional } from '@stoplight/types';
-import { Ruleset, RulesetDefinition, RulesetSourceContext } from '@api-commons/spotlight-core';
-import { Json, Yaml } from '@api-commons/spotlight-parsers';
+import { Ruleset, RulesetDefinition, RulesetSourceContext } from '@spotlight-rules/spotlight-core';
+import { Json, Yaml } from '@spotlight-rules/spotlight-parsers';
 import * as fs from 'fs';
 import * as path from '@stoplight/path';
 import * as process from 'process';
 import { createRequire } from 'module';
-import { fetch } from '@api-commons/spotlight-runtime';
-import { migrateRuleset, isBasicRuleset } from '@api-commons/spotlight-ruleset-migrator';
-import { bundleRuleset } from '@api-commons/spotlight-ruleset-bundler';
-import { node } from '@api-commons/spotlight-ruleset-bundler/presets/node';
-import { commonjs } from '@api-commons/spotlight-ruleset-bundler/plugins/commonjs';
-import { stdin } from '@api-commons/spotlight-ruleset-bundler/plugins/stdin';
-import { builtins } from '@api-commons/spotlight-ruleset-bundler/plugins/builtins';
+import { fetch } from '@spotlight-rules/spotlight-runtime';
+import { migrateRuleset, isBasicRuleset } from '@spotlight-rules/spotlight-ruleset-migrator';
+import { bundleRuleset } from '@spotlight-rules/spotlight-ruleset-bundler';
+import { node } from '@spotlight-rules/spotlight-ruleset-bundler/presets/node';
+import { commonjs } from '@spotlight-rules/spotlight-ruleset-bundler/plugins/commonjs';
+import { stdin } from '@spotlight-rules/spotlight-ruleset-bundler/plugins/stdin';
+import { builtins } from '@spotlight-rules/spotlight-ruleset-bundler/plugins/builtins';
 import { isError, isObject } from 'lodash';
 import { CLIError } from '../../../errors';
 

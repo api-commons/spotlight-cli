@@ -1,4 +1,4 @@
-const { pattern } = require('@api-commons/spotlight-functions');
+const { pattern } = require('@spotlight-rules/spotlight-functions');
 
 module.exports = {
   rules: {

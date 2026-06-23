@@ -1,6 +1,6 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import { pattern } from '@api-commons/spotlight-functions';
-import { RulesetDefinition } from '@api-commons/spotlight-core';
+import { pattern } from '@spotlight-rules/spotlight-functions';
+import { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 import _base from './_base';
 

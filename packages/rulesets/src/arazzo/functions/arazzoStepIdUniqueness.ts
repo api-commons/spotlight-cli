@@ -1,4 +1,4 @@
-import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
+import { createRulesetFunction, IFunctionResult } from '@spotlight-rules/spotlight-core';
 import type { JsonPath } from '@stoplight/types';
 
 export default createRulesetFunction<{ steps: Array<{ stepId?: string }> }, null>(

@@ -1,4 +1,4 @@
-import { oas2, oas3_0, oas3_1 } from '@api-commons/spotlight-formats';
+import { oas2, oas3_0, oas3_1 } from '@spotlight-rules/spotlight-formats';
 export default {
   aliases: {
     schema: {

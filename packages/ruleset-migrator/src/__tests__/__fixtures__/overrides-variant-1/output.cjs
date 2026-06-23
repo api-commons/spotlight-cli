@@ -1,5 +1,5 @@
-const { oas2, oas3 } = require('@api-commons/spotlight-formats');
-const { oas } = require('@api-commons/spotlight-rulesets');
+const { oas2, oas3 } = require('@spotlight-rules/spotlight-formats');
+const { oas } = require('@spotlight-rules/spotlight-rulesets');
 module.exports = {
   overrides: [
     {

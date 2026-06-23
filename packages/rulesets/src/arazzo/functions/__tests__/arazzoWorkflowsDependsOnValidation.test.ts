@@ -1,5 +1,5 @@
 import arazzoWorkflowDependsOnValidation from '../arazzoWorkflowDependsOnValidation';
-import { IFunctionResult } from '@api-commons/spotlight-core';
+import { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 
 const runRule = (target: ArazzoSpecification): IFunctionResult[] => {

@@ -1,5 +1,5 @@
 import shared from './shared';
-import {RulesetDefinition} from "@api-commons/spotlight-core";
+import {RulesetDefinition} from "@spotlight-rules/spotlight-core";
 
 export default {
   extends: [[shared, 'all']],

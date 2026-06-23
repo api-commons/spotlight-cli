@@ -34,7 +34,7 @@ This section records every intentional divergence from upstream Spectral.
   `develop` snapshot apart from these added files.
 - **2026-06-23** — Rebrand (`rebrand/spotlight` branch).
   - Renamed the 11 internal workspace packages `@stoplight/spectral-*` →
-    `@api-commons/spotlight-*` and updated every internal import, dependency,
+    `@spotlight-rules/spotlight-*` and updated every internal import, dependency,
     `tsconfig` path mapping, and test alias accordingly.
   - Renamed the CLI binary `spectral` → `spotlight` (`bin`, yargs `scriptName`,
     and the packaged-binary output path).
@@ -53,6 +53,8 @@ This section records every intentional divergence from upstream Spectral.
 - `CHANGELOG.md` files retain their original upstream package names (historical
   record).
 
-> The package versions were left at their upstream numbers. These packages are
-> not yet published to npm under the `@api-commons` scope; publishing is future
-> work.
+> The package versions were left at their upstream Spectral numbers (they
+> correspond to the exact Spectral snapshot that was forked). The packages are
+> published to npm under the **`@spotlight-rules`** scope (e.g.
+> `@spotlight-rules/spotlight-cli`). Note the npm scope (`@spotlight-rules`)
+> differs from the GitHub organization (`api-commons`).

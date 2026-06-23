@@ -1,7 +1,7 @@
 import { DiagnosticSeverity } from '@stoplight/types';
 import * as path from '@stoplight/path';
-import * as Parsers from '@api-commons/spotlight-parsers';
-import { Document } from '@api-commons/spotlight-core';
+import * as Parsers from '@spotlight-rules/spotlight-parsers';
+import { Document } from '@spotlight-rules/spotlight-core';
 
 import testRule from '../../__tests__/__helpers__/tester';
 

@@ -25,7 +25,7 @@
 
 import { extname } from '@stoplight/path';
 import { escapeRegExp } from 'lodash';
-import { printPath, PrintStyle } from '@api-commons/spotlight-runtime';
+import { printPath, PrintStyle } from '@spotlight-rules/spotlight-runtime';
 import { Formatter } from './types';
 import { groupBySource, xmlEscape } from './utils';
 

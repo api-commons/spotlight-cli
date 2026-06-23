@@ -1,5 +1,5 @@
 import arazzoStepRequestBodyValidation from '../arazzoStepRequestBodyValidation';
-import type { RulesetFunctionContext } from '@api-commons/spotlight-core';
+import type { RulesetFunctionContext } from '@spotlight-rules/spotlight-core';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 
 const runRule = (target: ArazzoSpecification, _contextOverrides: Partial<RulesetFunctionContext> = {}) => {

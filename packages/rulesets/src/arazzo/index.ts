@@ -1,5 +1,5 @@
-import { arazzo1_0 } from '@api-commons/spotlight-formats';
-import { truthy, falsy, pattern } from '@api-commons/spotlight-functions';
+import { arazzo1_0 } from '@spotlight-rules/spotlight-formats';
+import { truthy, falsy, pattern } from '@spotlight-rules/spotlight-functions';
 
 import arazzoDocumentSchema from './functions/arazzoDocumentSchema';
 import arazzoWorkflowIdUniqueness from './functions/arazzoWorkflowIdUniqueness';

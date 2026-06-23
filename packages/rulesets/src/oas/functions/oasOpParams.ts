@@ -1,6 +1,6 @@
-import type { IFunctionResult } from '@api-commons/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
 import { isObject } from './utils/isObject';
-import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
 
 function computeFingerprint(param: Record<string, unknown>): string {
   return `${String(param.in)}-${String(param.name)}`;

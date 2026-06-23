@@ -1,6 +1,6 @@
 import Shell from 'node-powershell';
 import { isError } from 'lodash';
-import type { SpawnFn } from '@api-commons/spotlight-test-harness';
+import type { SpawnFn } from '@spotlight-rules/spotlight-test-harness';
 
 import { normalizeLineEndings } from '../utils';
 

@@ -1,4 +1,4 @@
-const { oas3: oas3$0, oas3_1 } = require('@api-commons/spotlight-formats');
+const { oas3: oas3$0, oas3_1 } = require('@spotlight-rules/spotlight-formats');
 const oas3 = _interopDefault(require('/.tmp/spectral/functions-variant-4/functions/oas3.js'));
 module.exports = {
   formats: [oas3$0, oas3_1],

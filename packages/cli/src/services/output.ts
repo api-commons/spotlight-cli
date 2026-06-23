@@ -1,5 +1,5 @@
 import * as process from 'process';
-import { IRuleResult, Ruleset } from '@api-commons/spotlight-core';
+import { IRuleResult, Ruleset } from '@spotlight-rules/spotlight-core';
 import { promises as fs } from 'fs';
 import {
   html,
@@ -13,8 +13,8 @@ import {
   sarif,
   codeClimate,
   markdown,
-} from '@api-commons/spotlight-formatters';
-import type { Formatter, FormatterOptions } from '@api-commons/spotlight-formatters';
+} from '@spotlight-rules/spotlight-formatters';
+import type { Formatter, FormatterOptions } from '@spotlight-rules/spotlight-formatters';
 import type { OutputFormat } from './config';
 import { VERSION } from '../version';
 

@@ -19,7 +19,7 @@ async function processExtend(
   name: string,
 ): Promise<namedTypes.ObjectExpression | namedTypes.Identifier> {
   if (name in REPLACEMENTS) {
-    return ctx.tree.addImport(REPLACEMENTS[name], '@api-commons/spotlight-rulesets');
+    return ctx.tree.addImport(REPLACEMENTS[name], '@spotlight-rules/spotlight-rulesets');
   }
 
   const filepath = ctx.tree.resolveModule(name, ctx, 'ruleset');

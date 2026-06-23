@@ -1,4 +1,4 @@
-import { oas } from '@api-commons/spotlight-rulesets';
+import { oas } from '@spotlight-rules/spotlight-rulesets';
 export default {
   extends: oas,
 };

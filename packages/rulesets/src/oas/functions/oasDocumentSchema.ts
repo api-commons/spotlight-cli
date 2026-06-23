@@ -1,6 +1,6 @@
-import { createRulesetFunction } from '@api-commons/spotlight-core';
-import type { IFunctionResult } from '@api-commons/spotlight-core';
-import { oas2, oas3_1 } from '@api-commons/spotlight-formats';
+import { createRulesetFunction } from '@spotlight-rules/spotlight-core';
+import type { IFunctionResult } from '@spotlight-rules/spotlight-core';
+import { oas2, oas3_1 } from '@spotlight-rules/spotlight-formats';
 import { isPlainObject, resolveInlineRef } from '@stoplight/json';
 import type { ErrorObject } from 'ajv';
 import leven from 'leven';

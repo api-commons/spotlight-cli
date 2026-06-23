@@ -6,7 +6,7 @@ import type { AdditionalPropertiesError } from 'ajv/dist/vocabularies/applicator
 import type { EnumError } from 'ajv/dist/vocabularies/validation/enum';
 import type { JSONSchema7 } from 'json-schema';
 
-import { printPath, PrintStyle, printValue } from '@api-commons/spotlight-runtime';
+import { printPath, PrintStyle, printValue } from '@spotlight-rules/spotlight-runtime';
 
 import { RulesetValidationError } from './validation/index';
 import { IFunctionResult, JSONSchema, RulesetFunction, RulesetFunctionWithValidator } from '../types';

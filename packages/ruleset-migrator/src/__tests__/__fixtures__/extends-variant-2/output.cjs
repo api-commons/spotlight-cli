@@ -1,4 +1,4 @@
-const { asyncapi, oas } = require('@api-commons/spotlight-rulesets');
+const { asyncapi, oas } = require('@spotlight-rules/spotlight-rulesets');
 module.exports = {
   extends: [oas, asyncapi],
 };

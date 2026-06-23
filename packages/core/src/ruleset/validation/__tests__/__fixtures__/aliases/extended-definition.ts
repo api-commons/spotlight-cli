@@ -1,4 +1,4 @@
-import { RulesetDefinition } from '@api-commons/spotlight-core';
+import { RulesetDefinition } from '@spotlight-rules/spotlight-core';
 
 import _scope from './scope';
 import _version from './version-check';

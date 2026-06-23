@@ -1,4 +1,4 @@
-import type { Ruleset } from '@api-commons/spotlight-core';
+import type { Ruleset } from '@spotlight-rules/spotlight-core';
 import type { Plugin } from 'rollup';
 import type { IO } from '../types';
 

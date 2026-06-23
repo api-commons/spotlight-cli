@@ -1,4 +1,4 @@
-# @api-commons/spotlight-ref-resolver
+# @spotlight-rules/spotlight-ref-resolver
 
 This package provides Spectral-compatible bindings for [@stoplight/json-ref-resolver](https://github.com/stoplightio/json-ref-resolver) and [@stoplight/json-ref-readers](https://github.com/stoplightio/json-ref-readers).
 
@@ -7,11 +7,11 @@ You shouldn't need to install this package directly unless you want to create a 
 ## Installation
 
 ```bash
-npm install --save @api-commons/spotlight-ref-resolver
+npm install --save @spotlight-rules/spotlight-ref-resolver
 
 # OR
 
-yarn add @api-commons/spotlight-ref-resolver
+yarn add @spotlight-rules/spotlight-ref-resolver
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add @api-commons/spotlight-ref-resolver
 An example usage of spectral-ref-resolver together with [proxy-agent](https://www.npmjs.com/package/proxy-agent).
 
 ```js
-import { createHttpAndFileResolver, Resolver } from '@api-commons/spotlight-ref-resolver';
+import { createHttpAndFileResolver, Resolver } from '@spotlight-rules/spotlight-ref-resolver';
 import ProxyAgent from import('proxy-agent');
 
 module.exports = createHttpAndFileResolver({ agent: new ProxyAgent(process.env.PROXY) });

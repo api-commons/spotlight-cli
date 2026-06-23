@@ -4,7 +4,7 @@ describe('isKnownNmRegistry util', () => {
   it.each([
     'https://unpkg.com/spectral-aws-apigateway-ruleset',
     'https://unpkg.com/spectral-aws-apigateway-ruleset/functions/draft4.js',
-    'https://esm.sh/@api-commons/spotlight-core',
+    'https://esm.sh/@spotlight-rules/spotlight-core',
   ])('given recognized %s registry, should return true', input => {
     expect(isKnownNpmRegistry(input)).toBe(true);
   });
