@@ -1,6 +1,6 @@
-import { oas2, oas3 } from '@stoplight/spectral-formats';
-import { truthy } from '@stoplight/spectral-functions';
-import type { RulesetDefinition } from '@stoplight/spectral-core';
+import { oas2, oas3 } from '@api-commons/spotlight-formats';
+import { truthy } from '@api-commons/spotlight-functions';
+import type { RulesetDefinition } from '@api-commons/spotlight-core';
 import oas2Ruleset from './oas2';
 import oas3Ruleset from './oas3';
 

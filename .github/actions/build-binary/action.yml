@@ -23,7 +23,7 @@ runs:
       restore-keys: pkg-cache-${{ inputs.targets }}-${{ inputs.node-version }}
   - name: Create the Spectral Binary Windows
     if: ${{ inputs.targets == 'windows' }}
-    run: yarn workspace @stoplight/spectral-cli pkg . --public --public-packages "*" --targets node${{ inputs.node-version }}-windows --output binaries/spectral
+    run: yarn workspace @api-commons/spotlight-cli pkg . --public --public-packages "*" --targets node${{ inputs.node-version }}-windows --output binaries/spectral
     env:
       PKG_CACHE_PATH: "/tmp/pkg-node-binaries"
     shell: powershell
@@ -36,9 +36,9 @@ runs:
 
       if [ "${{ inputs.bytecode }}" = true ]
       then
-        yarn workspace @stoplight/spectral-cli pkg . --public --public-packages "*" --targets $TARGETS --output binaries/spectral
+        yarn workspace @api-commons/spotlight-cli pkg . --public --public-packages "*" --targets $TARGETS --output binaries/spectral
       else
-        yarn workspace @stoplight/spectral-cli pkg . --no-bytecode --public --public-packages "*" --targets $TARGETS --output binaries/spectral
+        yarn workspace @api-commons/spotlight-cli pkg . --no-bytecode --public --public-packages "*" --targets $TARGETS --output binaries/spectral
       fi
 
       (cd packages/cli/binaries && ls . | sed -n -E 's/^(spectral)-(alpine|linux|macos)$/mv "\1-\2" "\1-\2"-$ARCH/p' | sh)

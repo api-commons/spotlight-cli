@@ -30,9 +30,29 @@ upstream manually and document divergence here.
 This section records every intentional divergence from upstream Spectral.
 
 - **2026-06-23** — Initial import. Added `NOTICE`, `FORK.md`, and this fork
-  attribution. No functional source changes yet; the linter is byte-for-byte the
-  upstream `develop` snapshot apart from these added files.
+  attribution. No functional source changes; byte-for-byte the upstream
+  `develop` snapshot apart from these added files.
+- **2026-06-23** — Rebrand (`rebrand/spotlight` branch).
+  - Renamed the 11 internal workspace packages `@stoplight/spectral-*` →
+    `@api-commons/spotlight-*` and updated every internal import, dependency,
+    `tsconfig` path mapping, and test alias accordingly.
+  - Renamed the CLI binary `spectral` → `spotlight` (`bin`, yargs `scriptName`,
+    and the packaged-binary output path).
+  - Repointed `homepage`/`bugs`/`repository` URLs at `api-commons/spotlight-cli`.
+  - Added `SPOTLIGHT_SPEC.md` and `packages/core/src/ruleset/meta/README.md`
+    establishing [spotlight-spec](https://github.com/api-commons/spotlight-spec)
+    as the canonical published form of the ruleset meta-schema.
 
-> Renaming of the published npm packages (`@stoplight/spectral-*`) and CLI
-> binary is **not yet done** — the codebase still builds and runs as upstream
-> Spectral. Rebranding is tracked as future work.
+### Deliberately **not** changed (compatibility)
+
+- The **`spectral:` ruleset alias scheme** (`spectral:oas`, `spectral:asyncapi`,
+  `spectral:arazzo`) is preserved. A huge number of rulesets in the wild
+  reference these; renaming the scheme would break them. See `SPOTLIGHT_SPEC.md`.
+- The default ruleset filename **`.spectral.yaml`** is preserved for the same
+  reason.
+- `CHANGELOG.md` files retain their original upstream package names (historical
+  record).
+
+> The package versions were left at their upstream numbers. These packages are
+> not yet published to npm under the `@api-commons` scope; publishing is future
+> work.

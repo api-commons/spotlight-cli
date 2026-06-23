@@ -1,4 +1,4 @@
-const { truthy } = require('@stoplight/spectral-functions');
+const { truthy } = require('@api-commons/spotlight-functions');
 
 module.exports = {
   'rules': {

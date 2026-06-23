@@ -1,5 +1,5 @@
-const { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } = require('@stoplight/spectral-formats');
-const { truthy } = require('@stoplight/spectral-functions');
+const { asyncapi2, asyncapi3, jsonSchemaLoose, oas2, oas3, oas3_0, oas3_1 } = require('@api-commons/spotlight-formats');
+const { truthy } = require('@api-commons/spotlight-functions');
 module.exports = {
   formats: [oas2, oas3_1, oas3_0, jsonSchemaLoose],
   rules: {

@@ -1,5 +1,5 @@
-import { oas2, oas3 } from "@stoplight/spectral-formats";
-import { oas } from "@stoplight/spectral-rulesets";
+import { oas2, oas3 } from "@api-commons/spotlight-formats";
+import { oas } from "@api-commons/spotlight-rulesets";
 export default {
   overrides: [
     {

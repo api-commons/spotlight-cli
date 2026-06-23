@@ -1,5 +1,5 @@
-import { oas2 } from '@stoplight/spectral-formats';
-import { truthy } from '@stoplight/spectral-functions';
+import { oas2 } from '@api-commons/spotlight-formats';
+import { truthy } from '@api-commons/spotlight-functions';
 export default {
   rules: {
     'oas3-schema': 'error',

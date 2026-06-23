@@ -1,5 +1,5 @@
-import { truthy } from '@stoplight/spectral-functions';
-import { oas } from '@stoplight/spectral-rulesets';
+import { truthy } from '@api-commons/spotlight-functions';
+import { oas } from '@api-commons/spotlight-rulesets';
 export default {
   extends: [oas],
   aliases: {

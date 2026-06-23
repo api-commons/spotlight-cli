@@ -1,4 +1,4 @@
-declare module '@stoplight/spectral-test-harness' {
+declare module '@api-commons/spotlight-test-harness' {
   export type SpawnFn = (
     command: string,
     env: Record<string, string>,

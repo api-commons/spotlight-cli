@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 
-import type { IFileReadOptions } from '@stoplight/spectral-runtime';
+import type { IFileReadOptions } from '@api-commons/spotlight-runtime';
 
 export async function readFileDescriptor(fd: number, opts: IFileReadOptions): Promise<string> {
   let result = '';

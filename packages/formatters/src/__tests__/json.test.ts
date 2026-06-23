@@ -1,5 +1,5 @@
 import { DiagnosticSeverity } from '@stoplight/types';
-import type { IRuleResult } from '@stoplight/spectral-core';
+import type { IRuleResult } from '@api-commons/spotlight-core';
 import { json } from '../json';
 
 const results: IRuleResult[] = [

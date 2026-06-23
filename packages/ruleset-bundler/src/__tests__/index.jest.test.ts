@@ -1,5 +1,5 @@
-import { serveAssets } from '@stoplight/spectral-test-utils';
-import { fetch } from '@stoplight/spectral-runtime';
+import { serveAssets } from '@api-commons/spotlight-test-utils';
+import { fetch } from '@api-commons/spotlight-runtime';
 import * as fs from 'fs';
 import { bundleRuleset } from '../index';
 import { IO } from '../types';
@@ -99,8 +99,8 @@ export { spectral as default };`);
 
   it('given node target, should support commonjs for remote ruleset with builtin modules', async () => {
     serveAssets({
-      'https://tmp/input.js': `var spectralFormats = require('@stoplight/spectral-formats');
-var spectralFunctions = require('@stoplight/spectral-functions');
+      'https://tmp/input.js': `var spectralFormats = require('@api-commons/spotlight-formats');
+var spectralFunctions = require('@api-commons/spotlight-functions');
 const ruleset = {
   rules: {
     'my-rule': {

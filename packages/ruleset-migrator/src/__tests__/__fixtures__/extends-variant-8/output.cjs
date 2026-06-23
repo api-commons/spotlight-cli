@@ -1,4 +1,4 @@
-const { falsy, truthy } = require('@stoplight/spectral-functions');
+const { falsy, truthy } = require('@api-commons/spotlight-functions');
 const pascalCase = _interopDefault(require('/.tmp/spectral/extends-variant-8/assets/shared/functions/pascalCase.js'));
 module.exports = {
   extends: [

@@ -1,8 +1,8 @@
 import type { SchemaObject, ErrorObject } from 'ajv';
 import traverse from 'json-schema-traverse';
-import { schema as schemaFn, SchemaOptions } from '@stoplight/spectral-functions';
-import { createRulesetFunction } from '@stoplight/spectral-core';
-import { oas2, oas3_1, extractDraftVersion, oas3_0 } from '@stoplight/spectral-formats';
+import { schema as schemaFn, SchemaOptions } from '@api-commons/spotlight-functions';
+import { createRulesetFunction } from '@api-commons/spotlight-core';
+import { oas2, oas3_1, extractDraftVersion, oas3_0 } from '@api-commons/spotlight-formats';
 import { isPlainObject, pointerToPath } from '@stoplight/json';
 
 export type Options = {

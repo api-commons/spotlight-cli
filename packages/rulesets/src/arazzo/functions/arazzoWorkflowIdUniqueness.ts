@@ -1,4 +1,4 @@
-import { IFunctionResult } from '@stoplight/spectral-core';
+import { IFunctionResult } from '@api-commons/spotlight-core';
 import { getAllWorkflows } from './utils/getAllWorkflows';
 import { ArazzoSpecification } from './types/arazzoTypes';
 

@@ -1,4 +1,4 @@
-import { oas2, oas3, oas3_0, oas3_1 } from '@stoplight/spectral-formats';
+import { oas2, oas3, oas3_0, oas3_1 } from '@api-commons/spotlight-formats';
 import {
   truthy,
   pattern,
@@ -8,7 +8,7 @@ import {
   undefined,
   alphabetical,
   length,
-} from '@stoplight/spectral-functions';
+} from '@api-commons/spotlight-functions';
 import {
   oasOpIdUnique,
   oasPathParam,

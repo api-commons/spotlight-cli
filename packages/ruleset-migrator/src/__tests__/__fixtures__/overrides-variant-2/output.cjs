@@ -1,5 +1,5 @@
-const { truthy } = require('@stoplight/spectral-functions');
-const { oas } = require('@stoplight/spectral-rulesets');
+const { truthy } = require('@api-commons/spotlight-functions');
+const { oas } = require('@api-commons/spotlight-rulesets');
 module.exports = {
   extends: [oas],
   aliases: {

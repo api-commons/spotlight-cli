@@ -1,4 +1,4 @@
-import { decodeSegmentFragment, getClosestJsonPath, printPath, PrintStyle } from '@stoplight/spectral-runtime';
+import { decodeSegmentFragment, getClosestJsonPath, printPath, PrintStyle } from '@api-commons/spotlight-runtime';
 import { get, isError } from 'lodash';
 import { ErrorWithCause } from 'pony-cause';
 

@@ -1,5 +1,5 @@
 const rulesetValid = require('./ruleset-valid');
-const { pattern } = require('@stoplight/spectral-functions');
+const { pattern } = require('@api-commons/spotlight-functions');
 
 module.exports = {
   extends: rulesetValid,

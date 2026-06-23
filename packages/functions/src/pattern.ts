@@ -1,5 +1,5 @@
-import { createRulesetFunction, IFunctionResult } from '@stoplight/spectral-core';
-import { printValue } from '@stoplight/spectral-runtime';
+import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
+import { printValue } from '@api-commons/spotlight-runtime';
 
 import { optionSchemas } from './optionSchemas';
 

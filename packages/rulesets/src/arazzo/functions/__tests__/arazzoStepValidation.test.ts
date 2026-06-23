@@ -1,5 +1,5 @@
 import arazzoStepValidation from '../arazzoStepValidation';
-import type { IFunctionResult } from '@stoplight/spectral-core';
+import type { IFunctionResult } from '@api-commons/spotlight-core';
 import { ArazzoSpecification } from '../types/arazzoTypes';
 
 const runRule = (target: ArazzoSpecification): IFunctionResult[] => {

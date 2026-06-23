@@ -1,11 +1,11 @@
-# @stoplight/spectral-formatters
+# @api-commons/spotlight-formatters
 
 This project exposes the available formatters from the CLI for users that perform custom validation through Javascript.
 
 ## Usage
 
 ```ts
-import { pretty } from "@stoplight/spectral-formatters";
+import { pretty } from "@api-commons/spotlight-formatters";
 
 const spectral = new Spectral();
 // ...

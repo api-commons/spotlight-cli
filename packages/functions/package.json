@@ -1,13 +1,13 @@
 {
-  "name": "@stoplight/spectral-functions",
+  "name": "@api-commons/spotlight-functions",
   "version": "1.10.3",
   "sideEffects": false,
-  "homepage": "https://github.com/stoplightio/spectral",
-  "bugs": "https://github.com/stoplightio/spectral/issues",
+  "homepage": "https://github.com/api-commons/spotlight-cli",
+  "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoplightio/spectral"
+    "url": "https://github.com/api-commons/spotlight-cli"
   },
   "license": "Apache-2.0",
   "main": "dist/index.js",
@@ -19,11 +19,11 @@
     "node": "^16.20 || ^18.18 || >= 20.17"
   },
   "dependencies": {
+    "@api-commons/spotlight-core": "1.23.0",
+    "@api-commons/spotlight-formats": "^1.8.1",
+    "@api-commons/spotlight-runtime": "^1.1.2",
     "@stoplight/better-ajv-errors": "1.0.3",
     "@stoplight/json": "^3.17.1",
-    "@stoplight/spectral-core": "1.23.0",
-    "@stoplight/spectral-formats": "^1.8.1",
-    "@stoplight/spectral-runtime": "^1.1.2",
     "ajv": "^8.18.0",
     "ajv-draft-04": "~1.0.0",
     "ajv-errors": "~3.0.0",
@@ -32,6 +32,6 @@
     "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@stoplight/spectral-parsers": "*"
+    "@api-commons/spotlight-parsers": "*"
   }
 }

@@ -1,6 +1,6 @@
 import arazzoStepOutputNamesValidation from '../arazzoStepOutputNamesValidation';
 import { DeepPartial } from '@stoplight/types';
-import type { RulesetFunctionContext } from '@stoplight/spectral-core';
+import type { RulesetFunctionContext } from '@api-commons/spotlight-core';
 
 const runRule = (
   target: {

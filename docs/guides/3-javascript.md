@@ -9,13 +9,13 @@ To use the Spectral JS API, you need to install the appropriate package.
 For npm users:
 
 ```bash
-npm install -g @stoplight/spectral-core
+npm install -g @api-commons/spotlight-core
 ```
 
 For Yarn users:
 
 ```bash
-yarn global add @stoplight/spectral-core
+yarn global add @api-commons/spotlight-core
 ```
 
 ## Get Started
@@ -28,10 +28,10 @@ Similar to using Spectral in the CLI, there are two things you'll need to run Sp
 As an example, here's a script of Spectral in action:
 
 ```js title="example-1.mjs" lineNumbers
-import spectralCore from "@stoplight/spectral-core";
+import spectralCore from "@api-commons/spotlight-core";
 const { Spectral, Document } = spectralCore;
-import Parsers from "@stoplight/spectral-parsers"; // make sure to install the package if you intend to use default parsers!
-import { truthy } from "@stoplight/spectral-functions"; // this has to be installed as well
+import Parsers from "@api-commons/spotlight-parsers"; // make sure to install the package if you intend to use default parsers!
+import { truthy } from "@api-commons/spotlight-functions"; // this has to be installed as well
 
 // this will be our API specification document
 const myDocument = new Document(
@@ -84,11 +84,11 @@ import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";
 import { join } from "path";
-import { bundleAndLoadRuleset } from "@stoplight/spectral-ruleset-bundler/with-loader";
-import Parsers from "@stoplight/spectral-parsers"; // make sure to install the package if you intend to use default parsers!
-import spectralCore from "@stoplight/spectral-core";
+import { bundleAndLoadRuleset } from "@api-commons/spotlight-ruleset-bundler/with-loader";
+import Parsers from "@api-commons/spotlight-parsers"; // make sure to install the package if you intend to use default parsers!
+import spectralCore from "@api-commons/spotlight-core";
 const { Spectral, Document } = spectralCore;
-import spectralRuntime from "@stoplight/spectral-runtime";
+import spectralRuntime from "@api-commons/spotlight-runtime";
 const { fetch } = spectralRuntime;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -115,7 +115,7 @@ Starting in Spectral v6.0, support was added for [rulesets to be written using J
 To load a JavaScript ruleset, you have to import it similar to how you would import a module:
 
 ```js lineNumbers
-import { Spectral } from "@stoplight/spectral-core";
+import { Spectral } from "@api-commons/spotlight-core";
 import ruleset from "./my-javascript-ruleset";
 
 const spectral = new Spectral();
@@ -127,8 +127,8 @@ spectral.setRuleset(ruleset);
 Here's an example script of how you could run Spectral in the browser:
 
 ```js title="example-3.mjs" lineNumbers
-import { Spectral } from "@stoplight/spectral-core";
-import { bundleAndLoadRuleset } from "@stoplight/spectral-ruleset-bundler/with-loader";
+import { Spectral } from "@api-commons/spotlight-core";
+import { bundleAndLoadRuleset } from "@api-commons/spotlight-ruleset-bundler/with-loader";
 
 // create a ruleset that extends the spectral:oas ruleset
 const myRuleset = `extends: spectral:oas
@@ -162,9 +162,9 @@ If you'd like to use the `bundleAndLoadRuleset` method to load multiple rulesets
 Spectral supports HTTP(S) proxies when fetching remote assets:
 
 ```js title="example-4.mjs" lineNumbers
-import { Spectral } from "@stoplight/spectral-core";
+import { Spectral } from "@api-commons/spotlight-core";
 import ProxyAgent from "proxy-agent";
-import { createHttpAndFileResolver } from "@stoplight/spectral-ref-resolver";
+import { createHttpAndFileResolver } from "@api-commons/spotlight-ref-resolver";
 
 // start Spectral using a proxy
 const spectral = new Spectral({
@@ -186,7 +186,7 @@ For example:
 ```js title="example-5.cjs" lineNumbers
 const path = require("path");
 const fs = require("fs");
-const { Spectral } = require("@stoplight/spectral-cli");
+const { Spectral } = require("@api-commons/spotlight-cli");
 const { Resolver } = require("@stoplight/json-ref-resolver");
 
 const customFileResolver = new Resolver({

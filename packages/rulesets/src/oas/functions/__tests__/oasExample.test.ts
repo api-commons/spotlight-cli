@@ -1,7 +1,7 @@
-import { oas3, oas3_0 } from '@stoplight/spectral-formats';
+import { oas3, oas3_0 } from '@api-commons/spotlight-formats';
 import { DeepPartial } from '@stoplight/types';
 import oasExample, { Options as ExampleOptions } from '../oasExample';
-import { RulesetFunctionContext } from '@stoplight/spectral-core/src';
+import { RulesetFunctionContext } from '@api-commons/spotlight-core/src';
 
 const schemaOpts: ExampleOptions = {
   schemaField: '$',

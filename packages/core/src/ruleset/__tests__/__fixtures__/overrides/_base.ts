@@ -1,4 +1,4 @@
-import { pattern } from '@stoplight/spectral-functions';
+import { pattern } from '@api-commons/spotlight-functions';
 import { DiagnosticSeverity } from '@stoplight/types';
 
 export default {

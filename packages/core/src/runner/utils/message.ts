@@ -1,5 +1,5 @@
 import { Segment } from '@stoplight/types';
-import { printValue } from '@stoplight/spectral-runtime';
+import { printValue } from '@api-commons/spotlight-runtime';
 import { Replacer } from '../../utils/replacer';
 
 export type MessageVars = {

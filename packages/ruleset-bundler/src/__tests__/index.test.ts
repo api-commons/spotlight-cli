@@ -1,5 +1,5 @@
-import { serveAssets } from '@stoplight/spectral-test-utils';
-import { fetch } from '@stoplight/spectral-runtime';
+import { serveAssets } from '@api-commons/spotlight-test-utils';
+import { fetch } from '@api-commons/spotlight-runtime';
 import * as fs from 'fs';
 import { bundleRuleset } from '../index';
 import { IO } from '../types';

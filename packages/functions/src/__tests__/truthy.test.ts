@@ -1,6 +1,6 @@
-import '@stoplight/spectral-test-utils/matchers';
+import '@api-commons/spotlight-test-utils/matchers';
 
-import { RulesetValidationError } from '@stoplight/spectral-core';
+import { RulesetValidationError } from '@api-commons/spotlight-core';
 import truthy from '../truthy';
 import testFunction from './__helpers__/tester';
 import AggregateError = require('es-aggregate-error');

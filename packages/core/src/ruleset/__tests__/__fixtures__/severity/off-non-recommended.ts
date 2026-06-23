@@ -1,4 +1,4 @@
-import { truthy } from '@stoplight/spectral-functions';
+import { truthy } from '@api-commons/spotlight-functions';
 
 // Test case 4: Non-recommended rule enabled then off
 // grandparent (recommended:false) -> parent (enables with true) -> child (off)

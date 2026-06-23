@@ -1,5 +1,5 @@
 import ruleset from './indirect.3';
-import {falsy} from "@stoplight/spectral-functions";
+import {falsy} from "@api-commons/spotlight-functions";
 
 export default {
   extends: ruleset,

@@ -1,4 +1,4 @@
-import { aas2_0 } from '@stoplight/spectral-formats';
+import { aas2_0 } from '@api-commons/spotlight-formats';
 import asyncApiPayloadValidation from '../asyncApiPayloadValidation';
 
 function runPayloadValidation(targetVal: any) {

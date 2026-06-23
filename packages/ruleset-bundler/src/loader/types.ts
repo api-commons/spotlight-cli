@@ -1,4 +1,4 @@
-import type { Ruleset } from '@stoplight/spectral-core';
+import type { Ruleset } from '@api-commons/spotlight-core';
 import type { Plugin } from 'rollup';
 import type { IO } from '../types';
 

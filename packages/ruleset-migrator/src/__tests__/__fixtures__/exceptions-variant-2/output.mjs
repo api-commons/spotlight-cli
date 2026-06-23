@@ -1,4 +1,4 @@
-import { oas } from '@stoplight/spectral-rulesets';
+import { oas } from '@api-commons/spotlight-rulesets';
 export default {
   extends: oas,
   overrides: [

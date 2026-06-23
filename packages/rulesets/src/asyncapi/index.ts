@@ -9,7 +9,7 @@ import {
   aas2_6,
   aas3,
   aas3_0,
-} from '@stoplight/spectral-formats';
+} from '@api-commons/spotlight-formats';
 import {
   truthy,
   pattern,
@@ -17,7 +17,7 @@ import {
   schema,
   undefined,
   alphabetical,
-} from '@stoplight/spectral-functions';
+} from '@api-commons/spotlight-functions';
 
 import asyncApiChannelParameters from './functions/asyncApiChannelParameters';
 import asyncApi2ChannelServers from './functions/asyncApi2ChannelServers';

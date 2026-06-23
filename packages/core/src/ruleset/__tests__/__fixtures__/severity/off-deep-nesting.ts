@@ -1,4 +1,4 @@
-import { truthy } from '@stoplight/spectral-functions';
+import { truthy } from '@api-commons/spotlight-functions';
 
 // Test case 1: Deep nesting (great-grandparent chain)
 // great-grandparent -> grandparent (enables) -> parent (enables) -> child (off)

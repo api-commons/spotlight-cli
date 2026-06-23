@@ -12,7 +12,7 @@ const projectDefault = {
     ...Object.fromEntries(
       Object.entries(pathsToModuleNameMapper(compilerOptions.paths)).map(([k, v]) => [k, path.join(__dirname, v)]),
     ),
-    '^@stoplight/spectral\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
+    '^@api\\-commons/spotlight\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
   },
   testEnvironment: 'node',
   transform: {
@@ -29,7 +29,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-cli',
+        name: '@api-commons/spotlight-cli',
         color: 'greenBright',
       },
       testMatch: ['<rootDir>/packages/cli/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -37,7 +37,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-core',
+        name: '@api-commons/spotlight-core',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/core/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -45,7 +45,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-formats',
+        name: '@api-commons/spotlight-formats',
         color: 'redBright',
       },
       testMatch: ['<rootDir>/packages/formats/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -53,7 +53,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-functions',
+        name: '@api-commons/spotlight-functions',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/functions/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -61,7 +61,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ruleset-bundler',
+        name: '@api-commons/spotlight-ruleset-bundler',
         color: 'blueBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/ruleset-bundler/jest.setup.mjs'],
@@ -70,20 +70,20 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ruleset-migrator',
+        name: '@api-commons/spotlight-ruleset-migrator',
         color: 'blueBright',
       },
       testMatch: ['<rootDir>/packages/ruleset-migrator/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
-      displayName: '@stoplight/spectral-parsers',
+      displayName: '@api-commons/spotlight-parsers',
       testMatch: ['<rootDir>/packages/parsers/src/**/__tests__/**/*.{test,spec}.ts'],
     },
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-ref-resolver',
+        name: '@api-commons/spotlight-ref-resolver',
         color: 'yellow',
       },
       testMatch: ['<rootDir>/packages/ref-resolver/src/**/__tests__/**/*.{test,spec}.ts'],
@@ -91,7 +91,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-rulesets',
+        name: '@api-commons/spotlight-rulesets',
         color: 'cyanBright',
       },
       setupFilesAfterEnv: ['<rootDir>/packages/rulesets/jest.setup.mjs'],
@@ -100,7 +100,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-runtime',
+        name: '@api-commons/spotlight-runtime',
         color: 'blue',
       },
       testMatch: ['<rootDir>/packages/runtime/src/**/__tests__/*.{test,spec}.ts'],
@@ -108,7 +108,7 @@ export default {
     {
       ...projectDefault,
       displayName: {
-        name: '@stoplight/spectral-formatters',
+        name: '@api-commons/spotlight-formatters',
         color: 'magenta',
       },
       testMatch: ['<rootDir>/packages/formatters/src/**/__tests__/*.{test,spec}.ts'],

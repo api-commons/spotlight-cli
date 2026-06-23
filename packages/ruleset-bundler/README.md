@@ -1,4 +1,4 @@
-# @stoplight/spectral-ruleset-bundler
+# @api-commons/spotlight-ruleset-bundler
 
 ## Options
 
@@ -19,9 +19,9 @@
 import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 import * as path from "node:path";
-import { Spectral } from "@stoplight/spectral-core";
-import { bundleAndLoadRuleset } from "@stoplight/spectral-ruleset-bundler/with-loader";
-import { fetch } from "@stoplight/spectral-runtime";
+import { Spectral } from "@api-commons/spotlight-core";
+import { bundleAndLoadRuleset } from "@api-commons/spotlight-ruleset-bundler/with-loader";
+import { fetch } from "@api-commons/spotlight-runtime";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 

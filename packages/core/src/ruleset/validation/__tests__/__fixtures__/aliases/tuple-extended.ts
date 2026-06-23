@@ -1,4 +1,4 @@
-import { RulesetDefinition } from '@stoplight/spectral-core';
+import { RulesetDefinition } from '@api-commons/spotlight-core';
 
 import _scope from './scope';
 

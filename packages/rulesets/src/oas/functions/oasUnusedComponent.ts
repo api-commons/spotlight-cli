@@ -1,5 +1,5 @@
-import { unreferencedReusableObject } from '@stoplight/spectral-functions';
-import { createRulesetFunction, IFunctionResult } from '@stoplight/spectral-core';
+import { unreferencedReusableObject } from '@api-commons/spotlight-functions';
+import { createRulesetFunction, IFunctionResult } from '@api-commons/spotlight-core';
 import { isObject } from './utils/isObject';
 
 export default createRulesetFunction<{ components: Record<string, unknown> }, null>(

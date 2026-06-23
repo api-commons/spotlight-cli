@@ -1,4 +1,4 @@
-import type { createRulesetFunction } from '@stoplight/spectral-core';
+import type { createRulesetFunction } from '@api-commons/spotlight-core';
 import { CasingType } from './types';
 
 type CustomFunctionOptionsSchema = Parameters<typeof createRulesetFunction>[0]['input'];

@@ -1,11 +1,11 @@
 {
-  "name": "@stoplight/spectral-cli",
+  "name": "@api-commons/spotlight-cli",
   "version": "6.16.0",
-  "homepage": "https://github.com/stoplightio/spectral",
-  "bugs": "https://github.com/stoplightio/spectral/issues",
-  "author": "Stoplight <support@stoplight.io>",
+  "homepage": "https://github.com/api-commons/spotlight-cli",
+  "bugs": "https://github.com/api-commons/spotlight-cli/issues",
+  "author": "API Commons <apicommons@gmail.com>",
   "bin": {
-    "spectral": "./dist/index.js"
+    "spotlight": "./dist/index.js"
   },
   "engines": {
     "node": "^16.20 || ^18.18 || >= 20.17"
@@ -21,29 +21,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stoplightio/spectral.git"
+    "url": "https://github.com/api-commons/spotlight-cli.git"
   },
   "scripts": {
     "prelint": "node ../../scripts/inline-version.mjs",
     "prepare": "node ../../scripts/inline-version.mjs",
     "prebuild": "node ../../scripts/inline-version.mjs",
-    "build.binary": "pkg . --output ./binaries/spectral",
+    "build.binary": "pkg . --output ./binaries/spotlight",
     "build.windows": "pkg . --targets windows --out-path ./binaries",
     "build.nix": "pkg . --targets linux-x64,linux-arm64,macos-x64,macos-arm64,alpine-x64,alpine-arm64 --out-path ./binaries",
     "cli": "node -r ts-node/register/transpile-only -r tsconfig-paths/register src/index.ts",
     "cli:debug": "node -r ts-node/register/transpile-only -r tsconfig-paths/register --inspect-brk src/index.ts"
   },
   "dependencies": {
+    "@api-commons/spotlight-core": "^1.19.5",
+    "@api-commons/spotlight-formatters": "^1.4.1",
+    "@api-commons/spotlight-parsers": "^1.0.4",
+    "@api-commons/spotlight-ref-resolver": "^1.0.4",
+    "@api-commons/spotlight-ruleset-bundler": "^1.6.0",
+    "@api-commons/spotlight-ruleset-migrator": "^1.11.0",
+    "@api-commons/spotlight-rulesets": ">=1",
+    "@api-commons/spotlight-runtime": "^1.1.2",
     "@stoplight/json": "~3.21.0",
     "@stoplight/path": "1.3.2",
-    "@stoplight/spectral-core": "^1.19.5",
-    "@stoplight/spectral-formatters": "^1.4.1",
-    "@stoplight/spectral-parsers": "^1.0.4",
-    "@stoplight/spectral-ref-resolver": "^1.0.4",
-    "@stoplight/spectral-ruleset-bundler": "^1.6.0",
-    "@stoplight/spectral-ruleset-migrator": "^1.11.0",
-    "@stoplight/spectral-rulesets": ">=1",
-    "@stoplight/spectral-runtime": "^1.1.2",
     "@stoplight/types": "^13.6.0",
     "chalk": "4.1.2",
     "fast-glob": "~3.2.12",
