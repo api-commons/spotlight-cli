@@ -15,6 +15,7 @@ This is a planning draft, not a commitment. Issue/discussion numbers (e.g.
 | **spotlight-cli** | [api-commons/spotlight-cli](https://github.com/api-commons/spotlight-cli) | `@spotlight-rules/spotlight-*` (11 pkgs) | the linter engine + CLI (Spectral fork) |
 | **spotlight-spec** | [api-commons/spotlight-spec](https://github.com/api-commons/spotlight-spec) | JSON Schema + spec | standalone ruleset specification |
 | **spotlight-vscode** | [api-commons/spotlight-vscode](https://github.com/api-commons/spotlight-vscode) | VS Code extension | editor experience |
+| **spotlight-validator** | [api-commons/spotlight-validator](https://github.com/api-commons/spotlight-validator) | browser app | governance playground (validator.spotlight-rules.com) |
 | **spotlight-rules** | the org / ecosystem | — | governance, cadence, distribution, docs |
 
 ## Positioning — why this fork exists (the feedback makes the case)
@@ -153,6 +154,32 @@ depth, and keeping it authoritative.
   authoring-experience ask.
 - **Ruleset scaffolding** commands (new rule, new ruleset from a template that
   validates against spotlight-spec).
+
+---
+
+## spotlight-validator
+
+A browser-based governance playground at **validator.spotlight-rules.com** —
+runs the Spotlight engine client-side (Vite + Monaco) to lint OpenAPI, AsyncAPI,
+and JSON Schema, with a best-of-breed ruleset compiled from public rulesets and
+selectable by tag.
+
+### Now (shipped)
+- In-browser linting; Monaco artifact + custom-ruleset editors; ~289 rules
+  compiled from 10 public rulesets, tagged `source:`/`category:`/`format:`;
+  duplicate detection; tag-filtered selection.
+
+### Next
+- **Recover the remaining custom-function rules** (Paystack and others whose
+  functions aren't yet bundled).
+- **Real AsyncAPI & JSON Schema rule sets** — the compiled corpus is
+  OpenAPI-heavy; add format-specific best-of-breed rules.
+- **Shareable state** (ruleset + document in the URL) and import-from-URL.
+- **Curated "recommended" preset** beyond duplicate-hiding — a hand-reviewed core.
+
+### Later
+- Save/load named rule profiles; export a ruleset for the CLI; diff against a
+  baseline; embeddable widget.
 
 ---
 
