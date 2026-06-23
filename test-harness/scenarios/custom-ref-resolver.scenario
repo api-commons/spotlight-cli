@@ -1,0 +1,34 @@
+====test====
+Custom json-ref-resolver instance is used for $ref resolving
+====document====
+$ref: custom://user.yaml
+====asset:resolver.js====
+const { Resolver } = require('@stoplight/json-ref-resolver');
+
+module.exports = new Resolver({
+  resolvers: {
+    custom: {
+      async resolve() {
+        return `{ "user": "Stoplight" }`;
+      },
+    },
+  },
+});
+====asset:ruleset====
+const { truthy } = require('@stoplight/spectral-functions');
+
+module.exports = {
+  rules: {
+    'required-user': {
+      given: '$',
+      then: {
+        field: 'user',
+        function: truthy,
+      }
+    },
+  },
+}
+====command====
+{bin} lint {document} --ruleset "{asset:ruleset}" --resolver "{asset:resolver.js}" --ignore-unknown-format
+====stdout====
+No results with a severity of 'error' found!

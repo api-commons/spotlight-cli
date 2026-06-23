@@ -1,0 +1,61 @@
+import * as process from 'process';
+import { IRuleResult, Ruleset } from '@stoplight/spectral-core';
+import { promises as fs } from 'fs';
+import {
+  html,
+  json,
+  junit,
+  stylish,
+  teamcity,
+  text,
+  pretty,
+  githubActions,
+  sarif,
+  codeClimate,
+  markdown,
+} from '@stoplight/spectral-formatters';
+import type { Formatter, FormatterOptions } from '@stoplight/spectral-formatters';
+import type { OutputFormat } from './config';
+import { VERSION } from '../version';
+
+const formatters: Record<OutputFormat, Formatter> = {
+  json,
+  stylish,
+  pretty,
+  junit,
+  html,
+  text,
+  teamcity,
+  'github-actions': githubActions,
+  sarif,
+  'code-climate': codeClimate,
+  gitlab: codeClimate,
+  markdown,
+};
+
+export function formatOutput(
+  results: IRuleResult[],
+  format: OutputFormat,
+  formatOptions: FormatterOptions,
+  ruleset: Ruleset,
+): string {
+  return formatters[format](results, formatOptions, {
+    ruleset,
+    spectralVersion: VERSION,
+  });
+}
+
+export async function writeOutput(outputStr: string, outputFile: string): Promise<void> {
+  if (outputFile !== '<stdout>') {
+    await fs.writeFile(outputFile, outputStr);
+  } else {
+    // Handle backpressure by using the callback parameter
+    // The callback is invoked when the data is flushed (or an error occurs)
+    return new Promise((resolve, reject) => {
+      process.stdout.write(outputStr, err => {
+        if (err) reject(err);
+        else resolve();
+      });
+    });
+  }
+}

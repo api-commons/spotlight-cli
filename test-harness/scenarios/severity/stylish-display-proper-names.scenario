@@ -1,0 +1,87 @@
+====test====
+The name of severity levels are display correctly by stylish formatter
+====document====
+oneOf:
+  - type: string
+  - type: array
+  - type: boolean
+  - type: number
+  - type: "null"
+====asset:ruleset.yaml====
+{
+  "rules": {
+    "no-boolean-type": {
+      "message": "must not be boolean type",
+      "given": "$..type",
+      "severity": "hint",
+      "then": {
+        "function": "schema",
+        "functionOptions": {
+          "schema": {
+            "not": {
+              "enum": ["boolean"]
+            }
+          }
+        }
+      }
+    },
+    "no-null-type": {
+      "message": "must not be null type",
+      "given": "$..type",
+      "severity": "info",
+      "then": {
+        "function": "schema",
+        "functionOptions": {
+          "schema": {
+            "not": {
+              "enum": ["null"]
+            }
+          }
+        }
+      }
+    },
+    "no-complex-type": {
+      "message": "must not be complex type",
+      "given": "$..type",
+      "severity": "error",
+      "then": {
+        "function": "schema",
+        "functionOptions": {
+          "schema": {
+            "not": {
+              "enum": ["array", "object"]
+            }
+          }
+        }
+      }
+    },
+    "no-primitive-type": {
+      "message": "must not be primitive type",
+      "given": "$..type",
+      "severity": "warn",
+      "then": {
+        "function": "schema",
+        "functionOptions": {
+          "schema": {
+            "not": {
+              "enum": ["string", "number", "boolean", "null"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+====command====
+{bin} lint --ruleset {asset:ruleset.yaml} {document}
+====stdout====
+{document}
+ 2:11      warning  no-primitive-type  must not be primitive type  oneOf[0].type
+ 3:11        error  no-complex-type    must not be complex type    oneOf[1].type
+ 4:11         hint  no-boolean-type    must not be boolean type    oneOf[2].type
+ 4:11      warning  no-primitive-type  must not be primitive type  oneOf[2].type
+ 5:11      warning  no-primitive-type  must not be primitive type  oneOf[3].type
+ 6:11  information  no-null-type       must not be null type       oneOf[4].type
+ 6:11      warning  no-primitive-type  must not be primitive type  oneOf[4].type
+
+✖ 7 problems (1 error, 4 warnings, 1 info, 1 hint)

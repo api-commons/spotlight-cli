@@ -1,0 +1,74 @@
+====test====
+Prints reasonable error messages for oas3-schema errors.
+====document====
+openapi: 3.0.1
+info:
+  title: Example $ref error
+  version: 1.0.0
+  contact:
+    foo: me
+paths:
+  /user:
+    get:
+      operationId: getUser
+      parameters:
+        - type: string
+          name: module_id
+          in: path
+          required: true
+          schema:
+            type: string
+          description: Module ID
+        - name: module_id
+          in: bar
+          required: true
+          schema:
+            type: [string, number]
+        - name: alias
+          in: path
+          type: string
+          required: true
+          example: Joe
+      responses:
+        "200":
+          description: An Example
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  user_id: 12345
+            application/yaml:
+              schema:
+                type: object
+                properties:
+        "400":
+          description: []
+  /address:
+    get:
+      responses: {}
+====asset:ruleset====
+const { oas } = require('@stoplight/spectral-rulesets');
+
+module.exports = {
+  'extends': [[oas, 'off']],
+  rules: {
+    'oas3-schema': 'error'
+  }
+}
+====command====
+{bin} lint {document} --ruleset "{asset:ruleset}"
+====stdout====
+{document}
+  6:10  error  oas3-schema  Property "foo" is not expected to be here.                                                                                info.contact.foo
+ 12:17  error  oas3-schema  Property "type" is not expected to be here.                                                                               paths./user.get.parameters[0].type
+ 20:15  error  oas3-schema  "in" property must be equal to one of the allowed values: "path", "query", "header", "cookie". Did you mean "path"?.      paths./user.get.parameters[1].in
+ 23:18  error  oas3-schema  "type" property must be equal to one of the allowed values: "array", "boolean", "integer", "number", "object", "string".  paths./user.get.parameters[1].schema.type
+ 24:11  error  oas3-schema  "schema" or "content" must be present.                                                                                    paths./user.get.parameters[2]
+ 26:17  error  oas3-schema  Property "type" is not expected to be here.                                                                               paths./user.get.parameters[2].type
+ 37:28  error  oas3-schema  "user_id" property must be object.                                                                                        paths./user.get.responses[200].content.application/json.schema.properties.user_id
+ 41:28  error  oas3-schema  "properties" property must be object.                                                                                     paths./user.get.responses[200].content.application/yaml.schema.properties
+ 43:23  error  oas3-schema  "description" property must be string.                                                                                    paths./user.get.responses[400].description
+ 46:17  error  oas3-schema  "responses" property must not have fewer than 1 properties.                                                               paths./address.get.responses
+
+✖ 10 problems (10 errors, 0 warnings, 0 infos, 0 hints)

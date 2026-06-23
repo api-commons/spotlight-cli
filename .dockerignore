@@ -1,0 +1,9 @@
+node_modules
+dist
+docs
+img
+.github
+.circleci
+__mocks__
+__tests__
+test-harness

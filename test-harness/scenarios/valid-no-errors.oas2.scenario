@@ -1,0 +1,23 @@
+====test====
+Valid OAS2 document returns no results
+====document====
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: Stoplight
+  description: lots of text
+  contact:
+    name: fred
+host: localhost
+schemes: 
+  - http
+paths: {}
+tags:
+  - name: my-tag
+====asset:ruleset====
+const { oas } = require('@stoplight/spectral-rulesets');
+module.exports = oas;
+====command====
+{bin} lint {document} --ruleset "{asset:ruleset}"
+====stdout====
+No results with a severity of 'error' found!
