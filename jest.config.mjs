@@ -12,7 +12,7 @@ const projectDefault = {
     ...Object.fromEntries(
       Object.entries(pathsToModuleNameMapper(compilerOptions.paths)).map(([k, v]) => [k, path.join(__dirname, v)]),
     ),
-    '^@stoplight/spectral\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
+    '^@api\\-commons/spotlight\\-test\\-utils$': '<rootDir>/test-utils/node/index.ts',
   },
   testEnvironment: 'node',
   transform: {

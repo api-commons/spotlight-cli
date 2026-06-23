@@ -141,7 +141,7 @@ export default createRulesetFunction({}, input => {
       target: 'browser',
       plugins: [
         esmCdn({
-          ignoreList: [/^@stoplight\/spectral-/, '@stoplight/json'],
+          ignoreList: [/^@api-commons\/spotlight-/, '@stoplight/json'],
         }),
         virtualFs(io),
       ],

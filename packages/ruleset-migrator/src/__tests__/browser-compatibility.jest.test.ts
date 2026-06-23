@@ -43,7 +43,7 @@ describe('Browser Compatibility Integration Tests', () => {
       });
 
       expect(result).toContain('import');
-      expect(result).toContain('spectral-rulesets');
+      expect(result).toContain('spotlight-rulesets');
       expect(result).toContain('"extends"');
       // Test completed successfully
     });
@@ -69,8 +69,8 @@ describe('Browser Compatibility Integration Tests', () => {
         fs: vol as any,
       });
 
-      expect(result).toContain('spectral-rulesets');
-      expect(result).toContain('spectral-functions');
+      expect(result).toContain('spotlight-rulesets');
+      expect(result).toContain('spotlight-functions');
       // Test passed without throwing
     });
   });
@@ -199,7 +199,7 @@ rules:
       });
 
       expect(result).toContain('"local-rule"');
-      expect(result).toContain('spectral-rulesets');
+      expect(result).toContain('spotlight-rulesets');
     });
 
     it('should handle all non-function requireResolve types', async () => {

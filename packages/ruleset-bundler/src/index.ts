@@ -39,7 +39,7 @@ export async function bundleRuleset(
       if (
         e.code === 'UNRESOLVED_IMPORT' &&
         typeof e.source === 'string' &&
-        e.source.startsWith('@stoplight/spectral')
+        (e.source.startsWith('@api-commons/spotlight') || e.source.startsWith('@stoplight/spectral'))
       ) {
         return;
       }
