@@ -1,10 +1,10 @@
-# Spectral in JavaScript
+# Spotlight in JavaScript
 
-The Spectral CLI is a thin wrapper around a JavaScript (TypeScript) API, which can be used independently to do all the same things outside of the CLI, such as linting YAML and JSON documents from a string or an object.
+The Spotlight CLI is a thin wrapper around a JavaScript (TypeScript) API, which can be used independently to do all the same things outside of the CLI, such as linting YAML and JSON documents from a string or an object.
 
 ## Prerequisites
 
-To use the Spectral JS API, you need to install the appropriate package.
+To use the Spotlight JS API, you need to install the appropriate package.
 
 For npm users:
 
@@ -20,12 +20,12 @@ yarn global add @spotlight-rules/spotlight-core
 
 ## Get Started
 
-Similar to using Spectral in the CLI, there are two things you'll need to run Spectral in JS:
+Similar to using Spotlight in the CLI, there are two things you'll need to run Spotlight in JS:
 
 - A string or a file containing your structured data (OpenAPI, AsyncAPI, Kubernetes, etc).
 - An object or a file representing a ruleset
 
-As an example, here's a script of Spectral in action:
+As an example, here's a script of Spotlight in action:
 
 ```js title="example-1.mjs" lineNumbers
 import spectralCore from "@spotlight-rules/spotlight-core";
@@ -57,7 +57,7 @@ spectral.setRuleset({
   },
 });
 
-// we lint our document using the ruleset we passed to the Spectral object
+// we lint our document using the ruleset we passed to the Spotlight object
 spectral.run(myDocument).then(console.log);
 ```
 
@@ -124,7 +124,7 @@ spectral.setRuleset(ruleset);
 
 ### Browser
 
-Here's an example script of how you could run Spectral in the browser:
+Here's an example script of how you could run Spotlight in the browser:
 
 ```js title="example-3.mjs" lineNumbers
 import { Spectral } from "@spotlight-rules/spotlight-core";
@@ -153,20 +153,20 @@ s.setRuleset(await bundleAndLoadRuleset("/.spectral.yaml", { fs, fetch }));
 
 ### Load Multiple Rulesets
 
-If you'd like to use the `bundleAndLoadRuleset` method to load multiple rulesets, you'll have to create a new Spectral ruleset file, and use the [`extends`](../getting-started/3-rulesets.md#extending-rulesets) functionality to extend the rulesets you'd like to use.
+If you'd like to use the `bundleAndLoadRuleset` method to load multiple rulesets, you'll have to create a new Spotlight ruleset file, and use the [`extends`](../getting-started/3-rulesets.md#extending-rulesets) functionality to extend the rulesets you'd like to use.
 
 ## Advanced
 
 ### How to Use a Proxy
 
-Spectral supports HTTP(S) proxies when fetching remote assets:
+Spotlight supports HTTP(S) proxies when fetching remote assets:
 
 ```js title="example-4.mjs" lineNumbers
 import { Spectral } from "@spotlight-rules/spotlight-core";
 import ProxyAgent from "proxy-agent";
 import { createHttpAndFileResolver } from "@spotlight-rules/spotlight-ref-resolver";
 
-// start Spectral using a proxy
+// start Spotlight using a proxy
 const spectral = new Spectral({
   resolver: createHttpAndFileResolver({ agent: new ProxyAgent(process.env.PROXY) }),
 });
@@ -178,8 +178,8 @@ const spectral = new Spectral({
 
 ### How to Use a Custom Resolver
 
-Spectral lets you provide any custom \$ref resolver. By default, HTTP(S) and file protocols are resolved, relatively to
-the document Spectral lints against. You can also add support for additional protocols, or adjust the resolution. To achieve that, you need to create a custom json-ref-resolver instance.
+Spotlight lets you provide any custom \$ref resolver. By default, HTTP(S) and file protocols are resolved, relatively to
+the document Spotlight lints against. You can also add support for additional protocols, or adjust the resolution. To achieve that, you need to create a custom json-ref-resolver instance.
 
 For example:
 

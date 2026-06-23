@@ -2,7 +2,7 @@
 
 A [ruleset](../getting-started/3-rulesets.md) becomes infinitely more useful when other developers are using it. By itself, it's just a way of enforcing some rules on a single project, but when distributed a ruleset can become a "style guide" for enforcing consistency across a whole bunch of projects.
 
-To help you out distribute your rulesets among the others, Spectral provides a few ways to load rulesets from a variety of resources:
+To help you out distribute your rulesets among the others, Spotlight provides a few ways to load rulesets from a variety of resources:
 
 - via an HTTP server
 - via [npm](#npm)
@@ -21,7 +21,7 @@ There are pros and cons to each approach, so see what's right for you.
 
 ## HTTP Server
 
-At its most basic level, a Spectral ruleset is just a JSON or YAML file. It can be hosted anywhere you like: on your web hosting, Amazon S3, or anywhere text files are accessible, and then pulled into your local ruleset in the filesystem:
+At its most basic level, a Spotlight ruleset is just a JSON or YAML file. It can be hosted anywhere you like: on your web hosting, Amazon S3, or anywhere text files are accessible, and then pulled into your local ruleset in the filesystem:
 
 **ruleset.yaml**
 
@@ -38,7 +38,7 @@ extends:
   - https://raw.githubusercontent.com/openapi-contrib/style-guides/master/apisyouwonthate.yml
 ```
 
-As with any ruleset, you can pass these directly to the [Spectral CLI](./2-cli.md):
+As with any ruleset, you can pass these directly to the [Spotlight CLI](./2-cli.md):
 
 ```shell
 spotlight lint -r https://example.com/some-ruleset.yml
@@ -46,7 +46,7 @@ spotlight lint -r https://example.com/some-ruleset.yml
 
 ## npm
 
-As Spectral is an [npm](https://www.npmjs.com/) package, it supports loading rulesets from other npm packages.
+As Spotlight is an [npm](https://www.npmjs.com/) package, it supports loading rulesets from other npm packages.
 
 Not only does it let you serve files without a need for hosting your own server or uploading it somewhere else, but also supports versioning out of the box, and makes it easy to bundle a ruleset with custom rulesets.
 
@@ -58,7 +58,7 @@ This is a basic example showing how the directory structure as well as package.j
 {
   "name": "example-spectral-ruleset",
   "version": "0.0.0",
-  "description": "Example Spectral ruleset",
+  "description": "Example Spotlight ruleset",
   "main": "ruleset.json",
   "scripts": {},
   "license": "ISC"
@@ -126,7 +126,7 @@ Locking a ruleset on a given version is possible through `package.json`:
 }
 ```
 
-If you use Spectral in a browser or don't want to install the package, you can also reference that package through the use of CDNs for npm repositories, such as [unpkg.com](https://unpkg.com/):
+If you use Spotlight in a browser or don't want to install the package, you can also reference that package through the use of CDNs for npm repositories, such as [unpkg.com](https://unpkg.com/):
 
 ```yaml
 extends:
@@ -135,7 +135,7 @@ extends:
 
 ## Filesystem
 
-If you want to share Spectral rulesets between multiple repositories, you may need to use something like [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to clone down another repository into your repository.
+If you want to share Spotlight rulesets between multiple repositories, you may need to use something like [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) to clone down another repository into your repository.
 
 ```bash
 git submodule add https://github.com/some-org/style-guide

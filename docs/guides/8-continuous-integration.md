@@ -1,8 +1,8 @@
 # Continuous Integration
 
-Spectral CLI can be run anywhere that npm packages can be installed and run via CLI, which these days is pretty much any CI solution going.
+Spotlight CLI can be run anywhere that npm packages can be installed and run via CLI, which these days is pretty much any CI solution going.
 
-Here are some examples of Spectral in CI solutions.
+Here are some examples of Spotlight in CI solutions.
 
 ## CircleCI
 
@@ -24,7 +24,7 @@ jobs:
       # Create a folder for results to live in
       - run: "[ -d lint-results ] || mkdir lint-results"
       - run:
-          name: Run Spectral Lint
+          name: Run Spotlight Lint
           command: npx @spotlight-rules/spotlight-cli lint openapi.yaml
             -o lint-results/junit.xml
             -f junit
@@ -41,13 +41,13 @@ Make sure to change `openapi.yaml` to point to whatever documents you want to li
 
 The `-f` (format) flag is used in the script to pick the JUnit output format. This is a standard test format that many CI servers understand, and means you should be able to see the errors in the Test interface.
 
-![On the CircleCI build results page there is a tab called Tests, which shows Spectral results if the JUnit format has been enabled](../img/ci-circleci.png)
+![On the CircleCI build results page there is a tab called Tests, which shows Spotlight results if the JUnit format has been enabled](../img/ci-circleci.png)
 
 Learn more about [CircleCI Configuration](https://circleci.com/docs/2.0/config-intro/), or take a look at this [demo repository](https://github.com/philsturgeon/spectral-demo-circleci).
 
 ## GitHub Action
 
-Spectral has a pre-built [Spectral GitHub Action](https://github.com/stoplightio/spectral-action) which should speed up implementing Spectral in your GitHub repository.
+Spotlight is compatible with Stoplight's [Spectral GitHub Action](https://github.com/stoplightio/spectral-action), which can speed up running it in your GitHub repository. (A dedicated Spotlight action is on the [roadmap](https://spotlight-rules.com/roadmap/).)
 
 ## GitLab
 
@@ -73,4 +73,4 @@ lint:spectral:
 
 Make sure to change `openapi.yaml` to point to whatever documents you want to lint.
 
-The `-f` (format) flag is used in the script to pick the JUnit output format. This is a standard test format that many CI servers understand, and means you should be able to see the Spectral output on the merge request page.
+The `-f` (format) flag is used in the script to pick the JUnit output format. This is a standard test format that many CI servers understand, and means you should be able to see the Spotlight output on the merge request page.

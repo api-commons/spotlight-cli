@@ -10,7 +10,7 @@ Rules take certain parameters and then call functions on parts of another YAML o
 
 The fastest way to create a ruleset is to use the `extends` property to leverage an existing ruleset.
 
-Spectral comes with three built-in rulesets:
+Spotlight comes with three built-in rulesets:
 
 - `spectral:oas` - [OpenAPI v2/v3 rules](./4-openapi.md)
 - `spectral:asyncapi` - [AsyncAPI v2/v3 rules](./5-asyncapi.md)
@@ -51,8 +51,8 @@ Breaking down each part of the rule:
 
 - `description` and `message` help users quickly understand what the goal of the rule is
 - `severity` help define the importance of following the rule
-- The `given` keyword tells Spectral what part of the JSON or YAML file to target by using [JSONPath](http://jsonpath.com/) (Spectral uses [JSONPath Plus](https://www.npmjs.com/package/jsonpath-plus)).
-- The `then` property includes the `function` type and options that tells Spectral how to apply the function to the JSON or YAML file, and make sure that the rule is being followed or not. Spectral has a set of [built-in functions](../reference/functions.md) such as `truthy` or `pattern`, which can be used to power rules.
+- The `given` keyword tells Spotlight what part of the JSON or YAML file to target by using [JSONPath](http://jsonpath.com/) (Spotlight uses [JSONPath Plus](https://www.npmjs.com/package/jsonpath-plus)).
+- The `then` property includes the `function` type and options that tells Spotlight how to apply the function to the JSON or YAML file, and make sure that the rule is being followed or not. Spotlight has a set of [built-in functions](../reference/functions.md) such as `truthy` or `pattern`, which can be used to power rules.
 
 ## Next Steps
 

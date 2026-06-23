@@ -1,6 +1,6 @@
 # AsyncAPI Rules
 
-Spectral has a built-in "asyncapi" ruleset for the [AsyncAPI Specification](https://asyncapi.com).
+Spotlight has a built-in "asyncapi" ruleset for the [AsyncAPI Specification](https://asyncapi.com).
 
 In your ruleset file you can add `extends: "spectral:asyncapi"` and you'll get all of the following rules applied.
 
@@ -495,7 +495,7 @@ application/vnd.aai.asyncapi;version=2.0.0
 application/vnd.aai.asyncapi+json;version=2.0.0
 application/vnd.aai.asyncapi+yaml;version=2.0.0
 
-At this point, explicitly setting `schemaFormat` is not supported by Spectral, so if you use it this rule will emit an info message and skip validating the payload.
+At this point, explicitly setting `schemaFormat` is not supported by Spotlight, so if you use it this rule will emit an info message and skip validating the payload.
 
 Other formats such as OpenAPI Schema Object, JSON Schema Draft 07, and Avro will be added in various upcoming versions.
 
@@ -730,7 +730,7 @@ application/vnd.aai.asyncapi;version=2.0.0
 application/vnd.aai.asyncapi+json;version=2.0.0
 application/vnd.aai.asyncapi+yaml;version=2.0.0
 
-At this point, explicitly setting `schemaFormat` is not supported by Spectral, so if you use it this rule will emit an info message and skip validating the payload.
+At this point, explicitly setting `schemaFormat` is not supported by Spotlight, so if you use it this rule will emit an info message and skip validating the payload.
 
 Other formats such as OpenAPI Schema Object, JSON Schema Draft 07, and Avro will be added in various upcoming versions.
 

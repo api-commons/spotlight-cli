@@ -36,7 +36,7 @@ Let's look at all the properties that can be used for a rule.
 
 The `given` property is conceptually similar to a selector in CSS, in that it indicates the part of the document to apply rules to.
 
-`given` has a specific syntax known as [JSONPath](https://goessner.net/articles/JsonPath/index.html), which is similar to XPath. JSONPath has a few competing implementations. Spectral uses [nimma](https://www.npmjs.com/package/nimma) as its main implementation, and sometimes resorts to [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus) to ensure backwards-compatibility. Both support all the main JSONPath functionality and a bit more, but this syntax may differ slightly from other JSONPath implementations. Currently the implementation that Spectral uses is not fully aligned with [IETF RFC 9535](https://datatracker.ietf.org/doc/rfc9535/) (published in February 2024) which also is titled "JSONPath". Once supported by the underlying implementations, we will look to make available within Spectral.
+`given` has a specific syntax known as [JSONPath](https://goessner.net/articles/JsonPath/index.html), which is similar to XPath. JSONPath has a few competing implementations. Spotlight uses [nimma](https://www.npmjs.com/package/nimma) as its main implementation, and sometimes resorts to [jsonpath-plus](https://www.npmjs.com/package/jsonpath-plus) to ensure backwards-compatibility. Both support all the main JSONPath functionality and a bit more, but this syntax may differ slightly from other JSONPath implementations. Currently the implementation that Spotlight uses is not fully aligned with [IETF RFC 9535](https://datatracker.ietf.org/doc/rfc9535/) (published in February 2024) which also is titled "JSONPath". Once supported by the underlying implementations, we will look to make available within Spotlight.
 
 Your `given` value can be a string containing any valid JSONPath expression, or an array of expressions to apply a rule to multiple parts of a document.
 You can also consume your [aliases](4c-aliases.md) here if you have some defined.
@@ -94,7 +94,7 @@ contact-properties:
 
 ### Message
 
-To help you create meaningful messages for results, Spectral comes with placeholders that are evaluated at runtime.
+To help you create meaningful messages for results, Spotlight comes with placeholders that are evaluated at runtime.
 
 - `{{error}}` - the error returned by function
 - `{{description}}` - the description set on the rule
@@ -126,7 +126,7 @@ The default value is `warn`.
 
 ### Resolved
 
-By default, Spectral processes each rule on a "resolved" document (a file where all `$ref` JSON Schema references have been replaced with the objects they point to). While this is typically the desired behavior, there are some use cases where you may need to run a rule on the "raw" un-resolved document (for example, to enforce conventions on the folder structure used for [splitting up documents](https://blog.stoplight.io/keeping-openapi-dry-and-portable?utm_medium=spectral&utm_source=github&utm_campaign=docs)).
+By default, Spotlight processes each rule on a "resolved" document (a file where all `$ref` JSON Schema references have been replaced with the objects they point to). While this is typically the desired behavior, there are some use cases where you may need to run a rule on the "raw" un-resolved document (for example, to enforce conventions on the folder structure used for [splitting up documents](https://blog.stoplight.io/keeping-openapi-dry-and-portable?utm_medium=spectral&utm_source=github&utm_campaign=docs)).
 
 If your rule needs to access the raw `$ref` reference values, you can set `resolved: false` to allow the rule to receive the raw un-resolved version of the document. Otherwise `resolved: true` is the default.
 

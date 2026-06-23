@@ -1,6 +1,6 @@
 ## Overrides
 
-Previously Spectral supported exceptions, which were limited in their ability to target particular rules on specific files or parts of files or change parts of a rule. Overrides are the much more powerful version of exceptions, with the ability to customize ruleset usage for different files and projects without having to duplicate any rules.
+Previously Spotlight supported exceptions, which were limited in their ability to target particular rules on specific files or parts of files or change parts of a rule. Overrides are the much more powerful version of exceptions, with the ability to customize ruleset usage for different files and projects without having to duplicate any rules.
 
 Overrides can be used to apply rulesets on:
 

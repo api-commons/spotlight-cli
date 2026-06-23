@@ -1,8 +1,8 @@
 # Custom Functions
 
-If the core functions aren't enough for your [custom ruleset](../getting-started/3-rulesets.md), Spectral allows you to write and use custom functions.
+If the core functions aren't enough for your [custom ruleset](../getting-started/3-rulesets.md), Spotlight allows you to write and use custom functions.
 
-Start by creating a directory to contain your new functions. By default, Spectral looks for the `functions/` folder.
+Start by creating a directory to contain your new functions. By default, Spotlight looks for the `functions/` folder.
 
 **functions/abc.js**
 
@@ -41,7 +41,7 @@ greeting:
   message: hello
 ```
 
-If the message was goodbye, Spectral would throw an exception.
+If the message was goodbye, Spotlight would throw an exception.
 
 ## Writing Functions
 
@@ -178,7 +178,7 @@ operation-id-kebab-case:
 
 `context.path` contains a resolved property path pointing to a place in the document.
 
-`context.document` provides access to the document that Spectral is attempting to lint. You may find it useful if you'd like to see which formats were applied to it, or in case you'd like to get its unresolved version.
+`context.document` provides access to the document that Spotlight is attempting to lint. You may find it useful if you'd like to see which formats were applied to it, or in case you'd like to get its unresolved version.
 
 `context.documentInventory` provides access to resolved and unresolved documents, the $ref resolution graph, as well as some other advanced properties. You shouldn't need it most of the time.
 
@@ -267,11 +267,11 @@ export default createRulesetFunction(
 );
 ```
 
-Spectral attempts to deduplicate messages when they have the same `code` and target the same `path`. As such, if your custom function returns more than one result, you should specify a different `path` for each result.
+Spotlight attempts to deduplicate messages when they have the same `code` and target the same `path`. As such, if your custom function returns more than one result, you should specify a different `path` for each result.
 
 ## Referencing Core Functions
 
-Your custom function may also build on top of existing functions Spectral offers.
+Your custom function may also build on top of existing functions Spotlight offers.
 
 Make sure to provide all arguments that were originally passed to your function, otherwise, a core function may misbehave.
 
@@ -414,7 +414,7 @@ export default (targetVal, { excludedWords }) => {
 
 ## Supporting Multiple Environments
 
-Spectral is meant to support a variety of environments, so ideally your function should behave similarly in Node.js and browser contexts. Don't rely on globals or functions specific to a particular environment. For example, don't expect the browser `window` global to always be available, since this global isn't available in Node.js environments.
+Spotlight is meant to support a variety of environments, so ideally your function should behave similarly in Node.js and browser contexts. Don't rely on globals or functions specific to a particular environment. For example, don't expect the browser `window` global to always be available, since this global isn't available in Node.js environments.
 
 If you need to access environment-specific APIs, make sure you provide an alternative for other environments. A good example of such a situation is `fetch` - a function available natively in a browser context, but missing in Node.js.
 
@@ -422,8 +422,8 @@ To keep your code cross-platform, you'd need to use a cross-platform package suc
 
 ## Code Transpilation
 
-We encourage you to not transpile the code to ES5 if you can help it. Spectral doesn't support older environments than ES2019, so there is no need to bloat the bundle with useless transformations and polyfills. Ship untransformed async/await, don't include unneeded shims, it's all good.
+We encourage you to not transpile the code to ES5 if you can help it. Spotlight doesn't support older environments than ES2019, so there is no need to bloat the bundle with useless transformations and polyfills. Ship untransformed async/await, don't include unneeded shims, it's all good.
 
-Before 6.x, Spectral hadn't supported ES Modules, yet as of recently using ES Modules is the recommended way to do things.
+Before 6.x, Spotlight hadn't supported ES Modules, yet as of recently using ES Modules is the recommended way to do things.
 
 [jsonpath]: https://jsonpath.com/

@@ -24,7 +24,7 @@ npm install --save @spotlight-rules/spotlight-functions
 npm install --save @spotlight-rules/spotlight-formats
 ```
 
-Installing these packages isn't required for creating a JavaScript ruleset, but you'll use them in the example to create some common rules used with Spectral and to target a specific OpenAPI format.
+Installing these packages isn't required for creating a JavaScript ruleset, but you'll use them in the example to create some common rules used with Spotlight and to target a specific OpenAPI format.
 
 Next, create a JavaScript file to hold your ruleset:
 
@@ -96,9 +96,9 @@ export default {
 };
 ```
 
-If you use custom functions, the keywords `functions` and `functionOptions` have been removed, as they were designed to help Spectral find your functions. Now functions are passed as a variable, instead of using a string that contains the name like the JSON/YAML formats.
+If you use custom functions, the keywords `functions` and `functionOptions` have been removed, as they were designed to help Spotlight find your functions. Now functions are passed as a variable, instead of using a string that contains the name like the JSON/YAML formats.
 
-Next, publish the ruleset as an npm package, and then install that package as part of your API project and reference it in your Spectral ruleset as:
+Next, publish the ruleset as an npm package, and then install that package as part of your API project and reference it in your Spotlight ruleset as:
 
 ```
 extends: ["@your-js-ruleset"]
@@ -111,4 +111,4 @@ extends:
   - https://unpkg.com/@your-js-ruleset
 ```
 
-For a more detailed example of creating a JavaScript ruleset and publishing it to npm, check out [Distribute Spectral Style Guides with npm](https://apisyouwonthate.com/blog/distribute-spectral-style-guides-with-npm) at APIs You Won't Hate.
+For a more detailed example of creating a JavaScript ruleset and publishing it to npm, check out [Distribute Spotlight Style Guides with npm](https://apisyouwonthate.com/blog/distribute-spectral-style-guides-with-npm) at APIs You Won't Hate.
