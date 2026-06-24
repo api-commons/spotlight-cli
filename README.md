@@ -1,3 +1,5 @@
+<p align="center"><a href="https://spotlight-rules.com"><img src="https://raw.githubusercontent.com/api-commons/spotlight-cli/main/spotlight-rules-logo.png" alt="Spotlight Rules" height="90"></a></p>
+
 # Spotlight CLI
 
 [![npm version](https://img.shields.io/npm/v/@spotlight-rules/spotlight-cli?color=blue)](https://www.npmjs.com/package/@spotlight-rules/spotlight-cli)
@@ -100,3 +102,7 @@ and [NOTICE](./NOTICE) for full attribution.
 ## License
 
 Apache License 2.0 — see [LICENSE](./LICENSE).
+
+---
+
+Part of [Spotlight Rules](https://spotlight-rules.com) — a project of [API Evangelist](https://apievangelist.com), maintained openly under [API Commons](https://apicommons.org).
