@@ -57,3 +57,21 @@ product-facing is renamed to Spotlight, and the package versions restart at
 
 > The npm scope (`@spotlight-rules`) differs from the GitHub organization
 > (`api-commons`) and the site (`spotlight-rules.com`) — see the project READMEs.
+
+## License compliance (Apache-2.0)
+
+This fork's compliance posture with the upstream Apache License 2.0:
+
+- **§4(a) License included.** The upstream `LICENSE` is retained at the repo root
+  and in every package directory, so it is included in each published npm tarball
+  (verified present in the `@spotlight-rules/spotlight-*` packages).
+- **§4(b) Stating changes.** All changes from upstream are documented centrally in
+  this `FORK.md` (rather than per-file banners).
+- **§4(c) Retaining notices.** Upstream copyright/attribution notices in source
+  files are preserved; the rename touched product/identifier names only, not the
+  `Stoplight`/copyright notices.
+- **§4(d) NOTICE.** Upstream Spectral ships **no** `NOTICE` file, so §4(d) imposes
+  no propagation obligation. The `NOTICE` added here is voluntary attribution to
+  Stoplight and the Spectral contributors.
+- **§6 Trademarks.** The product was renamed Spectral → Spotlight; no upstream
+  trademarks are used.
