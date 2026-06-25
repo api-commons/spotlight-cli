@@ -64,14 +64,18 @@ export async function lint(documents: Array<number | string>, flags: ILintConfig
   };
 }
 
+const isMarkdown = (s: string): boolean => /\.(md|markdown)$/i.test(s);
+
 const createDocument = async (
   identifier: string | number,
   opts: IFileReadOptions,
   source: string,
 ): Promise<Document<unknown, Parsers.YamlParserResult<unknown>>> => {
   if (typeof identifier === 'string') {
-    return new Document(await readParsable(identifier, opts), Parsers.Yaml, identifier);
+    const parser = isMarkdown(identifier) ? Parsers.Markdown : Parsers.Yaml;
+    return new Document(await readParsable(identifier, opts), parser as typeof Parsers.Yaml, identifier);
   }
 
-  return new Document(await readFileDescriptor(identifier, opts), Parsers.Yaml, source);
+  const parser = isMarkdown(source) ? Parsers.Markdown : Parsers.Yaml;
+  return new Document(await readFileDescriptor(identifier, opts), parser as typeof Parsers.Yaml, source);
 };

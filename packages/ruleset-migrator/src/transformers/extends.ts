@@ -10,6 +10,7 @@ const REPLACEMENTS = {
   'spotlight:oas': 'oas',
   'spotlight:asyncapi': 'asyncapi',
   'spotlight:arazzo': 'arazzo',
+  'spotlight:skill': 'skill',
 };
 
 export { transformer as default };
