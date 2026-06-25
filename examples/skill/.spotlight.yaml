@@ -1,0 +1,2 @@
+# Lint this skill: spotlight lint SKILL.md --ruleset .spotlight.yaml
+extends: [spotlight:skill]

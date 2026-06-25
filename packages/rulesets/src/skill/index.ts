@@ -20,6 +20,13 @@ const headingPresent = (
   return undefined;
 };
 
+// Custom function: at most one level-1 heading in the body (the frontmatter name is the title).
+const atMostOneTitle = (input: { headings?: Array<{ depth?: number }> } | undefined) => {
+  const h1 = (input?.headings ?? []).filter((h) => (h.depth ?? 6) === 1);
+  if (h1.length > 1) return [{ message: `Skill body should have at most one level-1 heading (found ${h1.length}); use "##" for sections.` }];
+  return undefined;
+};
+
 const ruleset = {
   documentationUrl: 'https://spotlight-rules.com/spec/',
   rules: {
@@ -60,11 +67,36 @@ const ruleset = {
       severity: 'warn',
       then: { function: schema, functionOptions: { schema: { type: 'array', items: { type: 'string' } } } },
     },
+    'skill-version-semver': {
+      description: 'If a skill declares a version, it should be semantic (e.g. 1.0.0) so consumers can reason about changes.',
+      given: '$.frontmatter.version',
+      severity: 'warn',
+      then: { function: pattern, functionOptions: { match: '^\\d+\\.\\d+\\.\\d+(?:[-+][0-9A-Za-z.-]+)?$' } },
+    },
+    'skill-body-present': {
+      description: 'A skill must have body content, not just frontmatter — the body is the instruction set the agent follows.',
+      message: '{{error}}',
+      given: '$.words',
+      severity: 'error',
+      then: { function: schema, functionOptions: { schema: { type: 'integer', minimum: 1 } } },
+    },
     'skill-has-usage-section': {
       description: 'A skill body should document how to use it under a "Usage" section.',
       given: '$',
       severity: 'warn',
       then: { function: headingPresent, functionOptions: { name: 'Usage' } },
+    },
+    'skill-has-examples-section': {
+      description: 'A skill body should show concrete examples under an "Examples" section so agents and humans see how to invoke it.',
+      given: '$',
+      severity: 'info',
+      then: { function: headingPresent, functionOptions: { name: 'Examples' } },
+    },
+    'skill-single-title': {
+      description: 'A skill body should have at most one level-1 heading — the frontmatter name is the title; use "##" for sections.',
+      given: '$',
+      severity: 'warn',
+      then: { function: atMostOneTitle },
     },
     'skill-body-length': {
       description: 'Skill bodies should stay focused — very long instructions degrade agent performance (max ~5000 words).',
