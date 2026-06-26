@@ -10,6 +10,8 @@ name: pdf-extractor
 description: Extract text, tables, and metadata from PDF files so they can be analyzed and summarized.
 license: Apache-2.0
 version: 1.0.0
+metadata:
+  category: documents
 allowed-tools:
   - Read
   - Bash

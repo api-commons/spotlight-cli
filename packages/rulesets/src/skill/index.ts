@@ -104,6 +104,48 @@ const ruleset = {
       severity: 'info',
       then: { function: schema, functionOptions: { schema: { type: 'integer', maximum: 5000 } } },
     },
+    'skill-require-allowed-tools': {
+      description: 'A skill should declare an `allowed-tools` property listing the tools it needs.',
+      message: 'Missing `allowed-tools`.',
+      given: '$.frontmatter',
+      severity: 'info',
+      then: { field: 'allowed-tools', function: truthy },
+    },
+    'skill-require-metadata': {
+      description: 'A skill should declare a `metadata` object.',
+      message: 'Missing `metadata`.',
+      given: '$.frontmatter',
+      severity: 'info',
+      then: { field: 'metadata', function: truthy },
+    },
+    'skill-require-version': {
+      description: 'A skill should declare a `version`.',
+      message: 'Missing `version`.',
+      given: '$.frontmatter',
+      severity: 'info',
+      then: { field: 'version', function: truthy },
+    },
+    'skill-description-single-line': {
+      description: 'A skill description should be a single line (no embedded line breaks) so it renders cleanly in pickers.',
+      message: 'Skill description should be a single line.',
+      given: '$.frontmatter.description',
+      severity: 'info',
+      then: { function: pattern, functionOptions: { notMatch: '\\n' } },
+    },
+    'skill-metadata-object': {
+      description: 'If a skill declares metadata, it should be an object of key/value pairs.',
+      message: 'Skill metadata should be an object.',
+      given: '$.frontmatter.metadata',
+      severity: 'info',
+      then: { function: schema, functionOptions: { schema: { type: 'object' } } },
+    },
+    'skill-name-max-length': {
+      description: 'A skill name should be concise (64 characters or fewer).',
+      message: 'Skill name should be 64 characters or fewer.',
+      given: '$.frontmatter.name',
+      severity: 'info',
+      then: { function: schema, functionOptions: { schema: { type: 'string', maxLength: 64 } } },
+    },
   },
 };
 
