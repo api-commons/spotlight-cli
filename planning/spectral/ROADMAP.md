@@ -3,6 +3,9 @@
 An openly-governed, progressive build of the Spectral API linter — eight tools,
 one engine, one rule catalog. Currently at **1.1.0**. A plan, not a commitment.
 
+Today it governs the APIs you **produce**; the next half is governing the APIs and
+context you **consume** — see [Consumer API governance](#consumer-api-governance--the-next-half) below.
+
 ## The suite
 
 - **spotlight-cli** — the linter engine + CLI (`@spotlight-rules/*` on npm).
@@ -41,3 +44,18 @@ one engine, one rule catalog. Currently at **1.1.0**. A plan, not a commitment.
 - Spec: a conformance test suite for other implementations.
 - Distribution: arm64 container images; a SonarQube path.
 - A community ruleset registry, spec-validated, under API Commons.
+
+## Consumer API governance — the next half
+
+Governance has run producer-side and design-time. Agents and copilots consume APIs
+faster than producer governance can keep up, so the same rules, discovery, and
+validation turn to face the APIs and context we consume — governing, by rule, what
+we hand to AI. Background: [Consumer API Governance in an Agentic World](https://apievangelist.com/2026/06/24/consumer-api-governance-in-an-agentic-world/).
+
+- **Consumer rulesets (agent-safety packs)** — assert what a surface may and may not expose to an integration: no PII, no secrets, no pricing, scope-limited operations, bounded and deterministic outputs.
+- **Consumption gate in discovery** — score a third-party OpenAPI / MCP server for agent-readiness before you integrate it.
+- **Governed surface generation** — generate the gateway (e.g. KrakenD) / MCP declaration that shapes a consumed surface, governing both the declaration and the surface it produces (rulesets generated and hand-reviewed).
+- **Context manifests** — a first-class artifact describing the governed context for an integration (sources, fields, rules), generated and diffable.
+- **Continuous consumption monitoring** — re-lint the APIs you depend on; alert on drift, breaking changes, new PII, or policy violations before your agents hit them.
+- **Runtime input/output governance** — apply the same rules to the requests and responses flowing to AI, deterministically, at the point of consumption.
+- **Rulesets from plain-English policy** — generate a consumer ruleset from "products and metadata, no pricing, no PII", then review.
