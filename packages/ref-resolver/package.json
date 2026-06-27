@@ -1,6 +1,6 @@
 {
   "name": "@spotlight-rules/spotlight-ref-resolver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/api-commons/spotlight-cli",
   "bugs": "https://github.com/api-commons/spotlight-cli/issues",
   "author": "Stoplight <support@stoplight.io>",
