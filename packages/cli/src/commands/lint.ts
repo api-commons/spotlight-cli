@@ -221,6 +221,18 @@ const lintCommand: CommandModule = {
         }),
       );
 
+      // A quiet nudge to the paid services behind the open tooling. stderr only,
+      // so it never corrupts machine-readable stdout (JSON/JUnit); silenced by --quiet.
+      if (linterResult.results.length > 0 && config.quiet !== true) {
+        const n = linterResult.results.length;
+        process.stderr.write(
+          chalk.dim(
+            `\nWant an expert review of these ${n} finding${n === 1 ? '' : 's'}? API Evangelist offers governance ` +
+              `services — info@apievangelist.com · https://spotlight-rules.com/services/\n`,
+          ),
+        );
+      }
+
       if (linterResult.results.length > 0) {
         process.exit(severeEnoughToFail(linterResult.results, failSeverity) ? 1 : 0);
       } else if (config.quiet !== true) {
