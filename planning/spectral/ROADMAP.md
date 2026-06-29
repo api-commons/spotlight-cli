@@ -24,19 +24,18 @@ context you **consume** — see [Consumer API governance](#consumer-api-governan
 - Ruleset JSON Schema at 2020-12, with `title` / `reference` / `prompt` extensions and `functionOptions` schemas.
 - Ruleset schema fully documented — `description` / `title` / `examples` on every property, `$def`, and per-function options (generated, not hand-maintained).
 - Ruleset schema published to [SchemaStore](https://www.schemastore.org/) — editors auto-apply Spotlight completion + validation to `*.spotlight.*` and `spotlight-ruleset.*` files.
-- **spotlight-vscode** published to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spotlightrules.spotlight) and [Open VSX](https://open-vsx.org/extension/spotlightrules/spotlight) as `spotlightrules.spotlight` (VS Code, VSCodium, Cursor, Windsurf).
+- **spotlight-vscode** published to the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spotlightrules.spotlight) and [Open VSX](https://open-vsx.org/extension/spotlightrules/spotlight) as `spotlightrules.spotlight` (VS Code, VSCodium, Cursor, Windsurf). v1.1.0 associates the ruleset JSON Schema with `.spotlight.*` files for in-editor completion + validation.
 - Validator workbench: AI fix, tag filter, utilities, commit/PR, APIs.json export.
 - Distributable catalog pack (engine-loadable rulesets + functions).
 - Standardized dev process: single source of truth, uniform CI, drift gates, release runbook, branch protection.
 
 ## Now
 
-- VS Code: associate the SchemaStore ruleset schema with `.spotlight.*` files in the extension.
+- Spec: a ruleset authoring guide; publish the catalog pack as a package.
 
 ## Next
 
 - Engine: `unrecognized-format` as a first-class rule; surface `documentationUrl` in output; JSON Schema 2020-12 keywords in the OAS ruleset.
-- Spec: a ruleset authoring guide; publish the catalog pack as a package.
 - Validator: shareable state (ruleset + document in the URL); embeddable widget.
 
 ## Later
