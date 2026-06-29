@@ -27,12 +27,11 @@ context you **consume** — see [Consumer API governance](#consumer-api-governan
 - **spotlight-vscode** published to the VS Code Marketplace as [`spotlightrules.spotlight`](https://marketplace.visualstudio.com/items?itemName=spotlightrules.spotlight).
 - Validator workbench: AI fix, tag filter, utilities, commit/PR, APIs.json export.
 - Distributable catalog pack (engine-loadable rulesets + functions).
-- Standardized dev process: single source of truth, uniform CI, drift gates, release runbook.
+- Standardized dev process: single source of truth, uniform CI, drift gates, release runbook, branch protection.
 
 ## Now
 
 - VS Code: associate the schema with ruleset files; publish to Open VSX (VSCodium / Cursor / Windsurf).
-- Branch protection across the repos.
 
 ## Next
 
