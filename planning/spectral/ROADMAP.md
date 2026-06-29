@@ -24,13 +24,14 @@ context you **consume** — see [Consumer API governance](#consumer-api-governan
 - Ruleset JSON Schema at 2020-12, with `title` / `reference` / `prompt` extensions and `functionOptions` schemas.
 - Ruleset schema fully documented — `description` / `title` / `examples` on every property, `$def`, and per-function options (generated, not hand-maintained).
 - Ruleset schema published to [SchemaStore](https://www.schemastore.org/) — editors auto-apply Spotlight completion + validation to `*.spotlight.*` and `spotlight-ruleset.*` files.
+- **spotlight-vscode** published to the VS Code Marketplace as [`spotlightrules.spotlight`](https://marketplace.visualstudio.com/items?itemName=spotlightrules.spotlight).
 - Validator workbench: AI fix, tag filter, utilities, commit/PR, APIs.json export.
 - Distributable catalog pack (engine-loadable rulesets + functions).
 - Standardized dev process: single source of truth, uniform CI, drift gates, release runbook.
 
 ## Now
 
-- VS Code: associate the schema with ruleset files; publish to Marketplace + Open VSX.
+- VS Code: associate the schema with ruleset files; publish to Open VSX (VSCodium / Cursor / Windsurf).
 - Branch protection across the repos.
 
 ## Next
