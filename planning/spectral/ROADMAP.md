@@ -22,13 +22,14 @@ context you **consume** — see [Consumer API governance](#consumer-api-governan
 - 1.1.0 across all 11 npm packages.
 - Curated catalog of 733 rules across 12 artifact types.
 - Ruleset JSON Schema at 2020-12, with `title` / `reference` / `prompt` extensions and `functionOptions` schemas.
+- Ruleset schema fully documented — `description` / `title` / `examples` on every property, `$def`, and per-function options (generated, not hand-maintained).
+- Ruleset schema published to [SchemaStore](https://www.schemastore.org/) — editors auto-apply Spotlight completion + validation to `*.spotlight.*` and `spotlight-ruleset.*` files.
 - Validator workbench: AI fix, tag filter, utilities, commit/PR, APIs.json export.
 - Distributable catalog pack (engine-loadable rulesets + functions).
 - Standardized dev process: single source of truth, uniform CI, drift gates, release runbook.
 
 ## Now
 
-- Register the ruleset schema on schemastore (`.spotlight.*` / `.spectral.*`).
 - VS Code: associate the schema with ruleset files; publish to Marketplace + Open VSX.
 - Branch protection across the repos.
 
